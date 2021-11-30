@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public enum GameState { Lobby, Fishing, shop, Setting};
     public GameState curGameState = GameState.Lobby;
+    public List<GameObject> fishL;
     void Awake()
     {
         if (instance == null)
