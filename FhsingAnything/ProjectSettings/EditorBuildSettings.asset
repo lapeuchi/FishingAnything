@@ -9,25 +9,25 @@ EditorBuildSettings:
     path: Assets/Scenes/FishMarketScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/SeaScene.unity
+    path: Assets/Scenes/Fishing place/SeaScene.unity
     guid: 58a395fdadcbfd44cb8e61e2efa03daf
   - enabled: 1
-    path: Assets/Scenes/RiverScene.unity
+    path: Assets/Scenes/Fishing place/RiverScene.unity
     guid: 55b697e73d9bc264f93871daf5c1765b
   - enabled: 1
-    path: Assets/Scenes/ArcticScene.unity
+    path: Assets/Scenes/Fishing place/ArcticScene.unity
     guid: 8ac86e05a8e61fa4387a9053de0b451d
   - enabled: 1
-    path: Assets/Scenes/BaclocdamScene.unity
+    path: Assets/Scenes/Fishing place/BaclocdamScene.unity
     guid: 676f536c69cbc104b8339a727a22a9bb
   - enabled: 1
-    path: Assets/Scenes/BathsScene.unity
+    path: Assets/Scenes/Fishing place/BathsScene.unity
     guid: 802cb958ef351f545a3803297593df67
   - enabled: 1
-    path: Assets/Scenes/SewerScene.unity
+    path: Assets/Scenes/Fishing place/SewerScene.unity
     guid: be0f66a80aba3c0478eeb9f0e7a91c91
   - enabled: 1
-    path: Assets/Scenes/WaterFallScene.unity
+    path: Assets/Scenes/Fishing place/WaterFallScene.unity
     guid: d750b97647611b841bdc6186592b2cda
   - enabled: 1
     path: Assets/Scenes/ShopScene.unity

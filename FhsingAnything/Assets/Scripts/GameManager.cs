@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance = null;
+    public static GameManager instance = null;
 
     public enum GameState { Lobby, Fishing, shop, Setting};
     public GameState curGameState = GameState.Lobby;
-    
-    public List<Fish> fmL;
+   
     public List<GameObject> aL;
 
     //public List<Item> ItemL;
@@ -26,8 +25,6 @@ public class GameManager : MonoBehaviour
         //소모품
         int d;
     }
-
-    
 
     void Awake()
     {
