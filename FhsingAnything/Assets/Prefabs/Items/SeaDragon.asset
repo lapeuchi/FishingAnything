@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
+  m_Name: SeaDragon
+  m_EditorClassIdentifier: 
+  itemName: SeaDragon
+  itemImage: {fileID: 21300000, guid: b6d3988a3a1154d498c12668f39397a9, type: 3}
