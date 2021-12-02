@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Fishing : MonoBehaviour
 {
-    
-    private void Awake()
-    {
-        GameManager.instance.curGameState = GameManager.GameState.Fishing;
-     
-    }
+    public List<GameObject> SeaList;
+    public List<GameObject> RiverList;
+    public List<GameObject> SewerList;
+    public List<GameObject> ArticleList;
+    public List<GameObject> WaterfallList;
+    public List<GameObject> BathList;
+    public List<GameObject> Backlocdam;
+
     void Start()
     {
     

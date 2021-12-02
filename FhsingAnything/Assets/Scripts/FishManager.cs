@@ -5,22 +5,26 @@ using UnityEngine;
 public class FishManager : MonoBehaviour
 {
     [SerializeField]
-    private int sizeLv;
+    protected int sizeLv;
     [SerializeField]
-    private int hp;
+    protected int hp;
     [SerializeField]
-    private int money;
-    private enum Tier { Common, Normal, Rare, Epic, Unique, Legendary, Special, None };
+    protected int money;
+    protected enum Tier { Common, Normal, Rare, Epic, Unique, Legendary, Special, None };
     [SerializeField]
-    private Tier FishTier = Tier.None;
+    protected Tier FishTier = Tier.None;
 
-    private void Start()
+    
+    
+    protected void Summon()
     {
-        Debug.Log("Fish : Start()");
-        FishTier = (Tier)Random.Range(0, 6);
-        sizeLv = Random.Range(-5, 5);
-        SetStatus(FishTier, ref hp, ref money);
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            sizeLv = Random.Range(-5, 5);
+            SetStatus(FishTier, ref hp, ref money);
+        }
     }
+
 
     private void SetStatus(Tier FishTier, ref int hp, ref int money)
     {
