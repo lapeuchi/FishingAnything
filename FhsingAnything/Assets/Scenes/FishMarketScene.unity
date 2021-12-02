@@ -310,7 +310,7 @@ RectTransform:
   m_Children:
   - {fileID: 1481526367}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -331,6 +331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &122841163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,6 +556,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 1568954060}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &284292378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,10 +808,10 @@ RectTransform:
   - {fileID: 1424610225}
   - {fileID: 627847746}
   - {fileID: 1762634572}
-  - {fileID: 1568954061}
-  - {fileID: 740841244}
   - {fileID: 122841161}
   - {fileID: 1344846164}
+  - {fileID: 1568954061}
+  - {fileID: 740841244}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1190,6 +1194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &627847748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1335,6 +1341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &632265323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,7 +1387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 632265322}
-        m_MethodName: GoArctic
+        m_MethodName: Set_state_Arctic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1619,7 +1627,7 @@ Transform:
   - {fileID: 2039932739}
   - {fileID: 1318806780}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744707326
 GameObject:
@@ -1675,6 +1683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &744707329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,7 +1729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 744707328}
-        m_MethodName: GoSea
+        m_MethodName: Set_state_Sea
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2050,6 +2060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &936959471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,7 +2106,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 936959470}
-        m_MethodName: GoWaterFall
+        m_MethodName: Set_state_Waterfall
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2273,6 +2285,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1170904814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2317,7 +2331,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1170904813}
-        m_MethodName: GoRiver
+        m_MethodName: Set_state_River
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2418,6 +2432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1205675280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2462,7 +2478,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1205675279}
-        m_MethodName: GoBaclocdam
+        m_MethodName: Set_state_Baclocdam
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2563,6 +2579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1318806782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2687,7 +2705,7 @@ RectTransform:
   m_Children:
   - {fileID: 164150064}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2708,6 +2726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1344846166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2853,6 +2873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1352517732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3089,6 +3111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!1 &1481526366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3224,7 @@ RectTransform:
   - {fileID: 284292376}
   - {fileID: 1352517730}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3726,6 +3750,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 1568954060}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1762634574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4027,6 +4053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &1825216639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4071,7 +4099,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1825216638}
-        m_MethodName: GoSewer
+        m_MethodName: Set_state_Sewer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4250,6 +4278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  State: 0
 --- !u!114 &2039932741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4294,7 +4324,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2039932740}
-        m_MethodName: GoBaths
+        m_MethodName: Set_state_Baths
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -7,34 +7,55 @@ public class ButtonManager : MonoBehaviour
 {
     public GameObject SelectPlaceBackGround;
     public GameObject BlackBackGround;
+    public GameObject Bag;
 
-    public void GoSea() 
+    public enum FishingState
     {
-        SceneManager.LoadScene("SeaScene");
+        Sea,
+        River,
+        Arctic,
+        Baclocdam,
+        Baths,
+        Sewer,
+        Waterfall
     }
-    public void GoRiver()
+
+    public FishingState State;
+
+    public void Set_state_Sea() 
     {
-        SceneManager.LoadScene("RiverScene");
+        State = FishingState.Sea;
+        SceneManager.LoadScene("FishingPlaseScene");
     }
-    public void GoArctic()
+    public void Set_state_River()
     {
-        SceneManager.LoadScene("ArcticScene");
+        State = FishingState.River;
+        SceneManager.LoadScene("FishingPlaseScene");
     }
-    public void GoBaclocdam()
+    public void Set_state_Arctic()
     {
-        SceneManager.LoadScene("BaclocdamScene");
+        State = FishingState.Arctic;
+        SceneManager.LoadScene("FishingPlaseScene");
     }
-    public void GoBaths()
+    public void Set_state_Baclocdam()
     {
-        SceneManager.LoadScene("BathsScene");
+        State = FishingState.Baclocdam;
+        SceneManager.LoadScene("FishingPlaseScene");
     }
-    public void GoSewer()
+    public void Set_state_Baths()
     {
-        SceneManager.LoadScene("SewerScene");
+        State = FishingState.Baths;
+        SceneManager.LoadScene("FishingPlaseScene");
     }
-    public void GoWaterFall()
+    public void Set_state_Sewer()
     {
-        SceneManager.LoadScene("WaterFallScene");
+        State = FishingState.Sewer;
+        SceneManager.LoadScene("FishingPlaseScene");
+    }
+    public void Set_state_Waterfall()
+    {
+        State = FishingState.Waterfall;
+        SceneManager.LoadScene("FishingPlaseScene");
     }
     public void GoFishMarket()
     {
@@ -71,6 +92,13 @@ public class ButtonManager : MonoBehaviour
     public void SelectPlaceOn()
     {
         SelectPlaceBackGround.SetActive(true);
+    }
+    public void BagOn()
+    {
+        if (Bag.active == true)
+            Bag.SetActive(false);
+        else
+            Bag.SetActive(true);
     }
     public void SelectPlaceFalse()
     {
