@@ -232,3 +232,50 @@ MonoBehaviour:
   - {fileID: 1143995286249292566, guid: 874cbfd2f6445514c93a7bc976a5c087, type: 3}
   - {fileID: 2735747231527086785, guid: c3d154dd4728f974e8699db94642fadb, type: 3}
   - {fileID: 813185052544625475, guid: 4ee588d12d75d5346b362fffa18e59c6, type: 3}
+--- !u!1 &1920213851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920213853}
+  - component: {fileID: 1920213852}
+  m_Layer: 0
+  m_Name: FishPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1920213852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920213851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2bcc3d138638f47a6a1bf7d34425d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeLv: 0
+  hp: 0
+  money: 0
+  FishTier: 7
+--- !u!4 &1920213853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920213851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
