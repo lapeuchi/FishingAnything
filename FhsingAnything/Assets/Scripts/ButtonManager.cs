@@ -10,34 +10,42 @@ public class ButtonManager : MonoBehaviour
 
     public void GoSea() 
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("SeaScene");
     }
     public void GoRiver()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("RiverScene");
     }
     public void GoArctic()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("ArcticScene");
     }
     public void GoBaclocdam()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("BaclocdamScene");
     }
     public void GoBaths()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("BathsScene");
     }
     public void GoSewer()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("SewerScene");
     }
     public void GoWaterFall()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Fishing;
         SceneManager.LoadScene("WaterFallScene");
     }
     public void GoFishMarket()
     {
+        GameManager.instance.curGameState = GameManager.GameState.Lobby;
         SceneManager.LoadScene("FishMarketScene");
     }
     public void GoShop()

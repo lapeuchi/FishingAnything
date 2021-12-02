@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fishing : MonoBehaviour
+public class Fish : FishManager
 {
-    
-     
-    
+
     void Start()
     {
-    
+        
     }
 
+    
     void Update()
     {
         

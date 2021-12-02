@@ -8,12 +8,18 @@ public class GameManager : MonoBehaviour
 
     public enum GameState { Lobby, Fishing, shop, Setting};
     public GameState curGameState = GameState.Lobby;
-   
-    public List<GameObject> aL;
+
+    public List<GameObject> CommonFish;
+    public List<GameObject> NormalFish;
+    public List<GameObject> RareFish;
+    public List<GameObject> EpicFish;
+    public List<GameObject> UniqueFish;
+    public List<GameObject> LegenaryFish;
+    public List<GameObject> SpecialFish;
 
     //public List<Item> ItemL;
 
-    public int won;
+    public int money;
     public struct item
     {
         //미끼
