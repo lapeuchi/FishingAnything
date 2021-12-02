@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Fish : FishManager
 {
-
+    
     void Start()
     {
-        
+            
     }
-
     
     void Update()
     {
-        
+        base.Summon();
+
     }
 }

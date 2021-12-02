@@ -14,23 +14,16 @@ public class FishManager : MonoBehaviour
     [SerializeField]
     protected Tier FishTier = Tier.None;
 
-     
-
-    private void Start()
-    {
-       
-    }
-
-    private void Update()
+    
+    
+    protected void Summon()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            FishTier = (Tier)Random.Range(0, 6);
             sizeLv = Random.Range(-5, 5);
             SetStatus(FishTier, ref hp, ref money);
         }
     }
-
 
 
     private void SetStatus(Tier FishTier, ref int hp, ref int money)
