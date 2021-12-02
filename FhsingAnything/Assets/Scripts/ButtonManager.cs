@@ -8,53 +8,39 @@ public class ButtonManager : MonoBehaviour
     public GameObject SelectPlaceBackGround;
     public GameObject BlackBackGround;
     public GameObject Bag;
-
-    public enum FishingState
-    {
-        Sea,
-        River,
-        Arctic,
-        Baclocdam,
-        Baths,
-        Sewer,
-        Waterfall
-    }
-
-    public FishingState State;
-
     public void Set_state_Sea() 
     {
-        State = FishingState.Sea;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.Sea;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void Set_state_River()
     {
-        State = FishingState.River;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.River;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void Set_state_Arctic()
     {
-        State = FishingState.Arctic;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.Arctic;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void Set_state_Baclocdam()
     {
-        State = FishingState.Baclocdam;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.Baclocdam;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void Set_state_Baths()
     {
-        State = FishingState.Baths;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.Baths;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void Set_state_Sewer()
     {
-        State = FishingState.Sewer;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.Sewer;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void Set_state_Waterfall()
     {
-        State = FishingState.Waterfall;
+        GameManager.instance.fishing_Place_State = GameManager.FishingState.Waterfall;
         SceneManager.LoadScene("FishingPlaseScene");
     }
     public void GoFishMarket()

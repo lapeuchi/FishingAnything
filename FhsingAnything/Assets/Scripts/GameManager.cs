@@ -16,6 +16,18 @@ public class GameManager : MonoBehaviour
     public List<GameObject> UniqueFish;
     public List<GameObject> LegenaryFish;
     public List<GameObject> SpecialFish;
+    public enum FishingState
+    {
+        Sea,
+        River,
+        Arctic,
+        Baclocdam,
+        Baths,
+        Sewer,
+        Waterfall
+    }
+
+    public FishingState fishing_Place_State;
 
     //public List<Item> ItemL;
 
