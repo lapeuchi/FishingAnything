@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fishing : MonoBehaviour
 {
@@ -11,8 +12,20 @@ public class Fishing : MonoBehaviour
     public List<GameObject> WaterfallList;
     public List<GameObject> BathList;
     public List<GameObject> Backlocdam;
-
     public List<GameObject> MapList;
+
+    [SerializeField] private GameObject FishingButton;
+
+    private bool isFishing = false;
+    private float time = 0.0f;
+
+    [SerializeField] private GameObject Sign_Image;
+    [SerializeField] private Text Waiting_Text;
+    [SerializeField] private GameObject Water;
+    [SerializeField] private GameObject FishSiluet;
+
+    Rigidbody2D rigid;
+
 
     void Start()
     {
@@ -44,7 +57,50 @@ public class Fishing : MonoBehaviour
         {
             Instantiate(MapList[1]);
         }
-
-
     }
+
+    void Update()
+    {
+        if(isFishing == true)
+        {
+            StartCoroutine(FishSign());
+            StopCoroutine(FishSign());
+            
+            isFishing = false;
+        }
+    }
+
+    private void FishingGame()
+    {
+        FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
+        Water.SetActive(true);
+        
+        
+    }
+    
+    IEnumerator FishSign()
+    {
+        Waiting_Text.gameObject.SetActive(true);
+        yield return new WaitForSeconds(time);
+        Waiting_Text.gameObject.SetActive(false);
+        Sign_Image.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        Sign_Image.SetActive(false);
+        FishingGame();
+        Debug.Log("낚시 게임시작");
+        if (FishSiluet.gameObject.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
+        {
+            Water.SetActive(false);
+        }
+    }
+   
+
+    public void ClickFishing()
+    {
+        time = Random.RandomRange(5f, 11.50f);
+        isFishing = true;
+        FishingButton.SetActive(false);
+    }
+    
+    
 }
