@@ -9,7 +9,7 @@ public class FishSiluet : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("RandVec", 1f, 0.8f);
+        InvokeRepeating("RandVec", 0f, 0.8f);
     }
 
     void RandVec()

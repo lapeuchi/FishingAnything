@@ -18,6 +18,7 @@ public class Fishing : MonoBehaviour
 
     private bool isFishing = false;
     private float time = 0.0f;
+    [SerializeField] byte gameProcess = 0;
 
     [SerializeField] private GameObject Sign_Image;
     [SerializeField] private Text Waiting_Text;
@@ -64,27 +65,30 @@ public class Fishing : MonoBehaviour
         if(isFishing == true)
         {
             StartCoroutine(FishSign());
-            StopCoroutine(FishSign());
-
-           
+//            StopCoroutine(FishSign());
 
             isFishing = false;
         }
 
         if (FishSiluet.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
         {
-            Debug.Log("c");
-            FishSiluet.transform.position = new Vector2(1, 1);
+            gameProcess = 1;
+            Debug.Log("process '0' clear. -> '1'");
+            FishSiluet.GetComponent<FishSiluet>().isTrigger = false; 
             Water.SetActive(false);           
         }
     }
 
-    private void FishingGame()
+    private void FishingGame1()
     {
         FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
-        Water.SetActive(true);
+        Water.SetActive(true);   
+    }
 
+    private void FishingGame2()
+    {
         
+        FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
     }
     
     IEnumerator FishSign()
@@ -92,12 +96,15 @@ public class Fishing : MonoBehaviour
         Waiting_Text.gameObject.SetActive(true);
         yield return new WaitForSeconds(time);
         Waiting_Text.gameObject.SetActive(false);
-        Sign_Image.SetActive(true);
-        yield return new WaitForSeconds(1.0f);
-        Sign_Image.SetActive(false);
-        FishingGame();
         Debug.Log("낚시 게임시작");
-        
+        FishingGame1();
+        yield return new WaitUntil(()=>gameProcess > 0);
+        Sign_Image.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        Sign_Image.SetActive(false);
+        yield return new WaitForSeconds(0.4f);
+        Water.SetActive(true);
+        FishSiluet.SetActive(false);
     }
    
 
