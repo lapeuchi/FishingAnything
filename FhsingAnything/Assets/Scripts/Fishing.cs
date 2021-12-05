@@ -65,8 +65,17 @@ public class Fishing : MonoBehaviour
         {
             StartCoroutine(FishSign());
             StopCoroutine(FishSign());
-            
+
+           
+
             isFishing = false;
+        }
+
+        if (FishSiluet.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
+        {
+            Debug.Log("c");
+            FishSiluet.transform.position = new Vector2(1, 1);
+            Water.SetActive(false);           
         }
     }
 
@@ -74,7 +83,7 @@ public class Fishing : MonoBehaviour
     {
         FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
         Water.SetActive(true);
-        
+
         
     }
     
@@ -88,10 +97,7 @@ public class Fishing : MonoBehaviour
         Sign_Image.SetActive(false);
         FishingGame();
         Debug.Log("낚시 게임시작");
-        if (FishSiluet.gameObject.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
-        {
-            Water.SetActive(false);
-        }
+        
     }
    
 

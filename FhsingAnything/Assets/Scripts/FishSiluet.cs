@@ -18,17 +18,7 @@ public class FishSiluet : MonoBehaviour
         GetComponent<Rigidbody2D>().AddForce(vec, ForceMode2D.Impulse);
     }
 
-    public void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Finish"))
-        {
-            isTrigger = true;
-        }
-        else
-            isTrigger = false;
-    }
-
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnTriggerStay2D(Collider2D other) 
     {
         if (other.gameObject.CompareTag("Finish"))
         {
