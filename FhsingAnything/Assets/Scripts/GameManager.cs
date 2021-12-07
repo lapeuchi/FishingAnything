@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public enum GameState { Lobby, Fishing, shop, Setting};
     public GameState curGameState = GameState.Lobby;
 
+<<<<<<< Updated upstream
     public List<GameObject> CommonFish;
     public List<GameObject> NormalFish;
     public List<GameObject> RareFish;
@@ -18,6 +19,16 @@ public class GameManager : MonoBehaviour
     public List<GameObject> SpecialFish;
 
     public List<GameObject> FishList;
+=======
+    public List<GameObject> CommonFishL;
+    public List<GameObject> NormalFishL;
+    public List<GameObject> RareFishL;
+    public List<GameObject> EpicFishL;
+    public List<GameObject> UniqueFishL;
+    public List<GameObject> LegenaryFishL;
+    public List<GameObject> SpecialFishL;
+
+>>>>>>> Stashed changes
     public enum FishingState
     {
         Sea,
