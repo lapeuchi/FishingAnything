@@ -15,7 +15,11 @@ public class FishSiluet : MonoBehaviour
     void RandVec()
     {
         vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
+        
         GetComponent<Rigidbody2D>().AddForce(vec, ForceMode2D.Impulse);
+        float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     public void OnTriggerStay2D(Collider2D other) 

@@ -65,7 +65,6 @@ public class Fishing : MonoBehaviour
         if(isFishing == true)
         {
             StartCoroutine(FishSign());
-//            StopCoroutine(FishSign());
 
             isFishing = false;
         }
@@ -78,7 +77,7 @@ public class Fishing : MonoBehaviour
             Water.SetActive(false);           
         }
     }
-
+    
     private void FishingGame1()
     {
         FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
@@ -87,7 +86,6 @@ public class Fishing : MonoBehaviour
 
     private void FishingGame2()
     {
-        
         FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
     }
     
@@ -106,7 +104,6 @@ public class Fishing : MonoBehaviour
         Water.SetActive(true);
         FishSiluet.SetActive(false);
     }
-   
 
     public void ClickFishing()
     {
@@ -114,6 +111,4 @@ public class Fishing : MonoBehaviour
         isFishing = true;
         FishingButton.SetActive(false);
     }
-    
-    
 }

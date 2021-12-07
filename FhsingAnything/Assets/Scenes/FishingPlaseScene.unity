@@ -311,6 +311,7 @@ MonoBehaviour:
   - {fileID: 2735747231527086785, guid: c3d154dd4728f974e8699db94642fadb, type: 3}
   - {fileID: 813185052544625475, guid: 4ee588d12d75d5346b362fffa18e59c6, type: 3}
   FishingButton: {fileID: 1659393545}
+  gameProcess: 0
   Sign_Image: {fileID: 1311448326}
   Waiting_Text: {fileID: 1633113675}
   Water: {fileID: 1000085874}
@@ -336,7 +337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1000085875
 BoxCollider2D:
   m_ObjectHideFlags: 0
