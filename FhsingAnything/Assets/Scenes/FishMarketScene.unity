@@ -3494,6 +3494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603565605}
+  - component: {fileID: 1603565606}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -3515,6 +3516,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603565606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603565604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e9a84f89c1e664e8f5d6f7ce86aa33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curGameState: 0
+  CommonFish: []
+  NormalFish: []
+  RareFish: []
+  EpicFish: []
+  UniqueFish: []
+  LegenaryFish: []
+  SpecialFish: []
+  FishList: []
+  CommonFishL: []
+  NormalFishL: []
+  RareFishL: []
+  EpicFishL: []
+  UniqueFishL: []
+  LegenaryFishL: []
+  SpecialFishL: []
+  fishing_Place_State: 0
+  money: 0
 --- !u!1 &1669429780
 GameObject:
   m_ObjectHideFlags: 0
