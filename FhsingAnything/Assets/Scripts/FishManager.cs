@@ -23,6 +23,7 @@ public class FishManager : MonoBehaviour
             SetStatus(FishTier, ref hp, ref money);
         }
     }
+
     private void SetStatus(Tier FishTier, ref int hp, ref int money)
     {
         if (FishTier == Tier.Common)

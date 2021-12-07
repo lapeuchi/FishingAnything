@@ -25,6 +25,9 @@ public class Fishing : MonoBehaviour
     [SerializeField] private GameObject Water;
     [SerializeField] private GameObject FishSiluet;
 
+    [SerializeField] private Slider FishHp;
+    [SerializeField] private Slider AttackBar;
+
     Rigidbody2D rigid;
 
 
@@ -73,7 +76,8 @@ public class Fishing : MonoBehaviour
         {
             gameProcess = 1;
             Debug.Log("process '0' clear. -> '1'");
-            FishSiluet.GetComponent<FishSiluet>().isTrigger = false; 
+            FishSiluet.GetComponent<FishSiluet>().isTrigger = false;
+            FishSiluet.GetComponent<FishSiluet>().gamePrograss = 2;
             Water.SetActive(false);           
         }
     }
@@ -82,11 +86,6 @@ public class Fishing : MonoBehaviour
     {
         FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
         Water.SetActive(true);   
-    }
-
-    private void FishingGame2()
-    {
-        FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
     }
     
     IEnumerator FishSign()
@@ -103,6 +102,7 @@ public class Fishing : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         Water.SetActive(true);
         FishSiluet.SetActive(false);
+        AttackBar.gameObject.SetActive(true);
     }
 
     public void ClickFishing()
