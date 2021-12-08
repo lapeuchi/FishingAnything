@@ -23,6 +23,7 @@ public class Fishing : MonoBehaviour
     [SerializeField] private GameObject Sign_Image;
     [SerializeField] private Text Waiting_Text;
     [SerializeField] private GameObject Water;
+    [SerializeField] private GameObject Water2; // It used when FishSiluet's 'isGaming' is true
     [SerializeField] public GameObject FishSiluet;
 
     [SerializeField] private Slider FishHp;
@@ -33,7 +34,6 @@ public class Fishing : MonoBehaviour
 
     void Start()
     {
-        
         if(GameManager.instance.fishing_Place_State == GameManager.FishingState.Sea)
         {
             Instantiate(MapList[4]);
@@ -75,18 +75,20 @@ public class Fishing : MonoBehaviour
 
         if (FishSiluet.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
         {
-            gameProcess = 1;
-            Debug.Log("process '0' clear. -> '1'");
-            FishSiluet.GetComponent<FishSiluet>().isTrigger = false;
-            Water.SetActive(false);
-          
-        }
-
-        if(FishSiluet.GetComponent<FishSiluet>().gamePrograss == 2)
-        {
-            FishSiluet.SetActive(true);
-            FishSiluet.transform.position = new Vector2(0, 3);
-        }
+            
+            if (gameProcess == 0)
+            {
+                gameProcess = 1;
+                Debug.Log("process '0' clear. -> '1'");
+                Water.SetActive(false);
+            }
+            
+            if(gameProcess == 2)
+            {
+                Destroy(FishSiluet.gameObject);
+                gameProcess = 3;
+            }    
+        }       
     }
     
     private void FishingGame1()
@@ -103,16 +105,17 @@ public class Fishing : MonoBehaviour
         Debug.Log("낚시 게임시작");
         FishingGame1();
         yield return new WaitUntil(()=>gameProcess > 0);
+        Water.SetActive(false);
         Sign_Image.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         Sign_Image.SetActive(false);
-        yield return new WaitForSeconds(0.4f);
-        Water.SetActive(true);
-        FishSiluet.SetActive(false);
-        yield return new WaitForSeconds(0.2f);
-        FishSiluet.GetComponent<FishSiluet>().gamePrograss = 2;
         gameProcess = 2;
-        InvokeRepeating("SummonSiluet", 1, 1);
+        Water2.SetActive(true);
+        yield return new WaitUntil(() => gameProcess > 2);
+        Water2.SetActive(false);
+        Waiting_Text.text = "자 자 이리로 와...";
+        yield return new WaitForSeconds(0.5f);
+        Instantiate(GameManager.instance.FishList[Random.Range(0, GameManager.instance.FishList.Count)]);
     }
 
     public void ClickFishing()
@@ -122,22 +125,18 @@ public class Fishing : MonoBehaviour
         FishingButton.SetActive(false);
     }
 
-    private void SummonSiluet()
-    {
-        Vector3 pos = Vector3.zero;
-        int rand = Random.Range(0, 3);
-        if (rand == 0)
-            pos = new Vector3(-2, 0, 0);
-        if (rand == 1)
-            pos = new Vector3(2, 0, 0);
-        if (rand == 2)
-            pos = new Vector3(0, -1.5f, 0);
-        if (rand == 3)
-            pos = new Vector3(0, 1.5f, 0);
+    //private void SummonSiluet()
+    //{
+    //    Vector3 pos = Vector3.zero;
+    //    int rand = Random.Range(0, 3);
+    //    if (rand == 0)
+    //        pos = new Vector3(-2, 0, 0);
+    //    if (rand == 1)
+    //        pos = new Vector3(2, 0, 0);
+    //    if (rand == 2)
+    //        pos = new Vector3(0, -1.5f, 0);
+    //    if (rand == 3)
+    //        pos = new Vector3(0, 1.5f, 0);
 
-      //  float angle = Mathf.Atan2(pos.y, pos.x) * Mathf.Rad2Deg;
-      //  transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-      //  Instantiate(FishSiluet, pos, Quaternion.AngleAxis(angle, Vector3.forward));
-    }
+    //}
 }

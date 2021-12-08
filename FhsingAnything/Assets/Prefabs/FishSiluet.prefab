@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrigger: 0
-  gamePrograss: 0
+  isGaming: 1
 --- !u!61 &3838110935699369398
 BoxCollider2D:
   m_ObjectHideFlags: 0
