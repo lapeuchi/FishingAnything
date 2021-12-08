@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     //public List<Item> ItemL;
 
-    public int money;
+    public int money=0;
     public struct item
     {
         //미끼
