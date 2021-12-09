@@ -5180,6 +5180,74 @@ MonoBehaviour:
   UniqueFishL: []
   LegenaryFishL: []
   SpecialFishL: []
+  Arctic_Common: []
+  Arctic_Normal: []
+  Arctic_Rare: []
+  Arctic_Epic: []
+  Arctic_Unique: []
+  Arctic_Legendary: []
+  BacLocDam_Common:
+  - {fileID: 8384683354198485157, guid: 98b37ad5a5ed9e545b64ad7fb711fa39, type: 3}
+  BacLocDam_Normal: []
+  BacLocDam_Rare:
+  - {fileID: 3689212560416687863, guid: 051bf8fa4f72cf046a9293f26436e8ed, type: 3}
+  BacLocDam_Epic:
+  - {fileID: 9115955770583092252, guid: c093e511853148e4c80056b9539515a3, type: 3}
+  - {fileID: 9027602434401901250, guid: 8cb4fe4a13f35344d84ee81a6a209466, type: 3}
+  BacLocDam_Unique: []
+  BacLocDam_Legendary:
+  - {fileID: 5623150091359778557, guid: 829bd6c2cae6e0b48970c0d0683bcd5d, type: 3}
+  Baths_Common:
+  - {fileID: 7949418061210676546, guid: a63481552608d1e48a268236e77cd44e, type: 3}
+  - {fileID: 3897493254414249958, guid: a045e60cdfbb64340b120beb449d31a7, type: 3}
+  - {fileID: 2933078009820353543, guid: 5dd483cbf63621549895d1b6ff9efedc, type: 3}
+  Baths_Normal:
+  - {fileID: 1933097030524809703, guid: d33b8eda163a7a4468ef2379b1c38609, type: 3}
+  - {fileID: 7790458789860198296, guid: 9c8ef3b78c305dd4193d414ede5969ba, type: 3}
+  Baths_Rare:
+  - {fileID: 6937196629583127022, guid: bb5f7074b09762d48b0ffc2e225c225e, type: 3}
+  - {fileID: 1676802283703972106, guid: cafed26c0b69e364596e57015bbb73bc, type: 3}
+  - {fileID: 6773675632143328618, guid: 64f3a18769058644eaae22837b05d80f, type: 3}
+  Baths_Epic:
+  - {fileID: 8029908838305427694, guid: b321a4d163ff90a46b774f4e14cdcea4, type: 3}
+  - {fileID: 3312212190882307704, guid: a6847a21da291004cbc82d57232804bd, type: 3}
+  Baths_Unique: []
+  Baths_Legendary:
+  - {fileID: 1698455277788074061, guid: 3c545b7c34635184f8b2e892e2e7a793, type: 3}
+  River_Common: []
+  River_Normal: []
+  River_Rare: []
+  River_Epic: []
+  River_Unique: []
+  River_Legendary: []
+  Sea_Common: []
+  Sea_Normal: []
+  Sea_Rare: []
+  Sea_Epic: []
+  Sea_Unique: []
+  Sea_Legendary: []
+  Sewer_Common: []
+  Sewer_Normal: []
+  Sewer_Rare: []
+  Sewer_Epic: []
+  Sewer_Unique: []
+  Sewer_Legendary: []
+  WafallFall_Common:
+  - {fileID: 4179554013157318818, guid: c9c3f8ed6b266a740ada6e58108b875d, type: 3}
+  - {fileID: 7445843843317085202, guid: 6dcb4740741a2da478edc651ea899931, type: 3}
+  - {fileID: 4256647182558447613, guid: 8617f0e2f10c61a44a74e2a8769f2c82, type: 3}
+  - {fileID: 8397915642188626167, guid: 1a229267e03e8cf469a31c8b884fa222, type: 3}
+  WafallFall_Normal:
+  - {fileID: 2109522181545909757, guid: e4cbbebec16170347b93a21bcd922855, type: 3}
+  - {fileID: 7790458789860198296, guid: 9c8ef3b78c305dd4193d414ede5969ba, type: 3}
+  - {fileID: 5796078472311296308, guid: 6b9acc48d296d464289f61a921ebce88, type: 3}
+  WafallFall_Rare: []
+  WafallFall_Epic:
+  - {fileID: 2899092198111137713, guid: 5a933e45409789f4cb47accf0c8b2c4c, type: 3}
+  WafallFall_Unique:
+  - {fileID: 5054357250693808506, guid: dfbe0ba4e5927704da3a1ef5926cd674, type: 3}
+  WafallFall_Legendary:
+  - {fileID: 3589816611818242683, guid: 3da8a2a2c2f4f6b4896fded1f30261d3, type: 3}
   fishing_Place_State: 0
   money: 0
 --- !u!1 &1628949404
