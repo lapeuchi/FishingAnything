@@ -25,17 +25,10 @@ public class FishManager : MonoBehaviour
     }
     private void SetTier(GameManager.FishingState map)
     {
-        switch(map)
-        {
-            
-
-        }
-
-
 
         if(map == GameManager.FishingState.Arctic)
         {
-
+            
         }
         if (map == GameManager.FishingState.Baclocdam)
         {
@@ -49,18 +42,19 @@ public class FishManager : MonoBehaviour
         {
 
         }
-        if(map == GameManager.FishingState.Sea)
+        if (map == GameManager.FishingState.Sea)
         {
 
         }
-        if(map == GameManager.FishingState.Sewer)
+        if (map == GameManager.FishingState.Sewer)
         {
 
         }
-        if(map == GameManager.FishingState.Waterfall)
+        if (map == GameManager.FishingState.Waterfall)
         {
 
         }
+
         FishTier = (Tier)Random.Range(0, 6);
     }
 
