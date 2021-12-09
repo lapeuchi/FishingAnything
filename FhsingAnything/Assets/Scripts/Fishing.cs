@@ -37,6 +37,7 @@ public class Fishing : MonoBehaviour
         if(GameManager.instance.fishing_Place_State == GameManager.FishingState.Sea)
         {
             Instantiate(MapList[4]);
+
         }
         if (GameManager.instance.fishing_Place_State == GameManager.FishingState.River)
         {

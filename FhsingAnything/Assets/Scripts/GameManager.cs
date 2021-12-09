@@ -34,24 +34,14 @@ public class GameManager : MonoBehaviour
         Baclocdam,
         Baths,
         Sewer,
-        Waterfall
+        Waterfall,
+        None
     }
     public FishingState fishing_Place_State;
 
     //public List<Item> ItemL;
 
-    public int money=0;
-    public struct item
-    {
-        //미끼
-        int a;
-        //낚시대
-        int q;
-        //의자
-        int c;
-        //소모품
-        int d;
-    }
+    public int money;
 
     void Awake()
     {
@@ -65,4 +55,6 @@ public class GameManager : MonoBehaviour
         }           
         DontDestroyOnLoad(gameObject);
     }
+
+   
 }
