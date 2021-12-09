@@ -9,6 +9,8 @@ public class ButtonManager : MonoBehaviour
     public GameObject BlackBackGround;
     public GameObject Bag;
     public GameObject Status;
+    public GameObject TaeHwan;
+    public GameObject Mather;
     public void Set_state_Sea() 
     {
         GameManager.instance.fishing_Place_State = GameManager.FishingState.Sea;
@@ -104,5 +106,23 @@ public class ButtonManager : MonoBehaviour
     public void SelectPlaceFalse()
     {
         SelectPlaceBackGround.SetActive(false);
+    }
+    public void Tae()
+    {
+        if (TaeHwan.active == true)
+            TaeHwan.SetActive(false);
+        else
+        {
+            TaeHwan.SetActive(true);
+        }
+    }
+    public void matherOn()
+    {
+        if (Mather.active == true)
+            Mather.SetActive(false);
+        else
+        {
+            Mather.SetActive(true);
+        }
     }
 }
