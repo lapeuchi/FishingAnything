@@ -4,55 +4,7 @@ using UnityEngine;
 
 public class FishManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] Arctic_Common;
-    private GameObject[] Arctic_Normal;
-    private GameObject[] Arctic_Rare;
-    private GameObject[] Arctic_Epic;
-    private GameObject[] Arctic_Unique;
-    private GameObject[] Arctic_Legendary;
-
-    private GameObject[] BacLocDam_Common;
-    private GameObject[] BacLocDam_Normal;
-    private GameObject[] BacLocDam_Rare;
-    private GameObject[] BacLocDam_Epic;
-    private GameObject[] BacLocDam_Unique;
-    private GameObject[] BacLocDam_Legendary;
-
-    private GameObject[] Baths_Common;
-    private GameObject[] Baths_Normal;
-    private GameObject[] Baths_Rare;
-    private GameObject[] Baths_Epic;
-    private GameObject[] Baths_Unique;
-    private GameObject[] Baths_Legendary;
-
-    private GameObject[] River_Common;
-    private GameObject[] River_Normal;
-    private GameObject[] River_Rare;
-    private GameObject[] River_Epic;
-    private GameObject[] River_Unique;
-    private GameObject[] River_Legendary;
-
-    private GameObject[] Sea_Common;
-    private GameObject[] Sea_Normal;
-    private GameObject[] Sea_Rare;
-    private GameObject[] Sea_Epic;
-    private GameObject[] Sea_Unique;
-    private GameObject[] Sea_Legendary;
-
-    private GameObject[] Sewer_Common;
-    private GameObject[] Sewer_Normal;
-    private GameObject[] Sewer_Rare;
-    private GameObject[] Sewer_Epic;
-    private GameObject[] Sewer_Unique;
-    private GameObject[] Sewer_Legendary;
-
-    private GameObject[] WafallFall_Common;
-    private GameObject[] WafallFall_Normal;
-    private GameObject[] WafallFall_Rare;
-    private GameObject[] WafallFall_Epic;
-    private GameObject[] WafallFall_Unique;
-    private GameObject[] WafallFall_Legendary;
+    
 
     [SerializeField]
     protected int sizeLv;
