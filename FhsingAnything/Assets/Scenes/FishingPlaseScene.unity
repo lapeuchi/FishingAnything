@@ -244,7 +244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f26fa8880b3aeef4b8516c82dc12f2a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -287,7 +287,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009794354, y: 0.008197114}
+  m_Offset: {x: 0.009794474, y: 0.019760225}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -298,7 +298,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.6169863, y: 0.04835619}
+  m_Size: {x: 7, y: 0.1}
   m_EdgeRadius: 0
 --- !u!212 &120599557
 SpriteRenderer:
@@ -338,7 +338,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b7d245916891cca47a0144e12a82e086, type: 3}
   m_Color: {r: 0, g: 1, b: 0.42557764, a: 1}
   m_FlipX: 0
@@ -359,7 +359,7 @@ Transform:
   m_GameObject: {fileID: 120599555}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 2.15, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 3.734, z: 3.734}
+  m_LocalScale: {x: 0.5, y: 3.734, z: 0}
   m_Children: []
   m_Father: {fileID: 871035196}
   m_RootOrder: 1
@@ -395,7 +395,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0065576257}
+  m_Offset: {x: 0.009794474, y: 0.019760225}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -406,7 +406,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.95, y: 0.04245428}
+  m_Size: {x: 7, y: 0.1}
   m_EdgeRadius: 0
 --- !u!212 &145755761
 SpriteRenderer:
@@ -446,7 +446,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b7d245916891cca47a0144e12a82e086, type: 3}
   m_Color: {r: 0, g: 1, b: 0.42557764, a: 1}
   m_FlipX: 0
@@ -467,7 +467,7 @@ Transform:
   m_GameObject: {fileID: 145755759}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.01, y: -1.6, z: 0}
-  m_LocalScale: {x: 0.64172, y: 3.734, z: 3.734}
+  m_LocalScale: {x: 0.64172, y: 3.734, z: 0}
   m_Children: []
   m_Father: {fileID: 871035196}
   m_RootOrder: 3
@@ -503,7 +503,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.029383302, y: 0.004918225}
+  m_Offset: {x: 0.009794474, y: 0.019760225}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -514,7 +514,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.773699, y: 0.048356175}
+  m_Size: {x: 7, y: 0.1}
   m_EdgeRadius: 0
 --- !u!212 &260642849
 SpriteRenderer:
@@ -554,7 +554,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b7d245916891cca47a0144e12a82e086, type: 3}
   m_Color: {r: 0, g: 1, b: 0.42557764, a: 1}
   m_FlipX: 0
@@ -575,11 +575,78 @@ Transform:
   m_GameObject: {fileID: 260642847}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -2.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 3.734, z: 3.734}
+  m_LocalScale: {x: 0.5, y: 3.734, z: 0}
   m_Children: []
   m_Father: {fileID: 871035196}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &287087598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287087600}
+  - component: {fileID: 287087599}
+  m_Layer: 0
+  m_Name: FishingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &287087599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287087598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b1944e71661c469571cb64f3a77a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeaList: []
+  RiverList: []
+  SewerList: []
+  ArticleList: []
+  WaterfallList: []
+  BathList: []
+  Backlocdam: []
+  MapList:
+  - {fileID: 8763849355328063522, guid: 5eaa5bbe3278f854bb8fce27e7617053, type: 3}
+  - {fileID: 5457109321678916849, guid: 3d73b503d4019874ab6c64666926b2ce, type: 3}
+  - {fileID: 9141309567277068606, guid: 79233f2d97bf6d44f85c5409e427599e, type: 3}
+  - {fileID: 3320503919124637916, guid: cdc151cc48140b044bccfa17178da531, type: 3}
+  - {fileID: 1143995286249292566, guid: 874cbfd2f6445514c93a7bc976a5c087, type: 3}
+  - {fileID: 2735747231527086785, guid: c3d154dd4728f974e8699db94642fadb, type: 3}
+  - {fileID: 813185052544625475, guid: 4ee588d12d75d5346b362fffa18e59c6, type: 3}
+  FishingButton: {fileID: 1659393545}
+  gameProcess: 0
+  Sign_Image: {fileID: 1311448326}
+  Waiting_Text: {fileID: 1633113675}
+  Water: {fileID: 1000085874}
+  Water2: {fileID: 871035189}
+  FishSiluet: {fileID: 1593126995}
+  FishHp: {fileID: 0}
+  AttackBar: {fileID: 0}
+--- !u!4 &287087600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287087598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &303925704
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +736,6 @@ GameObject:
   - component: {fileID: 582998688}
   - component: {fileID: 582998687}
   - component: {fileID: 582998686}
-  - component: {fileID: 582998689}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -742,42 +808,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &582998689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582998685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787b1944e71661c469571cb64f3a77a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SeaList: []
-  RiverList: []
-  SewerList: []
-  ArticleList: []
-  WaterfallList: []
-  BathList: []
-  Backlocdam: []
-  MapList:
-  - {fileID: 8763849355328063522, guid: 5eaa5bbe3278f854bb8fce27e7617053, type: 3}
-  - {fileID: 5457109321678916849, guid: 3d73b503d4019874ab6c64666926b2ce, type: 3}
-  - {fileID: 9141309567277068606, guid: 79233f2d97bf6d44f85c5409e427599e, type: 3}
-  - {fileID: 3320503919124637916, guid: cdc151cc48140b044bccfa17178da531, type: 3}
-  - {fileID: 1143995286249292566, guid: 874cbfd2f6445514c93a7bc976a5c087, type: 3}
-  - {fileID: 2735747231527086785, guid: c3d154dd4728f974e8699db94642fadb, type: 3}
-  - {fileID: 813185052544625475, guid: 4ee588d12d75d5346b362fffa18e59c6, type: 3}
-  FishingButton: {fileID: 1659393545}
-  gameProcess: 0
-  Sign_Image: {fileID: 1311448326}
-  Waiting_Text: {fileID: 1633113675}
-  Water: {fileID: 1000085874}
-  Water2: {fileID: 871035189}
-  FishSiluet: {fileID: 1593126995}
-  FishHp: {fileID: 0}
-  AttackBar: {fileID: 0}
 --- !u!1 &795980258
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +839,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011375904, y: 0.00469207}
+  m_Offset: {x: 0.009794474, y: 0.019760225}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -820,7 +850,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.8362417, y: 0.04051798}
+  m_Size: {x: 7, y: 0.1}
   m_EdgeRadius: 0
 --- !u!212 &795980260
 SpriteRenderer:
@@ -860,7 +890,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b7d245916891cca47a0144e12a82e086, type: 3}
   m_Color: {r: 0, g: 1, b: 0.42557764, a: 1}
   m_FlipX: 0
@@ -881,7 +911,7 @@ Transform:
   m_GameObject: {fileID: 795980258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.01, y: 1.5500001, z: 0}
-  m_LocalScale: {x: 0.64172, y: 3.734, z: 3.734}
+  m_LocalScale: {x: 0.64172, y: 3.734, z: 0}
   m_Children: []
   m_Father: {fileID: 871035196}
   m_RootOrder: 4
@@ -904,7 +934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &871035190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1562,7 +1592,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e9d4143c19529834981ac6821a04aecd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1767,7 +1797,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 582998689}
+      - m_Target: {fileID: 0}
         m_MethodName: ClickFishing
         m_Mode: 1
         m_Arguments:

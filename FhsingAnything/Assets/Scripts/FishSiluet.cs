@@ -7,9 +7,11 @@ public class FishSiluet : MonoBehaviour
     Vector2 vec;
     public bool isTrigger = false;
     public bool isGaming;
+    [SerializeField] GameObject Fishing;
 
     private void Start()
     {
+        Fishing = GameObject.Find("FishingManager");
         if (isGaming == false)
             InvokeRepeating("RandVec", 0f, 0.8f);
         else if (isGaming == true)
@@ -21,7 +23,7 @@ public class FishSiluet : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
         if (isGaming == false)
-            GetComponent<Rigidbody2D>().AddForce(vec, ForceMode2D.Impulse); 
+            GetComponent<Rigidbody2D>().AddForce(vec * 2f, ForceMode2D.Impulse); 
     }
 
     void Update()
@@ -30,22 +32,29 @@ public class FishSiluet : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);      
          if(isGaming == true)
             transform.Translate(vec * Time.deltaTime * 2f);
+
+         if(isTrigger == true && Input.anyKeyDown)
+         {
+            Destroy(gameObject);
+         }
     }
 
-    public void OnTriggerStay2D(Collider2D other) 
+    public void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.gameObject.CompareTag("Finish"))
         {
             isTrigger = true;
-            if(Input.anyKeyDown)
-                Destroy(gameObject);
         }
-        else
-            isTrigger = false;
 
-        if(other.gameObject.CompareTag("Respawn"))
+        if (other.gameObject.CompareTag("Untagged"))
+            isTrigger = false;
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Finish"))
         {
-            Destroy(gameObject, 6f);
+            isTrigger = false;
         }
     }
 }

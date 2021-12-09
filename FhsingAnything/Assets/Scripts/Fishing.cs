@@ -75,19 +75,13 @@ public class Fishing : MonoBehaviour
 
         if (FishSiluet.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
         {
-            
+            Debug.Log("isTrigger = true");
             if (gameProcess == 0)
             {
                 gameProcess = 1;
                 Debug.Log("process '0' clear. -> '1'");
                 Water.SetActive(false);
-            }
-            
-            if(gameProcess == 2)
-            {
-                Destroy(FishSiluet.gameObject);
-                gameProcess = 3;
-            }    
+            }       
         }       
     }
     
@@ -124,19 +118,4 @@ public class Fishing : MonoBehaviour
         isFishing = true;
         FishingButton.SetActive(false);
     }
-
-    //private void SummonSiluet()
-    //{
-    //    Vector3 pos = Vector3.zero;
-    //    int rand = Random.Range(0, 3);
-    //    if (rand == 0)
-    //        pos = new Vector3(-2, 0, 0);
-    //    if (rand == 1)
-    //        pos = new Vector3(2, 0, 0);
-    //    if (rand == 2)
-    //        pos = new Vector3(0, -1.5f, 0);
-    //    if (rand == 3)
-    //        pos = new Vector3(0, 1.5f, 0);
-
-    //}
 }
