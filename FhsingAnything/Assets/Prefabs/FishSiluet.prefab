@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3838110935699369399}
   - component: {fileID: 3838110935699369397}
-  - component: {fileID: 3838110935699369396}
   - component: {fileID: 3838110935699369403}
+  - component: {fileID: 3838110935699369396}
   - component: {fileID: 3838110935699369398}
   m_Layer: 0
   m_Name: FishSiluet
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2bca16b26b7b4f14d97c3a8f2ce04e2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84,6 +84,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3838110935699369403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838110935699369392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3bd72de41a2b945870d08216057cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  isGaming: 1
+  Fishing: {fileID: 0}
 --- !u!50 &3838110935699369396
 Rigidbody2D:
   serializedVersion: 4
@@ -105,20 +120,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3838110935699369403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3838110935699369392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c3bd72de41a2b945870d08216057cf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTrigger: 0
-  isGaming: 1
 --- !u!61 &3838110935699369398
 BoxCollider2D:
   m_ObjectHideFlags: 0
