@@ -87,9 +87,6 @@ public class GameManager : MonoBehaviour
         None
     }
     public FishingState fishing_Place_State;
-
-    //public List<Item> ItemL;
-
     public int money;
 
     void Awake()
