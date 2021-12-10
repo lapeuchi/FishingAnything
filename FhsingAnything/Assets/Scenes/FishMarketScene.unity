@@ -233,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -357.9, y: -200.9}
-  m_SizeDelta: {x: 674.19617, y: 109.26767}
+  m_AnchoredPosition: {x: -356, y: -200.9}
+  m_SizeDelta: {x: 678.14185, y: 109.26767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70549355
 MonoBehaviour:
@@ -409,6 +409,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &122841163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +719,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &284292378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,6 +1159,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 1151971892}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &427907954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1684,6 +1690,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &627847748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,6 +1841,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &632265323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2170,6 +2180,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &744707329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,6 +2331,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 1879652589}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &759137125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2363,7 +2377,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 759137124}
-        m_MethodName: Set_state_Sea
+        m_MethodName: Mathers_talk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2468,6 +2482,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 415512093}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &787934363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2927,6 +2943,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &936959471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3270,6 +3288,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1170904814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3419,6 +3439,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1205675280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3724,6 +3746,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1318806782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3884,8 +3908,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB123\uC744\uAC8C~ \uC0AC\uC2E4 \uB108\uB3C4 \uC774\uAC8C \uC88B\uC740\uAC70\uC796\uC544
-    (\u02F5 \u0361~ \u035C\u0296 \u0361\xB0\u02F5)\uFF89\n"
+  m_Text: "\uB9C8\uB9B0\uBCF4\uC774 \uB3C4\uC804!"
 --- !u!222 &1330188971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3952,6 +3975,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1344846166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4175,6 +4200,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1352517732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4642,6 +4669,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!1 &1481526366
 GameObject:
   m_ObjectHideFlags: 0
@@ -5332,7 +5361,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2135682147}
-  - {fileID: 2090485154}
   m_Father: {fileID: 312693874}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5401,7 +5429,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.49016565, g: 0.43253827, b: 0.6792453, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5489,6 +5517,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 1151971892}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!1 &1669429780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5703,6 +5733,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 1330188970}
 --- !u!114 &1699177280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5747,7 +5779,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1699177279}
-        m_MethodName: Set_state_Sea
+        m_MethodName: TaeHwans_talk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6001,6 +6033,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1762634574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6169,80 +6203,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782711646}
-  m_CullTransparentMesh: 0
---- !u!1 &1787948817
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1787948818}
-  - component: {fileID: 1787948820}
-  - component: {fileID: 1787948819}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1787948818
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787948817}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1917099680}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.84, y: 175}
-  m_SizeDelta: {x: 62.32068, y: 62.32068}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1787948819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787948817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f26fa8880b3aeef4b8516c82dc12f2a5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1787948820
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787948817}
   m_CullTransparentMesh: 0
 --- !u!1 &1804980027
 GameObject:
@@ -6448,6 +6408,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &1825216639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6720,7 +6682,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1639867423}
-  - {fileID: 1787948818}
   m_Father: {fileID: 312693874}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.3750002}
@@ -6865,6 +6826,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &2039932741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7018,80 +6981,6 @@ MonoBehaviour:
   m_Spacing: {x: 100, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 2
---- !u!1 &2090485153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2090485154}
-  - component: {fileID: 2090485156}
-  - component: {fileID: 2090485155}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2090485154
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090485153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1628949405}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.84, y: 134.73}
-  m_SizeDelta: {x: 62.32068, y: 62.32068}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2090485155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090485153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f26fa8880b3aeef4b8516c82dc12f2a5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2090485156
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090485153}
-  m_CullTransparentMesh: 0
 --- !u!1 &2135682146
 GameObject:
   m_ObjectHideFlags: 0
@@ -7152,7 +7041,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.49019608, g: 0.43137255, b: 0.6784314, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -7240,6 +7129,8 @@ MonoBehaviour:
   Status: {fileID: 0}
   TaeHwan: {fileID: 415512093}
   Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!1001 &2552914101576651592
 PrefabInstance:
   m_ObjectHideFlags: 0
