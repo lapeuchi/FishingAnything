@@ -31,6 +31,7 @@ public class Fishing : MonoBehaviour
 
     Rigidbody2D rigid;
 
+    public GameObject fish;
 
     void Start()
     {
@@ -110,13 +111,15 @@ public class Fishing : MonoBehaviour
         Water2.SetActive(false);
         Waiting_Text.text = "자 자 이리로 와...";
         yield return new WaitForSeconds(0.5f);
-        Instantiate(GameManager.instance.FishList[Random.Range(0, GameManager.instance.FishList.Count)]);
+        fish.SetActive(true);
     }
 
     public void ClickFishing()
     {
+        FishManager.instance.SetStatus();
+
+        FishingButton.SetActive(false);
         time = Random.RandomRange(5f, 11.50f);
         isFishing = true;
-        FishingButton.SetActive(false);
     }
 }

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fish : FishManager
+public class Fish 
 { 
     
     void Update()
     {
-        base.Summon();
+    
 
     }
 }

@@ -13,7 +13,7 @@ public class FishingGame : MonoBehaviour
 
     void Summon()
     {
-        Instantiate(FishSiluet, transform.parent);
+        Instantiate(FishSiluet, new Vector2(0, 0) , Quaternion.identity);
     }
 
     void Update()
