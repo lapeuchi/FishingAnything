@@ -5,48 +5,36 @@ using UnityEngine;
 public class FishManager : MonoBehaviour
 {
     public static FishManager instance = null;
- 
+    public enum Tier { Common, Normal, Rare, Epic, Unique, Legendary, Special, None };
     [SerializeField]
-    protected int sizeLv;
-    [SerializeField]
-    protected int hp;
-    [SerializeField]
-    protected int money;
-    protected enum Tier { Common, Normal, Rare, Epic, Unique, Legendary, Special, None };
-    [SerializeField]
-    protected Tier FishTier = Tier.None;
+    public Tier FishTier = Tier.None;
 
-    public GameObject[] CommonFishL;
-    public GameObject[] NormalFishL;
-    public GameObject[] RareFishL;
-    public GameObject[] EpicFishL;
-    public GameObject[] UniqueFishL;
-    public GameObject[] LegenaryFishL;
-    public GameObject[] SpecialFishL;
+    private GameObject[] CommonFishL;
+    private GameObject[] NormalFishL;
+    private GameObject[] RareFishL;
+    private GameObject[] EpicFishL;
+    private GameObject[] UniqueFishL;
+    private GameObject[] LegenaryFishL;
+    private GameObject[] SpecialFishL;
+
+    public GameObject fish;
 
     private void Awake()
     {
         if (instance == null)
             instance = this;
         else
-            Destroy(gameObject);
+            Destroy(gameObject);    
+    }
+
+    private void Start()
+    {
         SetFishList(GameManager.instance.fishing_Place_State);
     }
-
-    public void Summon()
-    {
-        //if (Input.GetKeyDown(KeyCode.A)/*낚시 성공 조건*/)
-        //{        
-            sizeLv = Random.Range(-5, 5);
-            SetStatus(FishTier, hp, money);
-//        }
-    }
-
     
-
-    private void SetFishList(GameManager.FishingState map)
+    public void SetFishList(GameManager.FishingState map)
     {
-        //FishTier = (Tier)Random.Range(0, 6);
+        
         if (map == GameManager.FishingState.Arctic)
         {
             CommonFishL = GameManager.instance.Arctic_Common;
@@ -111,51 +99,78 @@ public class FishManager : MonoBehaviour
             LegenaryFishL = GameManager.instance.Waterfall_Legendary;
         }
     }
-    private void SetStatus(Tier FishTier, int hp, int money)
+    public void SetStatus(Tier FishTier, ref int hp, ref int money, ref int sizeLv)
     {
+        sizeLv = Random.Range(-5, 5);
         if (FishTier == Tier.Common)
         {   
             hp = Random.Range(30, 50);
             money = 0 + sizeLv * (int)FishTier;
-            Instantiate(CommonFishL[Random.Range(0, CommonFishL.Length)]);
         }
         if (FishTier == Tier.Normal)
         {
             hp = Random.Range(60, 100);
             money = 100 + sizeLv * (int)FishTier;
-            Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)]);
         }
         if (FishTier == Tier.Rare)
         {
             hp = Random.Range(120, 170);
             money = 200 + sizeLv * (int)FishTier;
-            Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)]);
         }
         if (FishTier == Tier.Epic)
         {
             hp = Random.Range(150, 200);
             money = 300 + sizeLv * (int)FishTier;
-            Instantiate(EpicFishL[Random.Range(0, CommonFishL.Length)]);
         }
         if (FishTier == Tier.Unique)
         {
             hp = Random.Range(200, 300);
             money = 400 + sizeLv * (int)FishTier;
-            Instantiate(UniqueFishL[Random.Range(0, CommonFishL.Length)]);
         }
         if (FishTier == Tier.Legendary)
         {
             hp = Random.Range(300, 400);
-            money = 500 + sizeLv * (int)FishTier;
-            Instantiate(LegenaryFishL[Random.Range(0, CommonFishL.Length)]);
+            money = 500 + sizeLv * (int)FishTier;          
         }
        
         if (FishTier == Tier.Special)
         {
             hp = Random.Range(300, 550);
-            money = 600 + sizeLv * (int)FishTier;
+            money = 600 + sizeLv * (int)FishTier;       
+        }
+        Summon(FishTier);
+    }
+    public void Summon(Tier FishTier)
+    {
+        if (FishTier == Tier.Common)
+        {
+            Instantiate(CommonFishL[Random.Range(0, CommonFishL.Length)]);
+        }
+        if (FishTier == Tier.Normal)
+        {
+            Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)]);
+        }
+        if (FishTier == Tier.Rare)
+        {
+            Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)]);
+        }
+        if (FishTier == Tier.Epic)
+        { 
+            Instantiate(EpicFishL[Random.Range(0, CommonFishL.Length)]);
+        }
+        if (FishTier == Tier.Unique)
+        {
+            Instantiate(UniqueFishL[Random.Range(0, CommonFishL.Length)]);
+        }
+        if (FishTier == Tier.Legendary)
+        {
+            Instantiate(LegenaryFishL[Random.Range(0, CommonFishL.Length)]);
+        }
+
+        if (FishTier == Tier.Special)
+        {
             Instantiate(SpecialFishL[Random.Range(0, CommonFishL.Length)]);
-        } 
+        }
     }
 }
 

@@ -661,10 +661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87917202c0546dd42b22b46cf5501c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeLv: 0
-  hp: 0
-  money: 0
   FishTier: 7
+  fish: {fileID: 0}
 --- !u!1 &303925704
 GameObject:
   m_ObjectHideFlags: 0

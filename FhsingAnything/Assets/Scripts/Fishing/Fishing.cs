@@ -38,7 +38,6 @@ public class Fishing : MonoBehaviour
         if(GameManager.instance.fishing_Place_State == GameManager.FishingState.Sea)
         {
             Instantiate(MapList[4]);
-
         }
         if (GameManager.instance.fishing_Place_State == GameManager.FishingState.River)
         {
@@ -116,8 +115,7 @@ public class Fishing : MonoBehaviour
 
     public void ClickFishing()
     {
-        FishManager.instance.SetStatus();
-
+       
         FishingButton.SetActive(false);
         time = Random.RandomRange(5f, 11.50f);
         isFishing = true;

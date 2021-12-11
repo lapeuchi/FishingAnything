@@ -13,7 +13,8 @@ public class TalkManager : MonoBehaviour
     }
     public Text yumy;
     [SerializeField]
-    string[] dialogue = new string[] {   
+    string[] dialogue = new string[] 
+    {   
         "좋은 물고기를 찾으면 갖고와량",
         "낚시가 힘들어? 발톱을 써 발톱!",   
         "이거 완전 재밌어~",
