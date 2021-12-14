@@ -1664,6 +1664,7 @@ GameObject:
   - component: {fileID: 1633113674}
   - component: {fileID: 1633113676}
   - component: {fileID: 1633113675}
+  - component: {fileID: 1633113677}
   m_Layer: 5
   m_Name: Waiting_Text
   m_TagString: Untagged
@@ -1722,7 +1723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC138\uC6D4\uC744 \uB09A\uB294 \uC911..."
+  m_Text: "\uC138\uC6D4\uC744 \uB09A\uB294 \uC911"
 --- !u!222 &1633113676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1731,6 +1732,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633113673}
   m_CullTransparentMesh: 0
+--- !u!114 &1633113677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633113673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca96b935be763a24ca1ad229152c4747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  text: {fileID: 1633113675}
 --- !u!1 &1659393545
 GameObject:
   m_ObjectHideFlags: 0

@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
     }
     public FishingState fishing_Place_State;
     public int money;
+    public int index_value =0;
 
     void Awake()
     {

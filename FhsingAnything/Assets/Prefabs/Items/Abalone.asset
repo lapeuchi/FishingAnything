@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Abalone
   m_EditorClassIdentifier: 
-  itemName: Abalone
+  itemName: "\uC804\uBCF5"
+  live: "\uBC14\uB2E4"
+  money: 0
+  Explanation: "\uC804\uBCF5 \uD560\uBA38\uB2C8\uC758 \uC601\uD63C\uC774 \uB4E4\uC5B4\uC788\uB2E4"
   itemImage: {fileID: 21300000, guid: 8565c4311d1c07840990fe1c0772faf1, type: 3}
+  Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
+  Find: 0
+  isFind: 0

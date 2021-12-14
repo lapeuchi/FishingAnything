@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: PolorBear
   m_EditorClassIdentifier: 
   itemName: PolorBear
+  live: 
+  money: 0
+  Explanation: 
   itemImage: {fileID: 21300000, guid: 4d55ff00f9a098e42b7ed3df8d5843b5, type: 3}
+  Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
+  Find: 0
+  isFind: 0

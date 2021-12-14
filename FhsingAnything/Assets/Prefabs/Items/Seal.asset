@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Seal
   itemImage: {fileID: 21300000, guid: d6e46c0f56d2b4c4c924c3103ee0c669, type: 3}
+  Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
+  Find: 0

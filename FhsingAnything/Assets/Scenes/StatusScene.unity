@@ -10691,6 +10691,10 @@ MonoBehaviour:
   BlackBackGround: {fileID: 0}
   Bag: {fileID: 155960274}
   Status: {fileID: 1465673958}
+  TaeHwan: {fileID: 0}
+  Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!114 &5147354722292310274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10707,6 +10711,10 @@ MonoBehaviour:
   BlackBackGround: {fileID: 0}
   Bag: {fileID: 155960274}
   Status: {fileID: 1465673958}
+  TaeHwan: {fileID: 0}
+  Mather: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!222 &8540038901697173012
 CanvasRenderer:
   m_ObjectHideFlags: 0

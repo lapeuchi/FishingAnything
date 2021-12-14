@@ -7,6 +7,7 @@ public class Slot : MonoBehaviour
     [SerializeField] Image Image;
 
     private Item _item;
+    
     public Item item
     {
         get
@@ -14,14 +15,21 @@ public class Slot : MonoBehaviour
         set
         {
             _item = value;
-            if(_item != null)
+            if(_item != null && _item.Find)
             {
                 Image.sprite = item.itemImage;
                 Image.color = new Color(1, 1, 1, 1);
+                
+                if (_item.Find && !_item.isFind)
+                {
+                    GameManager.instance.index_value++;
+                    _item.isFind = true;
+                }
             }
             else
             {
-                Image.color = new Color(1, 1, 1, 0);
+                Image.sprite = item.Notfound;
+                Image.color = new Color(1, 1, 1, 1);
             }
         }
     }
