@@ -44,12 +44,20 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             isTrigger = true;
+            if(isGaming)
+            {
+                Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 100));
+                FishManager.instance.hp -= 100;
+            }
+            
         }
 
         if (other.gameObject.CompareTag("Untagged"))
             isTrigger = false;
     }
-
+    
+    
+         
     public void OnTriggerExit2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Finish"))

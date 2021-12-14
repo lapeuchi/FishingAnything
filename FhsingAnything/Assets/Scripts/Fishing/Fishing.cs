@@ -26,16 +26,19 @@ public class Fishing : MonoBehaviour
     [SerializeField] private GameObject Water2; // It used when FishSiluet's 'isGaming' is true
     [SerializeField] public GameObject FishSiluet;
 
-    [SerializeField] private Slider FishHp;
-    [SerializeField] private Slider AttackBar;
-
+    [SerializeField] private Slider FishHpBar;
+    int MaxHp;
+    private float fSliderBarTime;
     Rigidbody2D rigid;
-
-    public GameObject fish;
 
     void Start()
     {
-        if(GameManager.instance.fishing_Place_State == GameManager.FishingState.Sea)
+        SetMap();
+    }
+
+    private void SetMap()
+    {
+        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Sea)
         {
             Instantiate(MapList[4]);
         }
@@ -67,7 +70,8 @@ public class Fishing : MonoBehaviour
 
     void Update()
     {
-        if(isFishing == true)
+        FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
+        if (isFishing == true)
         {
             StartCoroutine(FishSign());
 
@@ -83,7 +87,8 @@ public class Fishing : MonoBehaviour
                 Debug.Log("process '0' clear. -> '1'");
                 Water.SetActive(false);
             }       
-        }       
+            
+        }
     }
     
     private void FishingGame1()
@@ -94,6 +99,8 @@ public class Fishing : MonoBehaviour
     
     IEnumerator FishSign()
     {
+        MaxHp = FishManager.instance.hp;
+        
         Waiting_Text.gameObject.SetActive(true);
         yield return new WaitForSeconds(time);
         Waiting_Text.gameObject.SetActive(false);
@@ -106,18 +113,23 @@ public class Fishing : MonoBehaviour
         Sign_Image.SetActive(false);
         gameProcess = 2;
         Water2.SetActive(true);
-        yield return new WaitUntil(() => gameProcess > 2);
+        yield return new WaitUntil(() => FishManager.instance.hp <= 0);
+        FishManager.instance.isSucess = true;
         Water2.SetActive(false);
+        Waiting_Text.gameObject.SetActive(true);
         Waiting_Text.text = "자 자 이리로 와...";
         yield return new WaitForSeconds(0.5f);
-        fish.SetActive(true);
-    }
+        Waiting_Text.text = "낚시 성공";
+
+       }
 
     public void ClickFishing()
     {
-       
+        FishManager.instance.FishTier = (FishManager.Tier)Random.Range(0, 6);
+        FishManager.instance.Summon(FishManager.instance.FishTier);
         FishingButton.SetActive(false);
         time = Random.RandomRange(5f, 11.50f);
         isFishing = true;
+        
     }
 }
