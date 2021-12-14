@@ -34,7 +34,6 @@ public class Fishing : MonoBehaviour
     void Start()
     {
         SetMap();
-        FishHpBar = FishHpBar.gameObject.GetComponent<Slider>();
     }
 
     private void SetMap()
@@ -71,8 +70,8 @@ public class Fishing : MonoBehaviour
 
     void Update()
     {
-        FishHpBar.value = (float)FishManager.instance.hp / (float)MaxHp;
-        if(isFishing == true)
+        FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
+        if (isFishing == true)
         {
             StartCoroutine(FishSign());
 
@@ -88,10 +87,7 @@ public class Fishing : MonoBehaviour
                 Debug.Log("process '0' clear. -> '1'");
                 Water.SetActive(false);
             }       
-            else if(gameProcess == 2)
-            {
-                FishManager.instance.hp -= 100;
-            }
+            
         }
     }
     

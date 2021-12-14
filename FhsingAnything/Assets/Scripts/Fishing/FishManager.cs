@@ -134,8 +134,7 @@ public class FishManager : MonoBehaviour
         {
             hp = Random.Range(300, 400);
             money = 500 + sizeLv * (int)FishTier;          
-        }
-       
+        }     
         if (FishTier == Tier.Special)
         {
             hp = Random.Range(300, 550);
