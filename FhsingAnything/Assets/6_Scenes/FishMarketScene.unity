@@ -5076,132 +5076,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curGameState: 0
-  FishList:
-  - {fileID: 3656861888058145574, guid: ecb4556ccd54a1741aa34865376ce97f, type: 3}
-  - {fileID: 3689212560416687863, guid: 051bf8fa4f72cf046a9293f26436e8ed, type: 3}
-  - {fileID: 2109522181545909757, guid: e4cbbebec16170347b93a21bcd922855, type: 3}
-  - {fileID: 1933097030524809703, guid: d33b8eda163a7a4468ef2379b1c38609, type: 3}
-  - {fileID: 4251820260662631746, guid: 45fec7ed1fec4114d968a96a66019774, type: 3}
-  - {fileID: 4200755650091105440, guid: bc9b6751f822e64438d3007d3d470965, type: 3}
-  - {fileID: 263838303087183861, guid: 79030bbf95031b64fb6226f75b481fa6, type: 3}
-  - {fileID: 3312212190882307704, guid: a6847a21da291004cbc82d57232804bd, type: 3}
-  - {fileID: 5295703730555082378, guid: 316bc961c4226a34ca5794c88c4d3a0e, type: 3}
-  - {fileID: 3556819696783300369, guid: dd124668e0dfe7844abbdaac8af31051, type: 3}
-  - {fileID: 3734537763956847144, guid: 5764f237b2cfe7746b54e6ad878d403c, type: 3}
-  - {fileID: 1430373859443613980, guid: 1799d2996c02f6941be7fa96570392bf, type: 3}
-  - {fileID: 9027602434401901250, guid: 8cb4fe4a13f35344d84ee81a6a209466, type: 3}
-  - {fileID: 1676802283703972106, guid: cafed26c0b69e364596e57015bbb73bc, type: 3}
-  - {fileID: 7930215835950115268, guid: d2575f0b9768a32429d89ade0f62b315, type: 3}
-  - {fileID: 440597222652093888, guid: ee6eb627d8d6fb64d972eb4c5e07fd5a, type: 3}
-  - {fileID: 8099792338839749920, guid: 287c66c7548e2ae4f990fb7dab8f3ffe, type: 3}
-  - {fileID: 7983908711723697071, guid: f9dc3f676a544e34cafdbc2211338c3b, type: 3}
-  - {fileID: 6912000627732034702, guid: 0fe3b3861043c2547a4edaadb0979f8b, type: 3}
-  - {fileID: 9115955770583092252, guid: c093e511853148e4c80056b9539515a3, type: 3}
-  - {fileID: 3898281662845584918, guid: c538ac8d74229a640a3b8caf67b66f7b, type: 3}
-  - {fileID: 3897493254414249958, guid: a045e60cdfbb64340b120beb449d31a7, type: 3}
-  - {fileID: 1242295883360074387, guid: fa0743a8a1a9a6545a863546050d4c8c, type: 3}
-  - {fileID: 5855828893022234417, guid: fa90633d5595beb4093146897b6cd2d2, type: 3}
-  - {fileID: 7299905000411531948, guid: 5869ac1fe2bdab84184b814800772064, type: 3}
-  - {fileID: 1698455277788074061, guid: 3c545b7c34635184f8b2e892e2e7a793, type: 3}
-  - {fileID: 6128806444725975155, guid: 30961e558d8089a4ab394b17bfd17a3d, type: 3}
-  - {fileID: 5054357250693808506, guid: dfbe0ba4e5927704da3a1ef5926cd674, type: 3}
-  - {fileID: 2563317551293076561, guid: 5e501e8a8ba1ab8419c8df878abfd56c, type: 3}
-  - {fileID: 1432347312885799659, guid: 3322f265c64d3934cab252a0e77fc456, type: 3}
-  - {fileID: 8384683354198485157, guid: 98b37ad5a5ed9e545b64ad7fb711fa39, type: 3}
-  - {fileID: 4179554013157318818, guid: c9c3f8ed6b266a740ada6e58108b875d, type: 3}
-  - {fileID: 6773675632143328618, guid: 64f3a18769058644eaae22837b05d80f, type: 3}
-  - {fileID: 8254156416396772692, guid: b9da858e02379e446a42203c6eb6555b, type: 3}
-  - {fileID: 6777519808227444705, guid: 457c55fc9116d574a87c8cef59b875e2, type: 3}
-  - {fileID: 2758554622928112321, guid: 5493c69e72ed16c428265dfb475e6800, type: 3}
-  - {fileID: 7721126628912280081, guid: 7500c6c323abf9347b13fb1a2badfb00, type: 3}
-  - {fileID: 7790458789860198296, guid: 9c8ef3b78c305dd4193d414ede5969ba, type: 3}
-  - {fileID: 7445843843317085202, guid: 6dcb4740741a2da478edc651ea899931, type: 3}
-  - {fileID: 3504300613282417342, guid: 288ae8496d49f2744b2c3ede4583e7d3, type: 3}
-  - {fileID: 4256647182558447613, guid: 8617f0e2f10c61a44a74e2a8769f2c82, type: 3}
-  - {fileID: 6245571542461301518, guid: 9e4ec4ec68d36a94ca3674e319af24ec, type: 3}
-  - {fileID: 3589816611818242683, guid: 3da8a2a2c2f4f6b4896fded1f30261d3, type: 3}
-  - {fileID: 6511700530791562335, guid: f5534db01421e0741885310b5562e97f, type: 3}
-  - {fileID: 9204782054546335343, guid: 848272a48e7564c4a88c6499c997c033, type: 3}
-  - {fileID: 2899092198111137713, guid: 5a933e45409789f4cb47accf0c8b2c4c, type: 3}
-  - {fileID: 5796078472311296308, guid: 6b9acc48d296d464289f61a921ebce88, type: 3}
-  - {fileID: 7465251715735796303, guid: a712ef0d265650f409f38635708bea42, type: 3}
-  - {fileID: 3972065412226894547, guid: 5e473eea5a62ea442b275561cb5b5ff8, type: 3}
-  - {fileID: 8297410562384996916, guid: 6f20c500ea411704daafe870f3f3cff6, type: 3}
-  - {fileID: 1699137259921821500, guid: 83a7fc6a5b428e840833c6e46504ad13, type: 3}
-  - {fileID: 8397915642188626167, guid: 1a229267e03e8cf469a31c8b884fa222, type: 3}
-  - {fileID: 6937196629583127022, guid: bb5f7074b09762d48b0ffc2e225c225e, type: 3}
-  - {fileID: 7949418061210676546, guid: a63481552608d1e48a268236e77cd44e, type: 3}
-  - {fileID: 4204495364792765617, guid: eafd720e6e80cae4bb72d60cd71045ad, type: 3}
-  - {fileID: 5623150091359778557, guid: 829bd6c2cae6e0b48970c0d0683bcd5d, type: 3}
-  - {fileID: 3460855497328054899, guid: ad9daa721427e0a41a6c811a9442cfe1, type: 3}
-  - {fileID: 8029908838305427694, guid: b321a4d163ff90a46b774f4e14cdcea4, type: 3}
-  - {fileID: 2933078009820353543, guid: 5dd483cbf63621549895d1b6ff9efedc, type: 3}
-  CommonFish:
-  - {fileID: 2758554622928112321, guid: 5493c69e72ed16c428265dfb475e6800, type: 3}
-  - {fileID: 7445843843317085202, guid: 6dcb4740741a2da478edc651ea899931, type: 3}
-  - {fileID: 8099792338839749920, guid: 287c66c7548e2ae4f990fb7dab8f3ffe, type: 3}
-  - {fileID: 1699137259921821500, guid: 83a7fc6a5b428e840833c6e46504ad13, type: 3}
-  - {fileID: 2933078009820353543, guid: 5dd483cbf63621549895d1b6ff9efedc, type: 3}
-  - {fileID: 8397915642188626167, guid: 1a229267e03e8cf469a31c8b884fa222, type: 3}
-  - {fileID: 3897493254414249958, guid: a045e60cdfbb64340b120beb449d31a7, type: 3}
-  - {fileID: 5295703730555082378, guid: 316bc961c4226a34ca5794c88c4d3a0e, type: 3}
-  - {fileID: 8384683354198485157, guid: 98b37ad5a5ed9e545b64ad7fb711fa39, type: 3}
-  - {fileID: 4256647182558447613, guid: 8617f0e2f10c61a44a74e2a8769f2c82, type: 3}
-  - {fileID: 4179554013157318818, guid: c9c3f8ed6b266a740ada6e58108b875d, type: 3}
-  - {fileID: 1242295883360074387, guid: fa0743a8a1a9a6545a863546050d4c8c, type: 3}
-  - {fileID: 7949418061210676546, guid: a63481552608d1e48a268236e77cd44e, type: 3}
-  - {fileID: 6912000627732034702, guid: 0fe3b3861043c2547a4edaadb0979f8b, type: 3}
-  - {fileID: 2899092198111137713, guid: 5a933e45409789f4cb47accf0c8b2c4c, type: 3}
-  - {fileID: 5855828893022234417, guid: fa90633d5595beb4093146897b6cd2d2, type: 3}
-  NormalFish:
-  - {fileID: 7790458789860198296, guid: 9c8ef3b78c305dd4193d414ede5969ba, type: 3}
-  - {fileID: 9204782054546335343, guid: 848272a48e7564c4a88c6499c997c033, type: 3}
-  - {fileID: 5796078472311296308, guid: 6b9acc48d296d464289f61a921ebce88, type: 3}
-  - {fileID: 4200755650091105440, guid: bc9b6751f822e64438d3007d3d470965, type: 3}
-  - {fileID: 7930215835950115268, guid: d2575f0b9768a32429d89ade0f62b315, type: 3}
-  - {fileID: 7983908711723697071, guid: f9dc3f676a544e34cafdbc2211338c3b, type: 3}
-  - {fileID: 2109522181545909757, guid: e4cbbebec16170347b93a21bcd922855, type: 3}
-  - {fileID: 1933097030524809703, guid: d33b8eda163a7a4468ef2379b1c38609, type: 3}
-  - {fileID: 4204495364792765617, guid: eafd720e6e80cae4bb72d60cd71045ad, type: 3}
-  RareFish:
-  - {fileID: 6245571542461301518, guid: 9e4ec4ec68d36a94ca3674e319af24ec, type: 3}
-  - {fileID: 3656861888058145574, guid: ecb4556ccd54a1741aa34865376ce97f, type: 3}
-  - {fileID: 1430373859443613980, guid: 1799d2996c02f6941be7fa96570392bf, type: 3}
-  - {fileID: 6777519808227444705, guid: 457c55fc9116d574a87c8cef59b875e2, type: 3}
-  - {fileID: 3504300613282417342, guid: 288ae8496d49f2744b2c3ede4583e7d3, type: 3}
-  - {fileID: 8297410562384996916, guid: 6f20c500ea411704daafe870f3f3cff6, type: 3}
-  - {fileID: 7721126628912280081, guid: 7500c6c323abf9347b13fb1a2badfb00, type: 3}
-  - {fileID: 6937196629583127022, guid: bb5f7074b09762d48b0ffc2e225c225e, type: 3}
-  - {fileID: 1676802283703972106, guid: cafed26c0b69e364596e57015bbb73bc, type: 3}
-  - {fileID: 6773675632143328618, guid: 64f3a18769058644eaae22837b05d80f, type: 3}
-  - {fileID: 4204495364792765617, guid: eafd720e6e80cae4bb72d60cd71045ad, type: 3}
-  EpicFish:
-  - {fileID: 8029908838305427694, guid: b321a4d163ff90a46b774f4e14cdcea4, type: 3}
-  - {fileID: 8029908838305427694, guid: b321a4d163ff90a46b774f4e14cdcea4, type: 3}
-  - {fileID: 3734537763956847144, guid: 5764f237b2cfe7746b54e6ad878d403c, type: 3}
-  - {fileID: 3556819696783300369, guid: dd124668e0dfe7844abbdaac8af31051, type: 3}
-  - {fileID: 3460855497328054899, guid: ad9daa721427e0a41a6c811a9442cfe1, type: 3}
-  - {fileID: 263838303087183861, guid: 79030bbf95031b64fb6226f75b481fa6, type: 3}
-  - {fileID: 1432347312885799659, guid: 3322f265c64d3934cab252a0e77fc456, type: 3}
-  - {fileID: 7299905000411531948, guid: 5869ac1fe2bdab84184b814800772064, type: 3}
-  - {fileID: 9115955770583092252, guid: c093e511853148e4c80056b9539515a3, type: 3}
-  - {fileID: 440597222652093888, guid: ee6eb627d8d6fb64d972eb4c5e07fd5a, type: 3}
-  - {fileID: 9027602434401901250, guid: 8cb4fe4a13f35344d84ee81a6a209466, type: 3}
-  - {fileID: 3898281662845584918, guid: c538ac8d74229a640a3b8caf67b66f7b, type: 3}
-  UniqueFish:
-  - {fileID: 8254156416396772692, guid: b9da858e02379e446a42203c6eb6555b, type: 3}
-  - {fileID: 3972065412226894547, guid: 5e473eea5a62ea442b275561cb5b5ff8, type: 3}
-  - {fileID: 5054357250693808506, guid: dfbe0ba4e5927704da3a1ef5926cd674, type: 3}
-  - {fileID: 7465251715735796303, guid: a712ef0d265650f409f38635708bea42, type: 3}
-  - {fileID: 6128806444725975155, guid: 30961e558d8089a4ab394b17bfd17a3d, type: 3}
-  LegenaryFish:
-  - {fileID: 2563317551293076561, guid: 5e501e8a8ba1ab8419c8df878abfd56c, type: 3}
-  - {fileID: 6511700530791562335, guid: f5534db01421e0741885310b5562e97f, type: 3}
-  - {fileID: 3589816611818242683, guid: 3da8a2a2c2f4f6b4896fded1f30261d3, type: 3}
-  - {fileID: 1698455277788074061, guid: 3c545b7c34635184f8b2e892e2e7a793, type: 3}
-  - {fileID: 5623150091359778557, guid: 829bd6c2cae6e0b48970c0d0683bcd5d, type: 3}
-  - {fileID: 4251820260662631746, guid: 45fec7ed1fec4114d968a96a66019774, type: 3}
-  SpecialFish: []
   Arctic_Common:
   - {fileID: 1242295883360074387, guid: fa0743a8a1a9a6545a863546050d4c8c, type: 3}
   - {fileID: 7445843843317085202, guid: 6dcb4740741a2da478edc651ea899931, type: 3}
@@ -5314,6 +5188,66 @@ MonoBehaviour:
   Waterfall_Epic: []
   Waterfall_Unique: []
   Waterfall_Legendary: []
+  itemL:
+  - {fileID: 11400000, guid: 8b2f882a75bf5e44ea50596d777d1def, type: 2}
+  - {fileID: 11400000, guid: f9f68da6fd58e22439d1cf0970efcfb7, type: 2}
+  - {fileID: 11400000, guid: f64113b849eed7a4892ac5f00b301983, type: 2}
+  - {fileID: 11400000, guid: ff396fdaf6850fd46b402b83e44366ef, type: 2}
+  - {fileID: 11400000, guid: 93b90f5535865ac4584be87f5169aa8a, type: 2}
+  - {fileID: 11400000, guid: 2042721d4468b444bb13cb91c6aa3362, type: 2}
+  - {fileID: 11400000, guid: 4dbeb8c86322f944389c37c23cd1c4c8, type: 2}
+  - {fileID: 11400000, guid: cc1cfb4016fba8548b843ef665f775e9, type: 2}
+  - {fileID: 11400000, guid: 26b5dc93e4d004b45a2f924a1a418756, type: 2}
+  - {fileID: 11400000, guid: eace93b4b46306241b6f09adeeb63d30, type: 2}
+  - {fileID: 11400000, guid: 2f19b543d40ca514eb6e88003df901ac, type: 2}
+  - {fileID: 11400000, guid: 5c45c0a352784284984e3541f76f4625, type: 2}
+  - {fileID: 11400000, guid: 669a039e85fed934db5438ea6272646c, type: 2}
+  - {fileID: 11400000, guid: 7fc13460737d1734795a9084683c94a6, type: 2}
+  - {fileID: 11400000, guid: 4154b7e9a1eb31746b577bf92048217d, type: 2}
+  - {fileID: 11400000, guid: f7ed16fbb99fd12448195091a0516594, type: 2}
+  - {fileID: 11400000, guid: 96b695a7f1753c54cadc69687d1d08cc, type: 2}
+  - {fileID: 11400000, guid: dfbc4e8c9fc3f744ab8a6e34cc5e3f79, type: 2}
+  - {fileID: 11400000, guid: 6597121765897bd43bb4f55e08a7ea55, type: 2}
+  - {fileID: 11400000, guid: 2732591997027e64f94caf9a95ec119a, type: 2}
+  - {fileID: 11400000, guid: a14e313c186d8a5478b2039528a016e6, type: 2}
+  - {fileID: 11400000, guid: ae50c7f29d216d34db0ee568b58c49d2, type: 2}
+  - {fileID: 11400000, guid: 02329b77de4764649aecd0af217aa080, type: 2}
+  - {fileID: 11400000, guid: d8ca05eb890155c4e9165a2be410de73, type: 2}
+  - {fileID: 11400000, guid: 0d5a4b4620891ca46aea494b8e4a6fb8, type: 2}
+  - {fileID: 11400000, guid: 5ffa6a46fdd52044daea63ebc619fff1, type: 2}
+  - {fileID: 11400000, guid: 7a2784638116c854da8a5f4781330034, type: 2}
+  - {fileID: 11400000, guid: 23a702d53c6cbd141acbae182a34595c, type: 2}
+  - {fileID: 11400000, guid: 92dfa8b3903045949a6a268811962430, type: 2}
+  - {fileID: 11400000, guid: 27bbe93abc9c8ff4cb2782e0f59274da, type: 2}
+  - {fileID: 11400000, guid: ba2a193d404e3034bbe1d7dd5ca334f6, type: 2}
+  - {fileID: 11400000, guid: d57a39335780cfe4b8248941bd36df48, type: 2}
+  - {fileID: 11400000, guid: 1930ee8fdae985049bec36f4b2b45010, type: 2}
+  - {fileID: 11400000, guid: 7c381ab5711a968418a005e6660237af, type: 2}
+  - {fileID: 11400000, guid: 12605b18a5c00e54ca2768654fda2ec7, type: 2}
+  - {fileID: 11400000, guid: ea030f23cb5db3b4790e6a62088f84d1, type: 2}
+  - {fileID: 11400000, guid: 84a7368215efd1b449f6e229d5bba247, type: 2}
+  - {fileID: 11400000, guid: 97be544a922646042a3e5a1d274cfeb2, type: 2}
+  - {fileID: 11400000, guid: a2f119842d3518a409e9ae351da2b05a, type: 2}
+  - {fileID: 11400000, guid: 5332acfc63a8aa441b452196d6671df3, type: 2}
+  - {fileID: 11400000, guid: d713d76548412264a8470b7637f3f989, type: 2}
+  - {fileID: 11400000, guid: b855af8b08746414e95219427e25223b, type: 2}
+  - {fileID: 11400000, guid: 7c73fbecc861b6d45a8d2e3dc4aa48cf, type: 2}
+  - {fileID: 11400000, guid: 62fb0c33a224ae347a34a8bbd61c32fb, type: 2}
+  - {fileID: 11400000, guid: 8d03da3ee31b81944a23eec6d4e47014, type: 2}
+  - {fileID: 11400000, guid: 5b3bd86804d2fef429ce24522f39afdd, type: 2}
+  - {fileID: 11400000, guid: db951fef3a0633b4abc6b42e457f8f89, type: 2}
+  - {fileID: 11400000, guid: 84423bad246cf7e45b944d82dadaf914, type: 2}
+  - {fileID: 11400000, guid: c3e157803875e8e4da8254419d2c5953, type: 2}
+  - {fileID: 11400000, guid: fe30e9d1025ae9b4fb7dca60e6a80627, type: 2}
+  - {fileID: 11400000, guid: 078abfd3215882744ada02c5745c42bd, type: 2}
+  - {fileID: 11400000, guid: f016bda735e53ea498b8c47d0ee29dc9, type: 2}
+  - {fileID: 11400000, guid: 7defea10e9657d3499f4cb05e80e883a, type: 2}
+  - {fileID: 11400000, guid: 5d21c25774bf9e746862423a97bd25fb, type: 2}
+  - {fileID: 11400000, guid: a229872d08561a24a92b3ceb2876af17, type: 2}
+  - {fileID: 11400000, guid: d91822b4992be8148801645159891d9e, type: 2}
+  - {fileID: 11400000, guid: 3a395b9c6849d6e4cbd8952520bbf6ad, type: 2}
+  - {fileID: 11400000, guid: 8583cabae9d813e4a997cfd1f29470dc, type: 2}
+  - {fileID: 11400000, guid: d301151e51f846c4699f71bf2a0cb14b, type: 2}
   fishing_Place_State: 7
   money: 0
   index_value: 0

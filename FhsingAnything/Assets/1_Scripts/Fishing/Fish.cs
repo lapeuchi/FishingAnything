@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Fish : MonoBehaviour
 {
     public int hp;
@@ -18,9 +17,47 @@ public class Fish : MonoBehaviour
         Ghostfish, Seafairycookie, Ninjaturtle, Kyogre, Seadragon, Krong, Leviathan, Baron, Herald, Rayquaza,
         Kraken, Bluedragon
     }
-    public FishItem curFish;
 
+    public FishItem curFish;
+    public Item fishT;
     SpriteRenderer sr;
+    public void Link()
+    {
+        switch (curFish)
+        {
+            case FishItem.Starfish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[36]);
+                break;
+            case FishItem.Plastic:
+                Inventory.instance.AddItem(GameManager.instance.itemL[39]);
+                break;
+            case FishItem.Envelope:
+                Inventory.instance.AddItem(GameManager.instance.itemL[17]);
+                break;
+            case FishItem.Seaweeds:
+                Inventory.instance.AddItem(GameManager.instance.itemL[51]);
+                break;
+            case FishItem.Bracelet:
+                Inventory.instance.AddItem(GameManager.instance.itemL[8]);
+                break;
+            case FishItem.Shrimp:
+                Inventory.instance.AddItem(GameManager.instance.itemL[52]);
+                break;
+            case FishItem.hair:
+                Inventory.instance.AddItem(GameManager.instance.itemL[22]);
+                break;
+            case FishItem.Bronze:
+                Inventory.instance.AddItem(GameManager.instance.itemL[9]);
+                break;
+            case FishItem.Mermaid:
+                Inventory.instance.AddItem(GameManager.instance.itemL[31]);
+                break;
+            case FishItem.Poseidon:
+                Inventory.instance.AddItem(GameManager.instance.itemL[41]);
+                break;
+        }
+    }
+
     public void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
@@ -33,7 +70,7 @@ public class Fish : MonoBehaviour
         if (Fishing.instance.gameProcess == 3) 
         {
             sr.sortingOrder = 2;
-            //Inventory.instance.AddItem();
+           // Inventory.instance.AddItem(Starfish);
         }
     }
 }
