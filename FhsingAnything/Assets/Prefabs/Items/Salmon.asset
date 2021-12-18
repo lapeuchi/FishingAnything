@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Salmon
   m_EditorClassIdentifier: 
-  itemName: Salmon
+  itemName: "\uC5F0\uC5B4"
+  live: "\uBD81\uADF9"
+  Rare: "\uBCF4\uD1B5"
+  money: 0
+  Explanation: "\uC640 \uC5F0\uC5B4\uB294 \uAD6C\uC5B4\uC11C \uBA39\uC5B4\uC57C\uB418\uC694"
   itemImage: {fileID: 21300000, guid: fa0be3f017baad44194b23bd251b53cd, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Plastic
   m_EditorClassIdentifier: 
-  itemName: Plastic
+  itemName: "\uD50C\uB77C\uC2A4\uD2F1"
+  live: "\uBC14\uB2E4,\uAC15,\uD558\uC218\uAD6C,\uBD81\uADF9,\uD3ED\uD3EC"
+  Rare: "\uD754\uD568"
+  money: 0
+  Explanation: "\uBD84\uB9AC\uC218\uAC70 \uD558\uC138\uC694"
   itemImage: {fileID: 21300000, guid: 0c46738c0b9e6ad42897b74d0c8a1bb7, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

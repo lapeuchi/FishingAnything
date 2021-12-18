@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Catfish
   m_EditorClassIdentifier: 
-  itemName: Catfish
+  itemName: "\uBA54\uAE30"
+  live: "\uBC14\uB2E4"
+  Rare: "\uD76C\uADC0"
+  money: 0
+  Explanation: "\uB0A8\uC790\uC5D0\uAC8C \uC88B\uC2B5\uB2C8\uB2E4. \uC88B\uB2E4\uACE0\uC694"
   itemImage: {fileID: 21300000, guid: 77a4592a1b81564428be71f9db396149, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

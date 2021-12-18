@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: SeaDragon
   m_EditorClassIdentifier: 
-  itemName: SeaDragon
+  itemName: "\uBC14\uB2E4\uB8E1"
+  live: "\uC0C1\uC810"
+  Rare: "\uC720\uC77C\uBB34\uC774"
+  money: 0
+  Explanation: "\uC751\uC560 \uB098 \uBC14\uB2E4\uC6A9"
   itemImage: {fileID: 21300000, guid: b6d3988a3a1154d498c12668f39397a9, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

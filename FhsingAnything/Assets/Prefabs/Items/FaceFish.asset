@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: FaceFish
   m_EditorClassIdentifier: 
-  itemName: FaceFish
+  itemName: "\uC778\uBA74\uC5B4"
+  live: "\uD558\uC218\uAD6C"
+  Rare: "\uBCF4\uD1B5"
+  money: 0
+  Explanation: "\uC6D0\uC900\uC774\uB791 \uBE44\uC2B7\uD558\uAC8C \uC0DD\uACBC\uC2B5\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 1bd1cc137041dbc4a928fd4ece215508, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: "\uC804\uBCF5"
   live: "\uBC14\uB2E4"
+  Rare: "\uD754\uD558\uC9C0 \uC54A\uC74C"
   money: 0
   Explanation: "\uC804\uBCF5 \uD560\uBA38\uB2C8\uC758 \uC601\uD63C\uC774 \uB4E4\uC5B4\uC788\uB2E4"
   itemImage: {fileID: 21300000, guid: 8565c4311d1c07840990fe1c0772faf1, type: 3}

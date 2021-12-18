@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: WaterDragon
   m_EditorClassIdentifier: 
-  itemName: WaterDragon
+  itemName: "\uD574\uB8E1"
+  live: "\uAC15"
+  Rare: "\uC720\uC77C\uBB34\uC774"
+  money: 0
+  Explanation: "\uD574\uB8E1\uC774\uC9C0\uB9CC \uAC15\uC5D0 \uC0BD\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 91c4bc0f89416cc4fbede30c9060bfc6, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

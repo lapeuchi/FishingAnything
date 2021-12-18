@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Bronze
   m_EditorClassIdentifier: 
-  itemName: Bronze
+  itemName: "\uBE0C\uB860\uC988\uD50C\uB808\uC774\uC5B4"
+  live: "\uD558\uC218\uAD6C"
+  Rare: "\uD754\uD568"
+  money: 0
+  Explanation: "\uBE0C\uB860\uC988\uAC00 \uB9D0\uB300\uAFB8??"
   itemImage: {fileID: 21300000, guid: 116dd5f18bba7834a98500ba899a6871, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

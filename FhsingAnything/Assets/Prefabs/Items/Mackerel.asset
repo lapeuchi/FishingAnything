@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Mackerel
   m_EditorClassIdentifier: 
-  itemName: Mackerel
+  itemName: "\uACE0\uB4F1\uC5B4"
+  live: "\uBC14\uB2E4"
+  Rare: "\uD76C\uADC0"
+  money: 0
+  Explanation: "\uB178\uB77C\uC870\uC758 \uC0DD\uC120\uC785\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 65e2b0b73b85ca04eb49e9eb379863a5, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

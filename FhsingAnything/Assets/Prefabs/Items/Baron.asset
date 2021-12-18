@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Baron
   m_EditorClassIdentifier: 
-  itemName: Baron
+  itemName: "\uB0B4\uC154\uB0A8\uC791"
+  live: "\uAC15"
+  Rare: "\uC804\uC124\uC801"
+  money: 0
+  Explanation: "\uBC14\uB860\uC744 \uBE8F\uAE34\uB2E4\uBA74 \uBD80\uBAA8\uB2D8\uC744
+    \uC9C0\uD0AC \uC900\uBE44\uB97C \uD558\uC138\uC694.."
   itemImage: {fileID: 21300000, guid: 7d91c825c6594194a8ac6b75c4eb97ad, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

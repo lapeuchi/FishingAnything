@@ -12,6 +12,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject Status;
     public GameObject TaeHwan;
     public GameObject Mather;
+    public GameObject IndexUI;
     public Text Mather_talk;
     public Text TaeHwan_talk;
     public void Set_state_Sea() 
@@ -127,6 +128,10 @@ public class ButtonManager : MonoBehaviour
         {
             Mather.SetActive(true);
         }
+    }
+    public void OnOffIndex()
+    {
+        IndexUI.SetActive(false);
     }
     public void Mathers_talk()
     {

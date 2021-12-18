@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Frog
   m_EditorClassIdentifier: 
-  itemName: Frog
+  itemName: "\uAC1C\uAD6C\uB9AC"
+  live: "\uAC15,\uBC31\uB85D\uB2F4"
+  Rare: "\uD76C\uADC0\uD568"
+  money: 0
+  Explanation: "\uADC0\uC5FD\uC8E0?"
   itemImage: {fileID: 21300000, guid: dd393a54bd42831448d7e5a8c474183b, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Whale
   m_EditorClassIdentifier: 
-  itemName: Whale
+  itemName: "\uACE0\uB798"
+  live: "\uBC14\uB2E4"
+  Rare: "\uD76C\uADC0\uD568"
+  money: 0
+  Explanation: "\uACE0\uB798\uB294 \uBC25\uC774\uC8E0 \uD5C8\uD5C8"
   itemImage: {fileID: 21300000, guid: 233479cd7d5d51745a61285c9ea99f5d, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

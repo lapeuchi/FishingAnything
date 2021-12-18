@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Mermaid
   m_EditorClassIdentifier: 
-  itemName: Mermaid
+  itemName: "\uC778\uC5B4"
+  live: "\uBC31\uB85D\uB2F4"
+  Rare: "\uD754\uD568"
+  money: 0
+  Explanation: "\uC655\uC790\uAC00 \uAD1C\uD788 \uC778\uC5B4\uB97C \uC548\uC88B\uC544\uD55C\uAC8C
+    \uC544\uB2D9\uB2C8\uB2E4 -\uC778\uC5B4\uACF5\uC8FC \uC911-"
   itemImage: {fileID: 21300000, guid: 783bcfb51b1eaff428e51a3e76cb8670, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

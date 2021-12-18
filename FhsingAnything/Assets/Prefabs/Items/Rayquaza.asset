@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Rayquaza
   m_EditorClassIdentifier: 
-  itemName: Rayquaza
+  itemName: "\uB808\uCFE0\uC7C8"
+  live: "\uD3ED\uD3EC"
+  Rare: "\uC804\uC124\uC801"
+  money: 0
+  Explanation: "\uC6A9\uC6A9 \uC8FD\uACA0\uC9C0 \uC6A9 -\uD55C\uC6A9\uADE0-"
   itemImage: {fileID: 21300000, guid: 4ebebbf1ceb992546914fcd86319edbd, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

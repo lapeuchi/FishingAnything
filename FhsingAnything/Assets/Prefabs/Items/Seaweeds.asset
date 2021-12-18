@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Seaweeds
   m_EditorClassIdentifier: 
-  itemName: Seaweeds
+  itemName: "\uD574\uCD08"
+  live: "\uBC14\uB2E4,\uBD81\uADF9"
+  Rare: "\uD754\uD568"
+  money: 0
+  Explanation: "\uC9ED\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 0f1cd942eb933b4458d8edcf7a553340, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: TurtleKing
   m_EditorClassIdentifier: 
-  itemName: TurtleKing
+  itemName: "\uAC70\uBD81\uC774"
+  live: "\uBC14\uB2E4"
+  Rare: "\uBCF4\uD1B5"
+  money: 0
+  Explanation: "\uC218\uC9C8\uC624\uC5FC\uC73C\uB85C \uD50C\uB77C\uC2A4\uD2F1\uC774
+    \uBD99\uC5C8\uC2B5\uB2C8\uB2E4. \uB300\uD3EC\uAC00 \uC544\uB2D9\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 7e79d5a5d027c5345acd1f9acaf1c9d3, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

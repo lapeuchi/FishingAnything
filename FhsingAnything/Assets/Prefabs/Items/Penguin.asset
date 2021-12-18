@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Penguin
   m_EditorClassIdentifier: 
-  itemName: Penguin
+  itemName: "\uD3AD\uADC4"
+  live: "\uBD81\uADF9"
+  Rare: "\uD754\uD558\uC9C0 \uC54A\uC74C"
+  money: 0
+  Explanation: "\uBF40\uB85C\uB85C,\uD3AD\uC218\uC758 \uD615\uB2D8\uC785\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 99833a3c46d528440b724f0ef8aa4dbb, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0

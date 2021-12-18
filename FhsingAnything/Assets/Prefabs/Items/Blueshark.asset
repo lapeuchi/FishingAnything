@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eee3f18f6f27774bb2f8803bb77ddef, type: 3}
   m_Name: Blueshark
   m_EditorClassIdentifier: 
-  itemName: Blueshark
+  itemName: "\uCCAD\uC0C1\uC544\uB9AC"
+  live: "\uBC14\uB2E4,\uBAA9\uC695\uD0D5"
+  Rare: "\uD718\uADC0"
+  money: 0
+  Explanation: "\uCCAD\uC0C1\uC544\uB9AC~\uBC31\uC0C1\uC544\uB9AC~"
   itemImage: {fileID: 21300000, guid: 5584bca2bdc9dce49abb830de8299d4e, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
   Find: 0
+  isFind: 0
