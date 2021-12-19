@@ -15,7 +15,7 @@ public class Fish : MonoBehaviour
         Turtle, RainbowFish, Abalone, Crucian, Octopus, Polarbear, Seal, Penguin, Spongebob, Diver, Naturalman,
         Ancientkrug, Whiteshark, Blueshark, Crab, Catfish, Whale, Blowfish, Mackerel, Koi, Frog, Duck, Dearhorn,
         Ghostfish, Seafairycookie, Ninjaturtle, Kyogre, Seadragon, Krong, Leviathan, Baron, Herald, Rayquaza,
-        Kraken, Bluedragon
+        Kraken, Waterdragon
     }
 
     public FishItem curFish;
@@ -55,7 +55,154 @@ public class Fish : MonoBehaviour
             case FishItem.Poseidon:
                 Inventory.instance.AddItem(GameManager.instance.itemL[41]);
                 break;
-        }
+            case FishItem.Moss:
+                Inventory.instance.AddItem(GameManager.instance.itemL[32]);
+                break;
+            case FishItem.Ice:
+                Inventory.instance.AddItem(GameManager.instance.itemL[23]);
+                break;
+            case FishItem.Squid:
+                Inventory.instance.AddItem(GameManager.instance.itemL[54]);
+                break;
+            case FishItem.Fishbread:
+                Inventory.instance.AddItem(GameManager.instance.itemL[19]);
+                break;
+            case FishItem.Robofish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[46]);
+                break;
+            case FishItem.Jellyfish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[24]);
+                break;
+            case FishItem.Plankton:
+                Inventory.instance.AddItem(GameManager.instance.itemL[38]);
+                break;
+            case FishItem.Scuttler:
+                Inventory.instance.AddItem(GameManager.instance.itemL[45]);
+                break;
+            case FishItem.Salmon:
+                Inventory.instance.AddItem(GameManager.instance.itemL[47]);
+                break;
+            case FishItem.Bass:
+                Inventory.instance.AddItem(GameManager.instance.itemL[5]);
+                break;
+            case FishItem.Domfish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[15]);
+                break;
+            case FishItem.Facefish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[18]);
+                break;
+            case FishItem.AqaMan:
+                Inventory.instance.AddItem(GameManager.instance.itemL[2]);
+                break;
+            case FishItem.Barnacleboy:
+                Inventory.instance.AddItem(GameManager.instance.itemL[3]);
+                break;
+            case FishItem.Turtle:
+                Inventory.instance.AddItem(GameManager.instance.itemL[55]);
+                break;
+            case FishItem.RainbowFish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[42]);
+                break;
+            case FishItem.Abalone:
+                Inventory.instance.AddItem(GameManager.instance.itemL[0]);
+                break;
+            case FishItem.Crucian:
+                Inventory.instance.AddItem(GameManager.instance.itemL[12]);
+                break;
+            case FishItem.Octopus:
+                Inventory.instance.AddItem(GameManager.instance.itemL[35]);
+                break;
+            case FishItem.Polarbear:
+                Inventory.instance.AddItem(GameManager.instance.itemL[40]);
+                break;
+            case FishItem.Seal:
+                Inventory.instance.AddItem(GameManager.instance.itemL[50]);
+                break;
+            case FishItem.Penguin:
+                Inventory.instance.AddItem(GameManager.instance.itemL[37]);
+                break;
+            case FishItem.Spongebob:
+                Inventory.instance.AddItem(GameManager.instance.itemL[53]);
+                break;
+            case FishItem.Diver:
+                Inventory.instance.AddItem(GameManager.instance.itemL[14]);
+                break;
+            case FishItem.Naturalman:
+                Inventory.instance.AddItem(GameManager.instance.itemL[33]);
+                break;
+            case FishItem.Ancientkrug:
+                Inventory.instance.AddItem(GameManager.instance.itemL[1]);
+                break;
+            case FishItem.Whiteshark:
+                Inventory.instance.AddItem(GameManager.instance.itemL[58]);
+                break;
+            case FishItem.Blueshark:
+                Inventory.instance.AddItem(GameManager.instance.itemL[7]);
+                break;
+            case FishItem.Crab:
+                Inventory.instance.AddItem(GameManager.instance.itemL[11]);
+                break;
+            case FishItem.Catfish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[10]);
+                break;
+            case FishItem.Whale:
+                Inventory.instance.AddItem(GameManager.instance.itemL[57]);
+                break;
+            case FishItem.Blowfish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[6]);
+                break;
+            case FishItem.Mackerel:
+                Inventory.instance.AddItem(GameManager.instance.itemL[30]);
+                break;
+            case FishItem.Koi:
+                Inventory.instance.AddItem(GameManager.instance.itemL[25]);
+                break;
+            case FishItem.Frog:
+                Inventory.instance.AddItem(GameManager.instance.itemL[20]);
+                break;
+            case FishItem.Duck:
+                Inventory.instance.AddItem(GameManager.instance.itemL[16]);
+                break;
+            case FishItem.Dearhorn:
+                Inventory.instance.AddItem(GameManager.instance.itemL[13]);
+                break;
+            case FishItem.Ghostfish:
+                Inventory.instance.AddItem(GameManager.instance.itemL[21]);
+                break;
+            case FishItem.Seafairycookie:
+                Inventory.instance.AddItem(GameManager.instance.itemL[49]);
+                break;
+            case FishItem.Ninjaturtle:
+                Inventory.instance.AddItem(GameManager.instance.itemL[34]);
+                break;
+            case FishItem.Kyogre:
+                Inventory.instance.AddItem(GameManager.instance.itemL[28]);
+                break;
+            case FishItem.Seadragon:
+                Inventory.instance.AddItem(GameManager.instance.itemL[48]);
+                break;
+            case FishItem.Krong:
+                Inventory.instance.AddItem(GameManager.instance.itemL[27]);
+                break;
+            case FishItem.Leviathan:
+                Inventory.instance.AddItem(GameManager.instance.itemL[29]);
+                break;
+            case FishItem.Baron:
+                Inventory.instance.AddItem(GameManager.instance.itemL[4]);
+                break;
+            case FishItem.Herald:
+                Inventory.instance.AddItem(GameManager.instance.itemL[44]);
+                break;
+            case FishItem.Rayquaza:
+                Inventory.instance.AddItem(GameManager.instance.itemL[43]);
+                break;
+            case FishItem.Kraken:
+                Inventory.instance.AddItem(GameManager.instance.itemL[26]);
+                break;
+            case FishItem.Waterdragon:
+                Inventory.instance.AddItem(GameManager.instance.itemL[56]);
+                break;
+        } 
     }
 
     public void Start()
@@ -70,7 +217,8 @@ public class Fish : MonoBehaviour
         if (Fishing.instance.gameProcess == 3) 
         {
             sr.sortingOrder = 2;
-           // Inventory.instance.AddItem(Starfish);
+            Link();
+            Fishing.instance.gameProcess = 4;
         }
     }
 }
