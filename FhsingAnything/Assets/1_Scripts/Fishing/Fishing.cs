@@ -92,6 +92,7 @@ public class Fishing : MonoBehaviour
             Debug.Log("isTrigger = true");
             if (gameProcess == 0)
             {
+                SoundManager.instance.PlaySharfSound();
                 gameProcess = 1;
                 Debug.Log("process '0' clear. -> '1'");
                 Water.SetActive(false);   
@@ -125,11 +126,12 @@ public class Fishing : MonoBehaviour
         FishManager.instance.isSucess = true;
         Water2.SetActive(false);
         Waiting_Text.gameObject.SetActive(true);
-        Waiting_Text.text = "자 자 이리로 와...";
+        Waiting_Text.text = "자 자 이리로 와... ▼";
         yield return new WaitUntil(() => Input.anyKeyDown);
-        Waiting_Text.text = "낚시 성공!\n";
+        Waiting_Text.text = "낚시 성공!...▼\n";
         yield return new WaitUntil(() => Input.anyKeyDown);
         gameProcess = 3;
+        
     }
 
     public void ClickFishing()
@@ -137,7 +139,7 @@ public class Fishing : MonoBehaviour
         FishManager.instance.FishTier = (FishManager.Tier)Random.Range(0, 6);
         FishManager.instance.Summon(FishManager.instance.FishTier);
         FishingButton.SetActive(false);
-        time = Random.RandomRange(5f, 11.50f);
+        time = Random.RandomRange(5f, 7.50f);
         isFishing = true;
     }
 }
