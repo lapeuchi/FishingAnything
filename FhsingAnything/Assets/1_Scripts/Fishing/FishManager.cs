@@ -106,7 +106,7 @@ public class FishManager : MonoBehaviour
     }
     public void SetStatus(Tier FishTier, ref int hp, ref int money, ref int sizeLv)
     {
-        sizeLv = Random.Range(-5, 5);
+        sizeLv = Random.Range(0, 5);
         if (FishTier == Tier.Common)
         {   
             hp = Random.Range(50, 100);
