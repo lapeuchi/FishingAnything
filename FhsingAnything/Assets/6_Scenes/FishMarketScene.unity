@@ -5164,7 +5164,7 @@ MonoBehaviour:
   - {fileID: 7445843843317085202, guid: 6dcb4740741a2da478edc651ea899931, type: 3}
   - {fileID: 8099792338839749920, guid: 287c66c7548e2ae4f990fb7dab8f3ffe, type: 3}
   - {fileID: 1699137259921821500, guid: 83a7fc6a5b428e840833c6e46504ad13, type: 3}
-  - {fileID: 2933078009820353543, guid: 5dd483cbf63621549895d1b6ff9efedc, type: 3}
+  - {fileID: 9055562707346841352, guid: 3629ee5f52c4d564a9fc70d51b1ec37c, type: 3}
   - {fileID: 8397915642188626167, guid: 1a229267e03e8cf469a31c8b884fa222, type: 3}
   Sea_Normal:
   - {fileID: 4204495364792765617, guid: eafd720e6e80cae4bb72d60cd71045ad, type: 3}
@@ -5277,6 +5277,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d301151e51f846c4699f71bf2a0cb14b, type: 2}
   fishing_Place_State: 7
   money: 0
+  strength: 0
   index_value: 0
 --- !u!114 &1603437045
 MonoBehaviour:
