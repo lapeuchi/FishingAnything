@@ -224,7 +224,7 @@ public class Fish : MonoBehaviour
             Fishing.instance.gameProcess = 7;
         }
 
-        else if(Fishing.instance.gameProcess == 8)
+        if(Fishing.instance.gameProcess == 8)
         {
             Debug.Log("ASD");
             sr.sortingOrder = -2;

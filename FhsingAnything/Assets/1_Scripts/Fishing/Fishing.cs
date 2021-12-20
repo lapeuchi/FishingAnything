@@ -142,6 +142,7 @@ public class Fishing : MonoBehaviour
         Waiting_Text.text = FishManager.instance.money + "$를 벌었다!";
         yield return new WaitUntil(() => Input.anyKeyDown);
         gameProcess = 8;
+        yield return new WaitForSeconds(0.3f);
         GameClear();
     }
 

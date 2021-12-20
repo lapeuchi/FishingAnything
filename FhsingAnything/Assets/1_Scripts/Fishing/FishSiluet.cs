@@ -17,12 +17,12 @@ public class FishSiluet : MonoBehaviour
         ps = gameObject.GetComponent<ParticleSystem>();
         Fishing = GameObject.Find("FishingManager");
         if (isGaming == false)
-            InvokeRepeating("RandVec", 0f, 0.8f);
+            StartCoroutine(RandVec());
         else if (isGaming == true)
             Fight();
     }
 
-    void RandVec()
+    IEnumerator RandVec()
     {
         if (isGaming == false)
         {
@@ -31,6 +31,8 @@ public class FishSiluet : MonoBehaviour
             vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
             rb.AddForce(vec * 2f, ForceMode2D.Impulse);
             ps.Play();
+            yield return new WaitForSeconds(Random.Range(0.2f, 1.5f));
+            StartCoroutine(RandVec());
         }
     }
 
@@ -38,7 +40,7 @@ public class FishSiluet : MonoBehaviour
     void Fight()
     {
         power = Random.Range(3f, 5f);
-        int i = Random.Range(0, 3);
+        int i = Random.Range(0, 4);
         if (i == 0)
             vec = Vector2.up;
         if (i == 1)
