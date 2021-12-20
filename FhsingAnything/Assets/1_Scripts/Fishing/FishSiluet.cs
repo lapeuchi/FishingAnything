@@ -10,7 +10,7 @@ public class FishSiluet : MonoBehaviour
     public bool isTrigger = false;
     public bool isGaming;
     [SerializeField] GameObject Fishing;
-    
+    float power;
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -19,7 +19,7 @@ public class FishSiluet : MonoBehaviour
         if (isGaming == false)
             InvokeRepeating("RandVec", 0f, 0.8f);
         else if (isGaming == true)
-            RandVec();
+            Fight();
     }
 
     void RandVec()
@@ -34,17 +34,30 @@ public class FishSiluet : MonoBehaviour
         }
     }
 
+    
     void Fight()
     {
+        power = Random.Range(3f, 5f);
         int i = Random.Range(0, 3);
+        if (i == 0)
+            vec = Vector2.up;
+        if (i == 1)
+            vec = Vector2.down;
+        if (i == 2)
+            vec = Vector2.left;
+        if (i == 3)
+            vec = Vector2.right;
     }
 
     void Update()
-    {
-        float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);      
-         if(isGaming == true)
-            transform.Translate(vec * Time.deltaTime * 2f);
+    {   
+        if (isGaming == true)
+            transform.Translate(vec * Time.deltaTime * power);
+        else
+        {
+            float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
 
          if(isTrigger == true && Input.anyKeyDown)
          {   
