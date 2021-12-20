@@ -215,11 +215,14 @@ public class Fish : MonoBehaviour
 
     void Update()
     {
-        if (Fishing.instance.gameProcess == 3) 
+        if (Fishing.instance.gameProcess == 6) 
         {
             sr.sortingOrder = 2;
             Link();
-            Fishing.instance.gameProcess = 4;
+        }
+        if(Fishing.instance.gameProcess == 7)
+        {
+            Destroy(gameObject);
         }
     }
 }

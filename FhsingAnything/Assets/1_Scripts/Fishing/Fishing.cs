@@ -19,7 +19,7 @@ public class Fishing : MonoBehaviour
 
     private bool isFishing = false;
     private float time = 0.0f;
-    public byte gameProcess = 0;
+    public short gameProcess = -1;
 
     [SerializeField] private GameObject Sign_Image;
     [SerializeField] private Text Waiting_Text;
@@ -29,8 +29,6 @@ public class Fishing : MonoBehaviour
 
     [SerializeField] private Slider FishHpBar;
     int MaxHp;
-    private float fSliderBarTime;
-    Rigidbody2D rigid;
 
     private void Awake()
     {
@@ -42,6 +40,7 @@ public class Fishing : MonoBehaviour
 
     void Start()
     {
+        Waiting_Text.text = "";
         SetMap();
     }
 
@@ -90,11 +89,11 @@ public class Fishing : MonoBehaviour
         if (FishSiluet.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
         {
             Debug.Log("isTrigger = true");
-            if (gameProcess == 0)
+            if (gameProcess == 1)
             {
                 SoundManager.instance.PlaySharfSound();
-                gameProcess = 1;
-                Debug.Log("process '0' clear. -> '1'");
+                gameProcess = 2;
+                Debug.Log("process '1' -> '2'");
                 Water.SetActive(false);   
             }
             FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
@@ -103,6 +102,9 @@ public class Fishing : MonoBehaviour
     
     private void FishingGame1()
     {
+        Waiting_Text.text = "";
+        Debug.Log("process '0' -> '1'");
+        gameProcess = 1;
         FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
         Water.SetActive(true);   
     }
@@ -110,35 +112,48 @@ public class Fishing : MonoBehaviour
     IEnumerator FishSign()
     {
         MaxHp = FishManager.instance.hp;     
-        Waiting_Text.gameObject.SetActive(true);
         yield return new WaitForSeconds(time);
-        Waiting_Text.gameObject.SetActive(false);
         Debug.Log("낚시 게임시작");
         FishingGame1();
-        yield return new WaitUntil(()=>gameProcess > 0);
-        Water.SetActive(false);
+        yield return new WaitUntil(()=>gameProcess > 1);
         Sign_Image.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         Sign_Image.SetActive(false);
-        gameProcess = 2;
+        gameProcess = 3;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
         FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
-        FishManager.instance.isSucess = true;
+        gameProcess = 4;
         Water2.SetActive(false);
         FishHpBar.gameObject.SetActive(false); 
-        Waiting_Text.gameObject.SetActive(true);
         Waiting_Text.text = "자 자 이리로 와... ▼";
         yield return new WaitUntil(() => Input.anyKeyDown);
-        Waiting_Text.text = "낚시 성공!...▼\n";
         yield return new WaitUntil(() => Input.anyKeyDown);
-        gameProcess = 3;
-        
+        gameProcess = 5;
+        FishManager.instance.isSucess = true;
+        Waiting_Text.text = "";
+        yield return new WaitUntil(() => FishManager.instance.isSucess == false);
+        Waiting_Text.text = "낚시 성공!...▼\n";
+        gameProcess = 6;
+        yield return new WaitUntil(() => Input.anyKeyDown);
+        Waiting_Text.text = FishManager.instance.money + "$를 벌었다!";
+        yield return new WaitUntil(() => Input.anyKeyDown);
+        gameProcess = 7;
+        GameClear();
+    }
+
+    void GameClear()
+    {
+        Waiting_Text.text = "";
+        isFishing = false;
+        FishingButton.SetActive(true);
+        gameProcess = -1;
     }
 
     public void ClickFishing()
     {
+        gameProcess = 0;
         FishManager.instance.FishTier = (FishManager.Tier)Random.Range(0, 6);
         FishManager.instance.Summon(FishManager.instance.FishTier);
         FishingButton.SetActive(false);
