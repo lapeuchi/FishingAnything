@@ -11,6 +11,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject TaeHwan;
     public GameObject Mather;
     public GameObject IndexUI;
+    public GameObject NoMoney;
     public Text Mather_talk;
     public Text TaeHwan_talk;
 
@@ -149,4 +150,91 @@ public class ButtonManager : MonoBehaviour
             ,"옛날에 내가 봤던 고딩중에 '넥타이의 지배자 이아림'이라고 있었는데 모든 사람의 넥타이를 빼고 다녔었어"};
         TaeHwan_talk.text = talk[Random.Range(0, talk.Length)];
     }
+    public void Buy_Power()
+    {
+        float changeMoney;
+        if(GameManager.instance.Strength_Price > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= GameManager.instance.Strength_Price;
+            changeMoney = (GameManager.instance.Strength_Price * 1.2f);
+            GameManager.instance.Strength_Price = (int)changeMoney;
+            GameManager.instance.Strength++;
+        }
+    }
+    public void Buy_Luck()
+    {
+        float changeMoney;
+        if (GameManager.instance.Luck_Price > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= GameManager.instance.Luck_Price;
+            changeMoney = (GameManager.instance.Luck_Price * 1.2f);
+            GameManager.instance.Luck_Price = (int)changeMoney;
+            GameManager.instance.Luck++;
+        }
+    }
+    public void Buy_ComePower()
+    {
+        float changeMoney;
+        if (GameManager.instance.ComePower_Price > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= GameManager.instance.ComePower_Price;
+            changeMoney = (GameManager.instance.ComePower_Price * 1.2f);
+            GameManager.instance.ComePower_Price = (int)changeMoney;
+            GameManager.instance.ComePower++;
+        }
+    }
+    public void Buy_Stamina()
+    {
+        float changeMoney;
+        if (GameManager.instance.Stamina_Price > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= GameManager.instance.Stamina_Price;
+            changeMoney = (GameManager.instance.Stamina_Price * 1.2f);
+            GameManager.instance.Stamina_Price = (int)changeMoney;
+            GameManager.instance.Stamina++;
+        }
+    }
+    public void Buy_Intellect()
+    {
+        float changeMoney;
+        if (GameManager.instance.Intellect_Price > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= GameManager.instance.Intellect_Price;
+            changeMoney = (GameManager.instance.Intellect_Price * 1.2f);
+            GameManager.instance.Intellect_Price = (int)changeMoney;
+            GameManager.instance.Intellect++;
+        }
+    }
+    private void NomoneyOff()
+    {
+        if (NoMoney.active == true)
+        {
+            NoMoney.SetActive(false);
+        } 
+    } 
 }
