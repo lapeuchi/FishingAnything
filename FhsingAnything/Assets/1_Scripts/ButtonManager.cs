@@ -8,8 +8,6 @@ public class ButtonManager : MonoBehaviour
 {
     public GameObject SelectPlaceBackGround;
     public GameObject BlackBackGround;
-    public GameObject Bag;
-    public GameObject Status;
     public GameObject TaeHwan;
     public GameObject Mather;
     public GameObject IndexUI;
@@ -101,29 +99,6 @@ public class ButtonManager : MonoBehaviour
     {
         SoundManager.instance.PlayClickSound();
         SelectPlaceBackGround.SetActive(true);
-    }
-    public void BagOn()
-    {
-        SoundManager.instance.PlayClickSound();
-        if (Bag.active == true)
-            Bag.SetActive(false);
-        else
-        {
-            Bag.SetActive(true);
-            Status.SetActive(false);
-        }
-            
-    }
-    public void StatusOn()
-    {
-        SoundManager.instance.PlayClickSound();
-        if (Status.active == true)
-            Status.SetActive(false);
-        else
-        {
-            Status.SetActive(true);
-            Bag.SetActive(false);
-        }
     }
     public void SelectPlaceFalse()
     {
