@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC9C0\uB2A5 : 10\n\n"
+  m_Text: "\uD765\uC815\uB825: 10\n\n"
 --- !u!222 &40540375
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ Transform:
   m_GameObject: {fileID: 701678642}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 5.87507, y: -0.042, z: 0}
-  m_LocalScale: {x: 1.8538599, y: 1.0996176, z: 1}
+  m_LocalScale: {x: 1.8538599, y: 1.1133629, z: 1}
   m_Children: []
   m_Father: {fileID: 316612261}
   m_RootOrder: 2
@@ -1055,7 +1055,7 @@ Transform:
   m_GameObject: {fileID: 1760700996}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -5.978, y: -0.042, z: 0}
-  m_LocalScale: {x: 1.8538599, y: 1.061612, z: 1}
+  m_LocalScale: {x: 1.8538599, y: 1.0881523, z: 1}
   m_Children: []
   m_Father: {fileID: 316612261}
   m_RootOrder: 0
