@@ -23,12 +23,20 @@ public class FishSiluet : MonoBehaviour
     }
 
     void RandVec()
-    {   
-        rb.velocity = Vector2.zero;
-        SoundManager.instance.PlayFishMoveSound();
-        vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
+    {
         if (isGaming == false)
-            rb.AddForce(vec * 2f, ForceMode2D.Impulse); 
+        {
+            rb.velocity = Vector2.zero;
+            SoundManager.instance.PlayFishMoveSound();
+            vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
+            rb.AddForce(vec * 2f, ForceMode2D.Impulse);
+            ps.Play();
+        }
+    }
+
+    void Fight()
+    {
+        int i = Random.Range(0, 3);
     }
 
     void Update()

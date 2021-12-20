@@ -219,9 +219,13 @@ public class Fish : MonoBehaviour
         {
             sr.sortingOrder = 2;
             Link();
+            
         }
-        if(Fishing.instance.gameProcess == 7)
+
+        else if(Fishing.instance.gameProcess == 7)
         {
+            Debug.Log("ASD");
+            sr.sortingOrder = -2;
             Destroy(gameObject);
         }
     }

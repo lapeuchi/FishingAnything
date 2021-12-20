@@ -19,7 +19,7 @@ public class Fishing : MonoBehaviour
 
     private bool isFishing = false;
     private float time = 0.0f;
-    public short gameProcess = -1;
+    public int gameProcess = -1;
 
     [SerializeField] private GameObject Sign_Image;
     [SerializeField] private Text Waiting_Text;
@@ -40,6 +40,7 @@ public class Fishing : MonoBehaviour
 
     void Start()
     {
+        gameProcess = -1;
         Waiting_Text.text = "";
         SetMap();
     }
@@ -137,18 +138,18 @@ public class Fishing : MonoBehaviour
         Waiting_Text.text = "낚시 성공!...▼\n";
         gameProcess = 6;
         yield return new WaitUntil(() => Input.anyKeyDown);
+        yield return new WaitUntil(() => Input.anyKeyDown);
         Waiting_Text.text = FishManager.instance.money + "$를 벌었다!";
         yield return new WaitUntil(() => Input.anyKeyDown);
-        gameProcess = 7;
         GameClear();
     }
 
     void GameClear()
     {
+        gameProcess = -1;
         Waiting_Text.text = "";
         isFishing = false;
         FishingButton.SetActive(true);
-        gameProcess = -1;
     }
 
     public void ClickFishing()

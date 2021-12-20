@@ -148,12 +148,14 @@ public class FishManager : MonoBehaviour
     }
     public void Summon(Tier FishTier)
     {
-        Debug.Log(CommonFishL.Length + "\n" + NormalFishL.Length + "\n" + RareFishL.Length + "\n" + EpicFishL.Length + "\n"
+        Debug.Log("\n" + CommonFishL.Length + "\n" + NormalFishL.Length + "\n" + RareFishL.Length + "\n" + EpicFishL.Length + "\n"
             + UniqueFishL.Length + "\n" + LegenaryFishL.Length);
         if (FishTier == Tier.Common)
         {
             if (CommonFishL.Length == 1)
                 Instantiate(CommonFishL[0]);
+            else if (CommonFishL.Length == 0)
+                Summon(FishTier);
             else
                 Instantiate(CommonFishL[Random.Range(0, CommonFishL.Length)]);
         }
@@ -161,6 +163,8 @@ public class FishManager : MonoBehaviour
         {
             if (NormalFishL.Length == 1)
                 Instantiate(NormalFishL[0]);
+            else if (NormalFishL.Length == 0)
+                Summon(FishTier);
             else
                 Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)]);
         }
@@ -168,6 +172,8 @@ public class FishManager : MonoBehaviour
         {
             if (RareFishL.Length == 1)
                 Instantiate(RareFishL[0]);
+            else if (RareFishL.Length == 0)
+                Summon(FishTier);
             else
                 Instantiate(RareFishL[Random.Range(0, CommonFishL.Length)]);
         }
@@ -175,6 +181,8 @@ public class FishManager : MonoBehaviour
         {
             if (EpicFishL.Length == 1)
                 Instantiate(EpicFishL[0]);
+            else if (EpicFishL.Length == 0)
+                Summon(FishTier);
             else
                 Instantiate(EpicFishL[Random.Range(0, CommonFishL.Length)]);
         }
@@ -182,6 +190,8 @@ public class FishManager : MonoBehaviour
         {
             if (UniqueFishL.Length == 1)
                 Instantiate(UniqueFishL[0]);
+            else if (UniqueFishL.Length == 0)
+                Summon(FishTier);
             else
                 Instantiate(UniqueFishL[Random.Range(0, CommonFishL.Length)]);
         }
@@ -189,8 +199,10 @@ public class FishManager : MonoBehaviour
         {
             if (LegenaryFishL.Length == 1)
                 Instantiate(LegenaryFishL[0]);
+            else if (LegenaryFishL.Length == 0)
+                Summon(FishTier);
             else
-            Instantiate(LegenaryFishL[Random.Range(0, CommonFishL.Length)]);
+                Instantiate(LegenaryFishL[Random.Range(0, CommonFishL.Length)]);
         }
         if (FishTier == Tier.Special)
         {
