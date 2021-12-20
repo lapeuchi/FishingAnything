@@ -5113,7 +5113,7 @@ MonoBehaviour:
   - {fileID: 8384683354198485157, guid: 98b37ad5a5ed9e545b64ad7fb711fa39, type: 3}
   BacLocDam_Normal: []
   BacLocDam_Rare:
-  - {fileID: 3689212560416687863, guid: 051bf8fa4f72cf046a9293f26436e8ed, type: 3}
+  - {fileID: 8156409133860580241, guid: df19aab3537823b4a9519dbc4bcc1a10, type: 3}
   BacLocDam_Epic:
   - {fileID: 9115955770583092252, guid: c093e511853148e4c80056b9539515a3, type: 3}
   - {fileID: 9027602434401901250, guid: 8cb4fe4a13f35344d84ee81a6a209466, type: 3}
