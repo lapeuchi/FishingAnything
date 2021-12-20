@@ -98,3 +98,4 @@ MonoBehaviour:
   money: 0
   size: 0
   curFish: 43
+  fishT: {fileID: 11400000, guid: 5ffa6a46fdd52044daea63ebc619fff1, type: 2}

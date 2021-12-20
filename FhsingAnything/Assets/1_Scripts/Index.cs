@@ -10,7 +10,6 @@ public class Index : MonoBehaviour
     public GameObject IndexUI;
     public Text Itemname;
     public Text Livename;
-    public Text price;
     public Text Expli;
     public Text Rare;
     public Image image;
@@ -29,7 +28,6 @@ public class Index : MonoBehaviour
                 Rare.text = _item.Rare;
                 Itemname.text = _item.itemName;
                 Livename.text = _item.live;
-                price.text = _item.money.ToString();
                 Expli.text = _item.Explanation;
             }
             else

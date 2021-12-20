@@ -15,7 +15,6 @@ MonoBehaviour:
   itemName: "\uBB38\uC5B4"
   live: "\uD558\uC218\uAD6C"
   Rare: "\uD754\uD558\uC9C0 \uC54A\uC74C"
-  money: 0
   Explanation: "\uAC70\uC6B8\uC5D0 \uC11C\uC2DD\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 081211c81c94c4e46a33e39527be035c, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}

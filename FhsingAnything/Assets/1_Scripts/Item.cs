@@ -8,7 +8,6 @@ public class Item : ScriptableObject
     public string itemName;
     public string live;
     public string Rare;
-    public int money;
     public string Explanation;
     public Sprite itemImage;
     public Sprite Notfound;

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class BagInven : MonoBehaviour
 {
+    public static BagInven instance = null;
 
     public List<Item> items;
     [SerializeField]
@@ -17,13 +18,19 @@ public class Inventory : MonoBehaviour
     }
     void Awake()
     {
-        FreshSlot();    
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+            Destroy(gameObject);
+        FreshSlot();
     }
-    
+
     public void FreshSlot()
     {
         int i = 0;
-        for(;i<items.Count && i< slots.Length; i++)
+        for (; i < items.Count && i < slots.Length; i++)
         {
             slots[i].item = items[i];
         }
@@ -35,7 +42,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Item _item)
     {
-        if(items.Count < slots.Length)
+        if (items.Count < slots.Length)
         {
             items.Add(_item);
             FreshSlot();
