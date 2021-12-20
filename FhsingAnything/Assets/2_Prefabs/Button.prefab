@@ -144,6 +144,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
+  BlackBackGround: {fileID: 0}
+  Bag: {fileID: 0}
+  Status: {fileID: 0}
+  TaeHwan: {fileID: 0}
+  Mather: {fileID: 0}
+  IndexUI: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
 --- !u!1 &5069690188530943316
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +217,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b913267ab8db4884e8d8d45a25c5c980, type: 3}
+    m_Font: {fileID: 12800000, guid: 99a7daafca030ef4796e0b002f609d79, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
