@@ -5113,7 +5113,7 @@ MonoBehaviour:
   - {fileID: 8384683354198485157, guid: 98b37ad5a5ed9e545b64ad7fb711fa39, type: 3}
   BacLocDam_Normal: []
   BacLocDam_Rare:
-  - {fileID: 3689212560416687863, guid: 051bf8fa4f72cf046a9293f26436e8ed, type: 3}
+  - {fileID: 8156409133860580241, guid: df19aab3537823b4a9519dbc4bcc1a10, type: 3}
   BacLocDam_Epic:
   - {fileID: 9115955770583092252, guid: c093e511853148e4c80056b9539515a3, type: 3}
   - {fileID: 9027602434401901250, guid: 8cb4fe4a13f35344d84ee81a6a209466, type: 3}
@@ -5199,12 +5199,22 @@ MonoBehaviour:
   - {fileID: 8254156416396772692, guid: b9da858e02379e446a42203c6eb6555b, type: 3}
   Sewer_Legendary:
   - {fileID: 6511700530791562335, guid: f5534db01421e0741885310b5562e97f, type: 3}
-  Waterfall_Common: []
-  Waterfall_Normal: []
+  Waterfall_Common:
+  - {fileID: 2899092198111137713, guid: 5a933e45409789f4cb47accf0c8b2c4c, type: 3}
+  - {fileID: 4179554013157318818, guid: c9c3f8ed6b266a740ada6e58108b875d, type: 3}
+  - {fileID: 7445843843317085202, guid: 6dcb4740741a2da478edc651ea899931, type: 3}
+  - {fileID: 4256647182558447613, guid: 8617f0e2f10c61a44a74e2a8769f2c82, type: 3}
+  - {fileID: 8397915642188626167, guid: 1a229267e03e8cf469a31c8b884fa222, type: 3}
+  Waterfall_Normal:
+  - {fileID: 663867180558135485, guid: 72d546257e9a0e9418a9e6a44a5f761f, type: 3}
+  - {fileID: 7790458789860198296, guid: 9c8ef3b78c305dd4193d414ede5969ba, type: 3}
+  - {fileID: 5796078472311296308, guid: 6b9acc48d296d464289f61a921ebce88, type: 3}
   Waterfall_Rare: []
   Waterfall_Epic: []
-  Waterfall_Unique: []
-  Waterfall_Legendary: []
+  Waterfall_Unique:
+  - {fileID: 5054357250693808506, guid: dfbe0ba4e5927704da3a1ef5926cd674, type: 3}
+  Waterfall_Legendary:
+  - {fileID: 3589816611818242683, guid: 3da8a2a2c2f4f6b4896fded1f30261d3, type: 3}
   itemL:
   - {fileID: 11400000, guid: 8b2f882a75bf5e44ea50596d777d1def, type: 2}
   - {fileID: 11400000, guid: f9f68da6fd58e22439d1cf0970efcfb7, type: 2}

@@ -97,7 +97,7 @@ public class Fishing : MonoBehaviour
                 Debug.Log("process '0' clear. -> '1'");
                 Water.SetActive(false);   
             }
-            
+            FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
         }
     }
     
@@ -122,9 +122,12 @@ public class Fishing : MonoBehaviour
         Sign_Image.SetActive(false);
         gameProcess = 2;
         Water2.SetActive(true);
+        FishHpBar.gameObject.SetActive(true);
+        FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         FishManager.instance.isSucess = true;
         Water2.SetActive(false);
+        FishHpBar.gameObject.SetActive(false); 
         Waiting_Text.gameObject.SetActive(true);
         Waiting_Text.text = "자 자 이리로 와... ▼";
         yield return new WaitUntil(() => Input.anyKeyDown);
