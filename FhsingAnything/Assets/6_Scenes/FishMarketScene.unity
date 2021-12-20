@@ -3183,6 +3183,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011831784}
   m_CullTransparentMesh: 0
+--- !u!1 &1133708863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2552914099637445091, guid: 85ab557c5eed5064ca7ec6aba2525293,
+    type: 3}
+  m_PrefabInstance: {fileID: 2552914101576651592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1133708868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133708863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa3b9c5ce4a039458e4447722aca300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1151971892
 GameObject:
   m_ObjectHideFlags: 0
@@ -7164,7 +7182,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 312693874}
     m_Modifications:
+    - target: {fileID: 2552914099637445092, guid: 85ab557c5eed5064ca7ec6aba2525293,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 126.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552914099637445092, guid: 85ab557c5eed5064ca7ec6aba2525293,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2552914099637445094, guid: 85ab557c5eed5064ca7ec6aba2525293,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 44d5e39b9012a6b42a838777d98b713f,
+        type: 3}
+    - target: {fileID: 2552914099637445094, guid: 85ab557c5eed5064ca7ec6aba2525293,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552914100257275883, guid: 85ab557c5eed5064ca7ec6aba2525293,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -7172,10 +7211,9 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 2552914100257275883, guid: 85ab557c5eed5064ca7ec6aba2525293,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 44d5e39b9012a6b42a838777d98b713f,
-        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2552914101646561354, guid: 85ab557c5eed5064ca7ec6aba2525293,
         type: 3}
       propertyPath: m_Name
