@@ -405,8 +405,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -716,8 +714,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 1568954060}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -1157,8 +1153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 1151971892}
   IndexUI: {fileID: 0}
@@ -1689,8 +1683,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -1841,8 +1833,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -2181,8 +2171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -2333,8 +2321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -2485,8 +2471,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 415512093}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -2947,8 +2931,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -3293,8 +3275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -3445,8 +3425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -3753,8 +3731,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -3983,8 +3959,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -4209,8 +4183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -4679,8 +4651,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -4755,7 +4725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC2A4\uD15F"
+  m_Text: "\uB0B4 \uC815\uBCF4"
 --- !u!222 &1481526369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5277,8 +5247,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8583cabae9d813e4a997cfd1f29470dc, type: 2}
   - {fileID: 11400000, guid: d301151e51f846c4699f71bf2a0cb14b, type: 2}
   fishing_Place_State: 7
-  money: 0
-  strength: 0
+  Money: 0
+  Strength: 0
+  Luck: 0
+  Stamina: 0
+  Intellect: 0
   index_value: 0
 --- !u!114 &1603437045
 MonoBehaviour:
@@ -5572,8 +5545,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 1151971892}
   IndexUI: {fileID: 0}
@@ -5789,8 +5760,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -6090,8 +6059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 740841243}
   BlackBackGround: {fileID: 1568954060}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -6466,8 +6433,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -6885,8 +6850,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
@@ -7189,8 +7152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectPlaceBackGround: {fileID: 0}
   BlackBackGround: {fileID: 0}
-  Bag: {fileID: 0}
-  Status: {fileID: 0}
   TaeHwan: {fileID: 415512093}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
