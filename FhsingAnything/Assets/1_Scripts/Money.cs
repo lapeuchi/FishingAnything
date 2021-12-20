@@ -9,6 +9,9 @@ public class Money : MonoBehaviour
     void Start()
     {
         moneyUI = gameObject.GetComponent<Text>();
+    }
+    private void Update()
+    {
         moneyUpdate();
     }
     public void moneyUpdate()

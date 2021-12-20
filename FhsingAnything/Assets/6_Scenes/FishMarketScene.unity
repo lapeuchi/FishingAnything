@@ -408,6 +408,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &122841163
@@ -717,6 +718,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &284292378
@@ -1156,6 +1158,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 1151971892}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &427907954
@@ -1686,6 +1689,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &627847748
@@ -1836,6 +1840,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &632265323
@@ -2174,6 +2179,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &744707329
@@ -2324,6 +2330,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 1879652589}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &759137125
@@ -2474,6 +2481,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 415512093}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &787934363
@@ -2934,6 +2942,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &936959471
@@ -3183,24 +3192,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011831784}
   m_CullTransparentMesh: 0
---- !u!1 &1133708863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2552914099637445091, guid: 85ab557c5eed5064ca7ec6aba2525293,
-    type: 3}
-  m_PrefabInstance: {fileID: 2552914101576651592}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1133708868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133708863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fa3b9c5ce4a039458e4447722aca300, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1151971892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,6 +3287,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1170904814
@@ -3446,6 +3438,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1205675280
@@ -3752,6 +3745,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1318806782
@@ -3980,6 +3974,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1344846166
@@ -4204,6 +4199,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1352517732
@@ -4672,6 +4668,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!1 &1481526366
@@ -5265,11 +5262,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8583cabae9d813e4a997cfd1f29470dc, type: 2}
   - {fileID: 11400000, guid: d301151e51f846c4699f71bf2a0cb14b, type: 2}
   fishing_Place_State: 7
-  Money: 0
-  Strength: 0
-  Luck: 0
-  Stamina: 0
-  Intellect: 0
+  Money: 10000
+  Strength: 10
+  ComePower: 10
+  Luck: 10
+  Stamina: 10
+  Intellect: 10
+  Strength_Price: 100
+  Luck_Price: 100
+  ComePower_Price: 100
+  Stamina_Price: 100
+  Intellect_Price: 100
   index_value: 0
 --- !u!114 &1603437045
 MonoBehaviour:
@@ -5566,6 +5569,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 1151971892}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!1 &1669429780
@@ -5781,6 +5785,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 1330188970}
 --- !u!114 &1699177280
@@ -6080,6 +6085,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1762634574
@@ -6454,6 +6460,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &1825216639
@@ -6871,6 +6878,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 0}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!114 &2039932741
@@ -7173,6 +7181,7 @@ MonoBehaviour:
   TaeHwan: {fileID: 415512093}
   Mather: {fileID: 0}
   IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
 --- !u!1001 &2552914101576651592

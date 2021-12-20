@@ -73,11 +73,18 @@ public class GameManager : MonoBehaviour
     public FishingState fishing_Place_State;
 
     [Header("Player Status")]
-    public int Money;
-    public int Strength;
-    public int Luck;
-    public int Stamina;
-    public int Intellect;
+    public int Money=100000;
+    public int Strength=10;
+    public int ComePower=10;
+    public int Luck=10;
+    public int Stamina=10;
+    public int Intellect=10;
+
+    public int Strength_Price =100;
+    public int Luck_Price=100;
+    public int ComePower_Price=100;
+    public int Stamina_Price=100;
+    public int Intellect_Price=100;
 
     public int index_value = 0;
 
