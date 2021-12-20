@@ -73,9 +73,12 @@ public class GameManager : MonoBehaviour
     public FishingState fishing_Place_State;
 
     [Header("Player Status")]
-    public int money;
-    public int strength;
-    
+    public int Money;
+    public int Strength;
+    public int Luck;
+    public int Stamina;
+    public int Intellect;
+
     public int index_value = 0;
 
     void Awake()
