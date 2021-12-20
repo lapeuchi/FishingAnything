@@ -123,6 +123,7 @@ public class Fishing : MonoBehaviour
         gameProcess = 2;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
+        FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         FishManager.instance.isSucess = true;
         Water2.SetActive(false);
