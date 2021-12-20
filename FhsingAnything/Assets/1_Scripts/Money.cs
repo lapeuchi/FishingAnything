@@ -13,6 +13,6 @@ public class Money : MonoBehaviour
     }
     public void moneyUpdate()
     {
-        moneyUI.text = GameManager.instance.Money.ToString();
+        moneyUI.text = GameManager.instance.Money.ToString() + "$";
     }
 }
