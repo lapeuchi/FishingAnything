@@ -18,6 +18,8 @@ public class FishManager : MonoBehaviour
     public GameObject[] SpecialFishL;   //ㅅㅂ
 
     public int hp;
+    public int size;
+    public int money;
 
     public bool isSucess;
 
@@ -141,6 +143,8 @@ public class FishManager : MonoBehaviour
             money = 600 + sizeLv * (int)FishTier;       
         }
         this.hp = hp;
+        this.money = money;
+        this.size = sizeLv;
     }
     public void Summon(Tier FishTier)
     {
