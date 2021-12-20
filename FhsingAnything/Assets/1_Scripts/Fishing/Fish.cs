@@ -24,6 +24,8 @@ public class Fish : MonoBehaviour
     public void Link()
     {
         GameManager.instance.Money += money;
+        if(fishT.isFind == false)
+            fishT.Find = true;
         //switch (curfish)
         //{
         //    case fishitem.starfish:
@@ -219,10 +221,10 @@ public class Fish : MonoBehaviour
         {
             sr.sortingOrder = 2;
             Link();
-            
+            Fishing.instance.gameProcess = 7;
         }
 
-        else if(Fishing.instance.gameProcess == 7)
+        else if(Fishing.instance.gameProcess == 8)
         {
             Debug.Log("ASD");
             sr.sortingOrder = -2;
