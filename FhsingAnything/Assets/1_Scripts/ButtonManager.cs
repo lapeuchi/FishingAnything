@@ -15,6 +15,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject IndexUI;
     public Text Mather_talk;
     public Text TaeHwan_talk;
+
     public void Set_state_Sea() 
     {
         SoundManager.instance.PlayClickSound();

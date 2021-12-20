@@ -23,186 +23,187 @@ public class Fish : MonoBehaviour
     SpriteRenderer sr;
     public void Link()
     {
-        switch (curFish)
-        {
-            case FishItem.Starfish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[36]);
-                break;
-            case FishItem.Plastic:
-                BagInven.instance.AddItem(GameManager.instance.itemL[39]);
-                break;
-            case FishItem.Envelope:
-                BagInven.instance.AddItem(GameManager.instance.itemL[17]);
-                break;
-            case FishItem.Seaweeds:
-                BagInven.instance.AddItem(GameManager.instance.itemL[51]);
-                break;
-            case FishItem.Bracelet:
-                BagInven.instance.AddItem(GameManager.instance.itemL[8]);
-                break;
-            case FishItem.Shrimp:
-                BagInven.instance.AddItem(GameManager.instance.itemL[52]);
-                break;
-            case FishItem.hair:
-                BagInven.instance.AddItem(GameManager.instance.itemL[22]);
-                break;
-            case FishItem.Bronze:
-                BagInven.instance.AddItem(GameManager.instance.itemL[9]);
-                break;
-            case FishItem.Mermaid:
-                BagInven.instance.AddItem(GameManager.instance.itemL[31]);
-                break;
-            case FishItem.Poseidon:
-                BagInven.instance.AddItem(GameManager.instance.itemL[41]);
-                break;
-            case FishItem.Moss:
-                BagInven.instance.AddItem(GameManager.instance.itemL[32]);
-                break;
-            case FishItem.Ice:
-                BagInven.instance.AddItem(GameManager.instance.itemL[23]);
-                break;
-            case FishItem.Squid:
-                BagInven.instance.AddItem(GameManager.instance.itemL[54]);
-                break;
-            case FishItem.Fishbread:
-                BagInven.instance.AddItem(GameManager.instance.itemL[19]);
-                break;
-            case FishItem.Robofish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[46]);
-                break;
-            case FishItem.Jellyfish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[24]);
-                break;
-            case FishItem.Plankton:
-                BagInven.instance.AddItem(GameManager.instance.itemL[38]);
-                break;
-            case FishItem.Scuttler:
-                BagInven.instance.AddItem(GameManager.instance.itemL[45]);
-                break;
-            case FishItem.Salmon:
-                BagInven.instance.AddItem(GameManager.instance.itemL[47]);
-                break;
-            case FishItem.Bass:
-                BagInven.instance.AddItem(GameManager.instance.itemL[5]);
-                break;
-            case FishItem.Domfish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[15]);
-                break;
-            case FishItem.Facefish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[18]);
-                break;
-            case FishItem.AqaMan:
-                BagInven.instance.AddItem(GameManager.instance.itemL[2]);
-                break;
-            case FishItem.Barnacleboy:
-                BagInven.instance.AddItem(GameManager.instance.itemL[3]);
-                break;
-            case FishItem.Turtle:
-                BagInven.instance.AddItem(GameManager.instance.itemL[55]);
-                break;
-            case FishItem.RainbowFish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[42]);
-                break;
-            case FishItem.Abalone:
-                BagInven.instance.AddItem(GameManager.instance.itemL[0]);
-                break;
-            case FishItem.Crucian:
-                BagInven.instance.AddItem(GameManager.instance.itemL[12]);
-                break;
-            case FishItem.Octopus:
-                BagInven.instance.AddItem(GameManager.instance.itemL[35]);
-                break;
-            case FishItem.Polarbear:
-                BagInven.instance.AddItem(GameManager.instance.itemL[40]);
-                break;
-            case FishItem.Seal:
-                BagInven.instance.AddItem(GameManager.instance.itemL[50]);
-                break;
-            case FishItem.Penguin:
-                BagInven.instance.AddItem(GameManager.instance.itemL[37]);
-                break;
-            case FishItem.Spongebob:
-                BagInven.instance.AddItem(GameManager.instance.itemL[53]);
-                break;
-            case FishItem.Diver:
-                BagInven.instance.AddItem(GameManager.instance.itemL[14]);
-                break;
-            case FishItem.Naturalman:
-                BagInven.instance.AddItem(GameManager.instance.itemL[33]);
-                break;
-            case FishItem.Ancientkrug:
-                BagInven.instance.AddItem(GameManager.instance.itemL[1]);
-                break;
-            case FishItem.Whiteshark:
-                BagInven.instance.AddItem(GameManager.instance.itemL[58]);
-                break;
-            case FishItem.Blueshark:
-                BagInven.instance.AddItem(GameManager.instance.itemL[7]);
-                break;
-            case FishItem.Crab:
-                BagInven.instance.AddItem(GameManager.instance.itemL[11]);
-                break;
-            case FishItem.Catfish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[10]);
-                break;
-            case FishItem.Whale:
-                BagInven.instance.AddItem(GameManager.instance.itemL[57]);
-                break;
-            case FishItem.Blowfish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[6]);
-                break;
-            case FishItem.Mackerel:
-                BagInven.instance.AddItem(GameManager.instance.itemL[30]);
-                break;
-            case FishItem.Koi:
-                BagInven.instance.AddItem(GameManager.instance.itemL[25]);
-                break;
-            case FishItem.Frog:
-                BagInven.instance.AddItem(GameManager.instance.itemL[20]);
-                break;
-            case FishItem.Duck:
-                BagInven.instance.AddItem(GameManager.instance.itemL[16]);
-                break;
-            case FishItem.Dearhorn:
-                BagInven.instance.AddItem(GameManager.instance.itemL[13]);
-                break;
-            case FishItem.Ghostfish:
-                BagInven.instance.AddItem(GameManager.instance.itemL[21]);
-                break;
-            case FishItem.Seafairycookie:
-                BagInven.instance.AddItem(GameManager.instance.itemL[49]);
-                break;
-            case FishItem.Ninjaturtle:
-                BagInven.instance.AddItem(GameManager.instance.itemL[34]);
-                break;
-            case FishItem.Kyogre:
-                BagInven.instance.AddItem(GameManager.instance.itemL[28]);
-                break;
-            case FishItem.Seadragon:
-                BagInven.instance.AddItem(GameManager.instance.itemL[48]);
-                break;
-            case FishItem.Krong:
-                BagInven.instance.AddItem(GameManager.instance.itemL[27]);
-                break;
-            case FishItem.Leviathan:
-                BagInven.instance.AddItem(GameManager.instance.itemL[29]);
-                break;
-            case FishItem.Baron:
-                BagInven.instance.AddItem(GameManager.instance.itemL[4]);
-                break;
-            case FishItem.Herald:
-                BagInven.instance.AddItem(GameManager.instance.itemL[44]);
-                break;
-            case FishItem.Rayquaza:
-                BagInven.instance.AddItem(GameManager.instance.itemL[43]);
-                break;
-            case FishItem.Kraken:
-                BagInven.instance.AddItem(GameManager.instance.itemL[26]);
-                break;
-            case FishItem.Waterdragon:
-                BagInven.instance.AddItem(GameManager.instance.itemL[56]);
-                break;
-        } 
+        GameManager.instance.Money += money;
+        //switch (curfish)
+        //{
+        //    case fishitem.starfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[36]);
+        //        break;
+        //    case fishitem.plastic:
+        //        baginven.instance.additem(gamemanager.instance.iteml[39]);
+        //        break;
+        //    case fishitem.envelope:
+        //        baginven.instance.additem(gamemanager.instance.iteml[17]);
+        //        break;
+        //    case fishitem.seaweeds:
+        //        baginven.instance.additem(gamemanager.instance.iteml[51]);
+        //        break;
+        //    case fishitem.bracelet:
+        //        baginven.instance.additem(gamemanager.instance.iteml[8]);
+        //        break;
+        //    case fishitem.shrimp:
+        //        baginven.instance.additem(gamemanager.instance.iteml[52]);
+        //        break;
+        //    case fishitem.hair:
+        //        baginven.instance.additem(gamemanager.instance.iteml[22]);
+        //        break;
+        //    case fishitem.bronze:
+        //        baginven.instance.additem(gamemanager.instance.iteml[9]);
+        //        break;
+        //    case fishitem.mermaid:
+        //        baginven.instance.additem(gamemanager.instance.iteml[31]);
+        //        break;
+        //    case fishitem.poseidon:
+        //        baginven.instance.additem(gamemanager.instance.iteml[41]);
+        //        break;
+        //    case fishitem.moss:
+        //        baginven.instance.additem(gamemanager.instance.iteml[32]);
+        //        break;
+        //    case fishitem.ice:
+        //        baginven.instance.additem(gamemanager.instance.iteml[23]);
+        //        break;
+        //    case fishitem.squid:
+        //        baginven.instance.additem(gamemanager.instance.iteml[54]);
+        //        break;
+        //    case fishitem.fishbread:
+        //        baginven.instance.additem(gamemanager.instance.iteml[19]);
+        //        break;
+        //    case fishitem.robofish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[46]);
+        //        break;
+        //    case fishitem.jellyfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[24]);
+        //        break;
+        //    case fishitem.plankton:
+        //        baginven.instance.additem(gamemanager.instance.iteml[38]);
+        //        break;
+        //    case fishitem.scuttler:
+        //        baginven.instance.additem(gamemanager.instance.iteml[45]);
+        //        break;
+        //    case fishitem.salmon:
+        //        baginven.instance.additem(gamemanager.instance.iteml[47]);
+        //        break;
+        //    case fishitem.bass:
+        //        baginven.instance.additem(gamemanager.instance.iteml[5]);
+        //        break;
+        //    case fishitem.domfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[15]);
+        //        break;
+        //    case fishitem.facefish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[18]);
+        //        break;
+        //    case fishitem.aqaman:
+        //        baginven.instance.additem(gamemanager.instance.iteml[2]);
+        //        break;
+        //    case fishitem.barnacleboy:
+        //        baginven.instance.additem(gamemanager.instance.iteml[3]);
+        //        break;
+        //    case fishitem.turtle:
+        //        baginven.instance.additem(gamemanager.instance.iteml[55]);
+        //        break;
+        //    case fishitem.rainbowfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[42]);
+        //        break;
+        //    case fishitem.abalone:
+        //        baginven.instance.additem(gamemanager.instance.iteml[0]);
+        //        break;
+        //    case fishitem.crucian:
+        //        baginven.instance.additem(gamemanager.instance.iteml[12]);
+        //        break;
+        //    case fishitem.octopus:
+        //        baginven.instance.additem(gamemanager.instance.iteml[35]);
+        //        break;
+        //    case fishitem.polarbear:
+        //        baginven.instance.additem(gamemanager.instance.iteml[40]);
+        //        break;
+        //    case fishitem.seal:
+        //        baginven.instance.additem(gamemanager.instance.iteml[50]);
+        //        break;
+        //    case fishitem.penguin:
+        //        baginven.instance.additem(gamemanager.instance.iteml[37]);
+        //        break;
+        //    case fishitem.spongebob:
+        //        baginven.instance.additem(gamemanager.instance.iteml[53]);
+        //        break;
+        //    case fishitem.diver:
+        //        baginven.instance.additem(gamemanager.instance.iteml[14]);
+        //        break;
+        //    case fishitem.naturalman:
+        //        baginven.instance.additem(gamemanager.instance.iteml[33]);
+        //        break;
+        //    case fishitem.ancientkrug:
+        //        baginven.instance.additem(gamemanager.instance.iteml[1]);
+        //        break;
+        //    case fishitem.whiteshark:
+        //        baginven.instance.additem(gamemanager.instance.iteml[58]);
+        //        break;
+        //    case fishitem.blueshark:
+        //        baginven.instance.additem(gamemanager.instance.iteml[7]);
+        //        break;
+        //    case fishitem.crab:
+        //        baginven.instance.additem(gamemanager.instance.iteml[11]);
+        //        break;
+        //    case fishitem.catfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[10]);
+        //        break;
+        //    case fishitem.whale:
+        //        baginven.instance.additem(gamemanager.instance.iteml[57]);
+        //        break;
+        //    case fishitem.blowfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[6]);
+        //        break;
+        //    case fishitem.mackerel:
+        //        baginven.instance.additem(gamemanager.instance.iteml[30]);
+        //        break;
+        //    case fishitem.koi:
+        //        baginven.instance.additem(gamemanager.instance.iteml[25]);
+        //        break;
+        //    case fishitem.frog:
+        //        baginven.instance.additem(gamemanager.instance.iteml[20]);
+        //        break;
+        //    case fishitem.duck:
+        //        baginven.instance.additem(gamemanager.instance.iteml[16]);
+        //        break;
+        //    case fishitem.dearhorn:
+        //        baginven.instance.additem(gamemanager.instance.iteml[13]);
+        //        break;
+        //    case fishitem.ghostfish:
+        //        baginven.instance.additem(gamemanager.instance.iteml[21]);
+        //        break;
+        //    case fishitem.seafairycookie:
+        //        baginven.instance.additem(gamemanager.instance.iteml[49]);
+        //        break;
+        //    case fishitem.ninjaturtle:
+        //        baginven.instance.additem(gamemanager.instance.iteml[34]);
+        //        break;
+        //    case fishitem.kyogre:
+        //        baginven.instance.additem(gamemanager.instance.iteml[28]);
+        //        break;
+        //    case fishitem.seadragon:
+        //        baginven.instance.additem(gamemanager.instance.iteml[48]);
+        //        break;
+        //    case fishitem.krong:
+        //        baginven.instance.additem(gamemanager.instance.iteml[27]);
+        //        break;
+        //    case fishitem.leviathan:
+        //        baginven.instance.additem(gamemanager.instance.iteml[29]);
+        //        break;
+        //    case fishitem.baron:
+        //        baginven.instance.additem(gamemanager.instance.iteml[4]);
+        //        break;
+        //    case fishitem.herald:
+        //        baginven.instance.additem(gamemanager.instance.iteml[44]);
+        //        break;
+        //    case fishitem.rayquaza:
+        //        baginven.instance.additem(gamemanager.instance.iteml[43]);
+        //        break;
+        //    case fishitem.kraken:
+        //        baginven.instance.additem(gamemanager.instance.iteml[26]);
+        //        break;
+        //    case fishitem.waterdragon:
+        //        baginven.instance.additem(gamemanager.instance.iteml[56]);
+        //        break;
+        //}
     }
 
     public void Start()
