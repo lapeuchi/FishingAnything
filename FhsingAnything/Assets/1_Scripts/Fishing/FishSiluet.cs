@@ -66,13 +66,20 @@ public class FishSiluet : MonoBehaviour
             {
                 if (isUpTrigger && Input.GetKeyDown(KeyCode.UpArrow) || isDownTrigger && Input.GetKeyDown(KeyCode.DownArrow) || isLeftTrigger && Input.GetKeyDown(KeyCode.LeftArrow) || isRightTrigger && Input.GetKeyDown(KeyCode.RightArrow))
                     StartCoroutine(Particle());
+                else
+                {
+                    GameManager.instance.Stamina -= 2f;
+                    Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
+                }
             }
-            else if (Input.anyKeyDown && isGaming == false) 
+            else if (Input.anyKeyDown && isGaming == false)
             {
                 Fishing.instance.gameProcess = 1;
                 Destroy(gameObject);
             }
         }
+        
+        
 
 
         if (Fishing.instance.gameProcess == 1)
@@ -80,11 +87,7 @@ public class FishSiluet : MonoBehaviour
         if (isGaming == true)
         {
             transform.Translate(vec * Time.deltaTime * power);
-            if(Input.anyKeyDown && isTrigger == false)
-            {
-                GameManager.instance.Stamina -= 2f;
-                Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
-            }
+            
         }           
         else
         {
@@ -154,20 +157,27 @@ public class FishSiluet : MonoBehaviour
         {
             isTrigger = false;
             isUpTrigger = false;
+            GameManager.instance.Stamina -= 2f;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
         }
         if (other.gameObject.CompareTag("Down"))
         {
             isTrigger = false;
             isDownTrigger = false;
+            GameManager.instance.Stamina -= 2f;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
         }
         if (other.gameObject.CompareTag("Left"))
         {
             isTrigger = false;
             isLeftTrigger = false;
+            GameManager.instance.Stamina -= 2f;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
         }
         if (other.gameObject.CompareTag("Right"))
         {
-            isRightTrigger = false;
+            isRightTrigger = false; GameManager.instance.Stamina -= 2f;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
         }
     }
 }
