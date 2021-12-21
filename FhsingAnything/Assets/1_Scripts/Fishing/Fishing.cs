@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fishing : MonoBehaviour
 {
@@ -15,21 +16,23 @@ public class Fishing : MonoBehaviour
     public List<GameObject> Backlocdam;
     public List<GameObject> MapList;
 
-    [SerializeField] private GameObject FishingButton;
+    public GameObject FishingButton;
 
     private bool isFishing = false;
     private float time = 0.0f;
     public int gameProcess = -1;
 
-    [SerializeField] private GameObject Sign_Image;
-    [SerializeField] private Text Waiting_Text;
-    [SerializeField] private Image Background_Waiting_Text;
-    [SerializeField] private GameObject Water;
-    [SerializeField] private GameObject Water2; // It used when FishSiluet's 'isGaming' is true
-    [SerializeField] public GameObject FishSiluet;
-    [SerializeField] public GameObject FishSiluet_1;
-    [SerializeField] public Slider FishHpBar;
-    public float MaxHp;
+    public GameObject Sign_Image;
+    public Text Waiting_Text;
+    public Image Background_Waiting_Text;
+    public GameObject Water;
+    public GameObject Water2; // It used when FishSiluet's 'isGaming' is true
+    public GameObject FishSiluet;
+    public Slider FishHpBar;
+    public Slider PlayerHpBar;
+    
+    public float FishMaxHp;
+    public float PlayerMaxHp;
     Animator anim;
     public GameObject Charactor;
 
@@ -42,7 +45,7 @@ public class Fishing : MonoBehaviour
     }
 
     void Start()
-    {       
+    {
         Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         gameProcess = -1;
         Waiting_Text.text = "";
@@ -85,7 +88,7 @@ public class Fishing : MonoBehaviour
 
     void Update()
     {
-        FishHpBar.value = FishManager.instance.hp / MaxHp;
+        FishHpBar.value = FishManager.instance.hp / FishMaxHp;
         if (isFishing == true)
         {
             StartCoroutine(FishSign());
@@ -104,8 +107,15 @@ public class Fishing : MonoBehaviour
                 gameProcess = 2;
                 Debug.Log("process '1' -> '2'");
                 Water.SetActive(false);   
-            }
-            
+            }           
+        }
+
+        if(GameManager.instance.Stamina <= 0)
+        {
+            GameClear();
+            Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ...▼";
+            if (Input.anyKeyDown)
+                SceneManager.LoadScene("FishMarketScene");
         }
     }
     
@@ -121,7 +131,6 @@ public class Fishing : MonoBehaviour
     
     IEnumerator FishSign()
     {
-        MaxHp = FishManager.instance.hp;     
         yield return new WaitForSeconds(time);
         Debug.Log("낚시 게임시작");
         FishingGame1();
@@ -130,12 +139,19 @@ public class Fishing : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         Sign_Image.SetActive(false);
         gameProcess = 3;
+        FishMaxHp = FishManager.instance.hp;
+        FishHpBar.value = FishManager.instance.hp / FishMaxHp;
+        PlayerMaxHp = GameManager.instance.Stamina;
+        PlayerHpBar.value = GameManager.instance.Stamina / PlayerMaxHp;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
+        PlayerHpBar.gameObject.SetActive(true);
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         gameProcess = 4;
+        yield return new WaitForSeconds(0.5f);
         Water2.SetActive(false);
         FishHpBar.gameObject.SetActive(false);
+        PlayerHpBar.gameObject.SetActive(false);
         Background_Waiting_Text.color = new Color(1, 1, 1, 0.4f);
         Waiting_Text.text = "자 자 이리로 와... ▼";
         yield return new WaitUntil(() => Input.anyKeyDown);
@@ -146,6 +162,7 @@ public class Fishing : MonoBehaviour
         Waiting_Text.text = "";
         yield return new WaitUntil(() => FishManager.instance.isSucess == false);
         Background_Waiting_Text.color = new Color(1, 1, 1, 0.4f);
+        SoundManager.instance.PlayCatchSound();
         Waiting_Text.text = "낚시 성공!...▼\n";
         gameProcess = 6;
         yield return new WaitUntil(() => Input.anyKeyDown);
@@ -159,6 +176,12 @@ public class Fishing : MonoBehaviour
 
     void GameClear()
     {
+        Water.SetActive(false);
+        Water2.SetActive(false);
+        FishHpBar.gameObject.SetActive(false);
+        PlayerHpBar.gameObject.SetActive(false);
+        Sign_Image.SetActive(false);
+
         gameProcess = -1;
         Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         Waiting_Text.text = "";
@@ -169,7 +192,7 @@ public class Fishing : MonoBehaviour
     public void ClickFishing()
     {
         gameProcess = 0;
-        FishManager.instance.FishTier = (FishManager.Tier)Random.Range(0, 6);
+        FishManager.instance.FishTier = FishManager.instance.RandTier();
         FishManager.instance.Summon(FishManager.instance.FishTier);
         FishingButton.SetActive(false);
         time = Random.Range(5f, 7.50f);

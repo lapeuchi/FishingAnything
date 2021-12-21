@@ -411,6 +411,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &122841163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +722,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &284292378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,6 +979,7 @@ RectTransform:
   - {fileID: 740841244}
   - {fileID: 415512094}
   - {fileID: 1151971893}
+  - {fileID: 1053474166}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1161,6 +1164,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &427907954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,6 +1696,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &627847748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1843,6 +1848,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &632265323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,6 +2188,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &744707329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2333,6 +2340,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 1879652589}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &759137125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,6 +2492,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &787934363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,6 +2954,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &936959471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3192,6 +3202,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011831784}
   m_CullTransparentMesh: 0
+--- !u!1 &1053474165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053474166}
+  - component: {fileID: 1053474168}
+  - component: {fileID: 1053474167}
+  m_Layer: 5
+  m_Name: Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1053474166
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053474165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 312693874}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 72}
+  m_SizeDelta: {x: 1568.34, y: 123}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1053474167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053474165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.82384, b: 0.08962262, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 44d5e39b9012a6b42a838777d98b713f, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1053474168
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053474165}
+  m_CullTransparentMesh: 0
 --- !u!1 &1151971892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,6 +3378,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1170904814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3441,6 +3530,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1205675280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3748,6 +3838,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1318806782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3977,6 +4068,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1344846166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4202,6 +4294,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1352517732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4671,6 +4764,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 1053474167}
 --- !u!1 &1481526366
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,7 +5094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1603437042
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5077,6 +5171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e9a84f89c1e664e8f5d6f7ce86aa33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  USER: 
   curGameState: 0
   Arctic_Common:
   - {fileID: 1242295883360074387, guid: fa0743a8a1a9a6545a863546050d4c8c, type: 3}
@@ -5578,6 +5673,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!1 &1669429780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5794,6 +5890,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 1330188970}
+  Message: {fileID: 0}
 --- !u!114 &1699177280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6094,6 +6191,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1762634574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6469,6 +6567,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1825216639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6887,6 +6986,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &2039932741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7190,6 +7290,7 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!1001 &2552914101576651592
 PrefabInstance:
   m_ObjectHideFlags: 0
