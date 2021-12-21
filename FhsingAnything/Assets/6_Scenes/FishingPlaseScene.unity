@@ -268,8 +268,8 @@ GameObject:
   - component: {fileID: 120599557}
   - component: {fileID: 120599556}
   m_Layer: 0
-  m_Name: FinishLine
-  m_TagString: Finish
+  m_Name: FinishLine_Right
+  m_TagString: Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,8 +450,8 @@ GameObject:
   - component: {fileID: 145755761}
   - component: {fileID: 145755760}
   m_Layer: 0
-  m_Name: FinishLine (2)
-  m_TagString: Finish
+  m_Name: FinishLine_Down
+  m_TagString: Down
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,8 +558,8 @@ GameObject:
   - component: {fileID: 260642849}
   - component: {fileID: 260642848}
   m_Layer: 0
-  m_Name: FinishLine (1)
-  m_TagString: Finish
+  m_Name: FinishLine_Left
+  m_TagString: Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -707,6 +707,7 @@ MonoBehaviour:
   Water: {fileID: 1000085874}
   Water2: {fileID: 871035189}
   FishSiluet: {fileID: 1593126995}
+  FishSiluet_1: {fileID: 0}
   FishHpBar: {fileID: 1701941705}
 --- !u!4 &287087600
 Transform:
@@ -1074,8 +1075,8 @@ GameObject:
   - component: {fileID: 795980260}
   - component: {fileID: 795980259}
   m_Layer: 0
-  m_Name: FinishLine (3)
-  m_TagString: Finish
+  m_Name: FinishLine_Up
+  m_TagString: Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2578,6 +2579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838110935699369398, guid: 59ac72af29afeab46b5ea359452e90b4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3838110935699369399, guid: 59ac72af29afeab46b5ea359452e90b4,
         type: 3}

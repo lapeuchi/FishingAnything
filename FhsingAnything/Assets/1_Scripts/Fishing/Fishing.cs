@@ -27,9 +27,11 @@ public class Fishing : MonoBehaviour
     [SerializeField] private GameObject Water;
     [SerializeField] private GameObject Water2; // It used when FishSiluet's 'isGaming' is true
     [SerializeField] public GameObject FishSiluet;
-
-    [SerializeField] private Slider FishHpBar;
-    int MaxHp;
+    [SerializeField] public GameObject FishSiluet_1;
+    [SerializeField] public Slider FishHpBar;
+    public float MaxHp;
+    Animator anim;
+    public GameObject Charactor;
 
     private void Awake()
     {
@@ -40,11 +42,13 @@ public class Fishing : MonoBehaviour
     }
 
     void Start()
-    {
+    {       
         Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         gameProcess = -1;
         Waiting_Text.text = "";
         SetMap();
+        Charactor = GameObject.Find("sword_man");
+        anim = Charactor.GetComponent<Animator>();
     }
 
     private void SetMap()
@@ -81,7 +85,7 @@ public class Fishing : MonoBehaviour
 
     void Update()
     {
-        FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
+        FishHpBar.value = FishManager.instance.hp / MaxHp;
         if (isFishing == true)
         {
             StartCoroutine(FishSign());
@@ -91,15 +95,17 @@ public class Fishing : MonoBehaviour
 
         if (FishSiluet.GetComponent<FishSiluet>().isTrigger && Input.anyKeyDown)
         {
+            if (gameProcess == -3)
+                gameProcess = 1;
             Debug.Log("isTrigger = true");
             if (gameProcess == 1)
-            {
+            {                
                 SoundManager.instance.PlaySharfSound();
                 gameProcess = 2;
                 Debug.Log("process '1' -> '2'");
                 Water.SetActive(false);   
             }
-            FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
+            FishHpBar.value = FishManager.instance.hp / MaxHp;
         }
     }
     
@@ -126,7 +132,7 @@ public class Fishing : MonoBehaviour
         gameProcess = 3;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
-        FishHpBar.value = (float)MaxHp / (float)FishManager.instance.hp;
+        FishHpBar.value = FishManager.instance.hp / MaxHp;
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         gameProcess = 4;
         Water2.SetActive(false);
@@ -169,5 +175,6 @@ public class Fishing : MonoBehaviour
         FishingButton.SetActive(false);
         time = Random.RandomRange(5f, 7.50f);
         isFishing = true;
+        anim.SetTrigger("Fishing");
     }
 }
