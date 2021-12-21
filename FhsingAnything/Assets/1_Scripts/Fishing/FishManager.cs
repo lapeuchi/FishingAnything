@@ -155,7 +155,7 @@ public class FishManager : MonoBehaviour
             if (CommonFishL.Length == 1)
                 Instantiate(CommonFishL[0]);
             else if (CommonFishL.Length == 0)
-                Summon(FishTier);
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(CommonFishL[Random.Range(0, CommonFishL.Length)],new Vector2(0,1.4f),transform.rotation);
         }
@@ -164,7 +164,7 @@ public class FishManager : MonoBehaviour
             if (NormalFishL.Length == 1)
                 Instantiate(NormalFishL[0]);
             else if (NormalFishL.Length == 0)
-                Summon(FishTier);
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
@@ -173,7 +173,7 @@ public class FishManager : MonoBehaviour
             if (RareFishL.Length == 1)
                 Instantiate(RareFishL[0]);
             else if (RareFishL.Length == 0)
-                Summon(FishTier);
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(RareFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
@@ -182,7 +182,7 @@ public class FishManager : MonoBehaviour
             if (EpicFishL.Length == 1)
                 Instantiate(EpicFishL[0]);
             else if (EpicFishL.Length == 0)
-                Summon(FishTier);
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(EpicFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
@@ -191,7 +191,7 @@ public class FishManager : MonoBehaviour
             if (UniqueFishL.Length == 1)
                 Instantiate(UniqueFishL[0]);
             else if (UniqueFishL.Length == 0)
-                Summon(FishTier);
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(UniqueFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
@@ -200,7 +200,7 @@ public class FishManager : MonoBehaviour
             if (LegenaryFishL.Length == 1)
                 Instantiate(LegenaryFishL[0]);
             else if (LegenaryFishL.Length == 0)
-                Summon(FishTier);
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(LegenaryFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
@@ -208,6 +208,8 @@ public class FishManager : MonoBehaviour
         {
             if (SpecialFishL.Length == 1)
                 Instantiate(SpecialFishL[0]);
+            else if (SpecialFishL.Length == 0)
+                Summon((Tier)Random.Range(0, 6));
             else
                 Instantiate(SpecialFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
