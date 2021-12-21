@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -4227844575363206218}
   m_Layer: 0
   m_Name: FishSiluet
-  m_TagString: Untagged
+  m_TagString: FishSiluet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

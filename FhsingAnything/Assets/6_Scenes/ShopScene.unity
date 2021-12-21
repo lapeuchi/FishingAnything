@@ -504,6 +504,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &101199068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,7 +1092,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1854410267}
   m_Direction: 2
   m_Value: -0.0000005106482
-  m_Size: 0.303031
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1453,6 +1454,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &404308683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,6 +1606,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &506959083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2525,6 +2528,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &737194300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3144,6 +3148,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1016543046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4652,6 +4657,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1577886410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6076,6 +6082,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!114 &1967365915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7343,6 +7350,7 @@ MonoBehaviour:
   NoMoney: {fileID: 1131919737}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  Message: {fileID: 0}
 --- !u!1 &5040518255724689649
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fishing : MonoBehaviour
 {
@@ -108,6 +109,14 @@ public class Fishing : MonoBehaviour
                 Water.SetActive(false);   
             }           
         }
+
+        if(GameManager.instance.Stamina <= 0)
+        {
+            GameClear();
+            Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ...▼";
+            if (Input.anyKeyDown)
+                SceneManager.LoadScene("FishMarketScene");
+        }
     }
     
     private void FishingGame1()
@@ -167,6 +176,12 @@ public class Fishing : MonoBehaviour
 
     void GameClear()
     {
+        Water.SetActive(false);
+        Water2.SetActive(false);
+        FishHpBar.gameObject.SetActive(false);
+        PlayerHpBar.gameObject.SetActive(false);
+        Sign_Image.SetActive(false);
+
         gameProcess = -1;
         Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         Waiting_Text.text = "";

@@ -14,6 +14,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject NoMoney;
     public Text Mather_talk;
     public Text TaeHwan_talk;
+    public Text Message; //수산시장 메시지
 
     public void Set_state_Sea() 
     {
@@ -98,13 +99,18 @@ public class ButtonManager : MonoBehaviour
 
     public void SelectPlaceOn()
     {
-        SoundManager.instance.PlayClickSound();
-        SelectPlaceBackGround.SetActive(true);
+        if (GameManager.instance.Stamina > 0)
+        {
+            SoundManager.instance.PlayClickSound();
+            SelectPlaceBackGround.SetActive(true);
+        }
+        else
+            StartCoroutine(DoMessage("현재 스테미너가 부족해 낚시를 할 수 없습니다."));
     }
     public void SelectPlaceFalse()
     {
         SoundManager.instance.PlayClickSound();
-        SelectPlaceBackGround.SetActive(false);
+        SelectPlaceBackGround.SetActive(false);   
     }
     public void Tae()
     {
@@ -266,5 +272,19 @@ public class ButtonManager : MonoBehaviour
     public void Unquip_Bait()
     {
         GameManager.instance.Bait_state = GameManager.Bait_State.Pogayri;
+    }
+
+    public IEnumerator DoMessage(string str)
+    {
+        Message.color = new Color(255, 210, 23, 255);
+        Message.text = str;
+        for (float f = 1f; f >= 0; f -= 0.01f)
+        {
+            Color c = Message.color;
+            c.a = f;
+            Message.color = c;
+            yield return null;
+        }
+        Message.text = null;
     }
 }
