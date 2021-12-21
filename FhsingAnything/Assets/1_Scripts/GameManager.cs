@@ -74,12 +74,13 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Status")]
     public int Money=100000;
-    public int Strength=10;
-    public int ComePower=10;
-    public int Luck=10;
-    public int Stamina=10;
-    public int Intellect=10;
+    public int Strength=10; //공격력
+    public int ComePower=10;    //유인력
+    public int Luck=10; // 흥정력
+    public float Stamina=10;  // 스테미너(체력)
+    public int Intellect=10;    //지식
 
+    [Header("Shop Price")]
     public int Strength_Price =100;
     public int Luck_Price=100;
     public int ComePower_Price=100;

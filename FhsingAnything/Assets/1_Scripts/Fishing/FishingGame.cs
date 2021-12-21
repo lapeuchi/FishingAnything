@@ -19,13 +19,12 @@ public class FishingGame : MonoBehaviour
 
     void SummonSiluet()
     {
-        if (FishManager.instance.hp > 0)
+        if (FishManager.instance.hp > 0 && Fishing.instance.gameProcess == -2 || Fishing.instance.gameProcess == 3)
         {
             Fishing.instance.gameProcess = -2;
-            Instantiate(FishSiluet, new Vector2(0, 0), Quaternion.identity);
-            
+            Instantiate(FishSiluet, new Vector2(0, 0), Quaternion.identity);           
         }
-        else
+        else if(Fishing.instance.gameProcess == -2 && FishManager.instance.hp <= 0)
             Fishing.instance.gameProcess = 3;
     }
 }

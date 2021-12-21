@@ -72,13 +72,19 @@ public class FishSiluet : MonoBehaviour
                 Fishing.instance.gameProcess = 1;
                 Destroy(gameObject);
             }
-
         }
+
 
         if (Fishing.instance.gameProcess == 1)
             StartCoroutine(RandVec());
         if (isGaming == true)
+        {
             transform.Translate(vec * Time.deltaTime * power);
+            if(Input.anyKeyDown && isTrigger == false)
+            {
+                GameManager.instance.Stamina -= 2f;
+            }
+        }           
         else
         {
             float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
@@ -86,16 +92,16 @@ public class FishSiluet : MonoBehaviour
         }
      
         if (FishManager.instance.hp <= 0)
-        {
-            SoundManager.instance.PlayCatchSound();
+        {            
             Destroy(gameObject);
         }
     }
 
     IEnumerator Particle()
     {
-        Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 10 + (GameManager.instance.Strength * 0.1f)));
-        FishManager.instance.hp -= 10 + (GameManager.instance.Strength * 0.1f);
+        Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - (GameManager.instance.Strength * 0.5f)));
+        FishManager.instance.hp -= + (GameManager.instance.Strength * 0.5f);
+        Fishing.instance.FishHpBar.value = FishManager.instance.hp / Fishing.instance.FishMaxHp;
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = 0;

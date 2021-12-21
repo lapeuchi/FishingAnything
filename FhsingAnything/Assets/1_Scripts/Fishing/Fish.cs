@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Fish : MonoBehaviour
 {
-    public int hp;
+    public float hp;
     public int money;
     public int size;
 

@@ -10,19 +10,20 @@ public class Fade : MonoBehaviour
     IEnumerator FadeIn()
     {
         isFadeIn = true;
-        for (float f = 0f; f <= 1; f += 0.008f)
+        for (float f = 0f; f <= 1; f += 0.05f)
         {
             Color c = FadeInImage.color;
             c.a = f;
             FadeInImage.color = c;
             yield return null;
         }
+        
         StartCoroutine(FadeOut());
     }
     IEnumerator FadeOut()
     {
         isFadeIn = false;
-        for (float f = 1f; f >= 0; f -= 0.008f)
+        for (float f = 1f; f >= 0; f -= 0.05f)
         {
             Color c = FadeInImage.color;
             c.a = f;
