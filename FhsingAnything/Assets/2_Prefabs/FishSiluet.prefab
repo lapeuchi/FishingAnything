@@ -99,8 +99,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrigger: 0
+  isUpTrigger: 0
+  isDownTrigger: 0
+  isLeftTrigger: 0
+  isRightTrigger: 0
   isGaming: 1
-  Fishing: {fileID: 0}
+  FishingManager: {fileID: 0}
 --- !u!50 &3838110935699369396
 Rigidbody2D:
   serializedVersion: 4
@@ -132,7 +136,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -17,7 +17,7 @@ public class FishManager : MonoBehaviour
     public GameObject[] LegenaryFishL;
     public GameObject[] SpecialFishL;   //ㅅㅂ
 
-    public int hp;
+    public float hp;
     public int size;
     public int money;
 
@@ -109,32 +109,32 @@ public class FishManager : MonoBehaviour
         sizeLv = Random.Range(1, 5);
         if (FishTier == Tier.Common)
         {   
-            hp = Random.Range(50, 100);
+            hp = Random.Range(100, 200);
             money = 0 + sizeLv * (int)FishTier;
         }
         if (FishTier == Tier.Normal)
         {
-            hp = Random.Range(80, 130);
+            hp = Random.Range(200, 400);
             money = 100 + sizeLv * (int)FishTier;
         }
         if (FishTier == Tier.Rare)
         {
-            hp = Random.Range(70, 160);
+            hp = Random.Range(400, 700);
             money = 200 + sizeLv * (int)FishTier;
         }
         if (FishTier == Tier.Epic)
         {
-            hp = Random.Range(120, 200);
+            hp = Random.Range(700, 1100);
             money = 300 + sizeLv * (int)FishTier;
         }
         if (FishTier == Tier.Unique)
         {
-            hp = Random.Range(200, 300);
+            hp = Random.Range(1100, 1600);
             money = 400 + sizeLv * (int)FishTier;
         }
         if (FishTier == Tier.Legendary)
         {
-            hp = Random.Range(300, 400);
+            hp = Random.Range(1600, 2200);
             money = 500 + sizeLv * (int)FishTier;          
         }     
         if (FishTier == Tier.Special)
@@ -166,7 +166,7 @@ public class FishManager : MonoBehaviour
             else if (NormalFishL.Length == 0)
                 Summon((Tier)Random.Range(0, 6));
             else
-                Instantiate(NormalFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
+                Instantiate(NormalFishL[Random.Range(0, NormalFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
         if (FishTier == Tier.Rare)
         {
@@ -175,7 +175,7 @@ public class FishManager : MonoBehaviour
             else if (RareFishL.Length == 0)
                 Summon((Tier)Random.Range(0, 6));
             else
-                Instantiate(RareFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
+                Instantiate(RareFishL[Random.Range(0, RareFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
         if (FishTier == Tier.Epic)
         {
@@ -184,7 +184,7 @@ public class FishManager : MonoBehaviour
             else if (EpicFishL.Length == 0)
                 Summon((Tier)Random.Range(0, 6));
             else
-                Instantiate(EpicFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
+                Instantiate(EpicFishL[Random.Range(0, EpicFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
         if (FishTier == Tier.Unique)
         {
@@ -193,7 +193,7 @@ public class FishManager : MonoBehaviour
             else if (UniqueFishL.Length == 0)
                 Summon((Tier)Random.Range(0, 6));
             else
-                Instantiate(UniqueFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
+                Instantiate(UniqueFishL[Random.Range(0, UniqueFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
         if (FishTier == Tier.Legendary)
         {
@@ -202,7 +202,7 @@ public class FishManager : MonoBehaviour
             else if (LegenaryFishL.Length == 0)
                 Summon((Tier)Random.Range(0, 6));
             else
-                Instantiate(LegenaryFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
+                Instantiate(LegenaryFishL[Random.Range(0, LegenaryFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
         if (FishTier == Tier.Special)
         {
@@ -211,7 +211,7 @@ public class FishManager : MonoBehaviour
             else if (SpecialFishL.Length == 0)
                 Summon((Tier)Random.Range(0, 6));
             else
-                Instantiate(SpecialFishL[Random.Range(0, CommonFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
+                Instantiate(SpecialFishL[Random.Range(0, SpecialFishL.Length)], new Vector2(0, 1.4f), transform.rotation);
         }
     }
 }

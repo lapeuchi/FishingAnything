@@ -8,6 +8,10 @@ public class FishSiluet : MonoBehaviour
     Rigidbody2D rb;
     Vector2 vec;
     public bool isTrigger = false;
+    public bool isUpTrigger = false;
+    public bool isDownTrigger = false;
+    public bool isLeftTrigger = false;
+    public bool isRightTrigger = false;
     public bool isGaming;
     [SerializeField] GameObject FishingManager;
     float power;
@@ -26,7 +30,7 @@ public class FishSiluet : MonoBehaviour
     IEnumerator RandVec()
     {
         if (isGaming == false)
-        {
+        {          
             Fishing.instance.gameProcess = -3;
             rb.velocity = Vector2.zero;
             SoundManager.instance.PlayFishMoveSound();
@@ -35,6 +39,8 @@ public class FishSiluet : MonoBehaviour
             ps.Play();
             yield return new WaitForSeconds(Random.Range(0.2f, 1.5f));
             StartCoroutine(RandVec());
+            if (Fishing.instance.gameProcess == 1)
+                StopCoroutine(RandVec());
         }
     }
 
@@ -54,15 +60,15 @@ public class FishSiluet : MonoBehaviour
 
     void Update()
     {
-        if (isTrigger == true && Input.anyKeyDown)
+        Fishing.instance.FishHpBar.value = FishManager.instance.hp / Fishing.instance.MaxHp;
+        if (isTrigger == true)
         {
             if (isGaming)
             {
-                Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 100));
-                FishManager.instance.hp -= 100;
-                StartCoroutine(Particle());
+                if (isUpTrigger && Input.GetKeyDown(KeyCode.UpArrow) || isDownTrigger && Input.GetKeyDown(KeyCode.DownArrow) || isLeftTrigger && Input.GetKeyDown(KeyCode.LeftArrow) || isRightTrigger && Input.GetKeyDown(KeyCode.RightArrow))
+                    StartCoroutine(Particle());
             }
-            else
+            else if (Input.anyKeyDown && isGaming == false) 
             {
                 Fishing.instance.gameProcess = 1;
                 Destroy(gameObject);
@@ -79,8 +85,7 @@ public class FishSiluet : MonoBehaviour
             float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
-
-         
+     
         if (FishManager.instance.hp <= 0)
         {
             SoundManager.instance.PlayCatchSound();
@@ -90,11 +95,14 @@ public class FishSiluet : MonoBehaviour
 
     IEnumerator Particle()
     {
+        Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 10 + (GameManager.instance.Strength * 0.1f)));
+        FishManager.instance.hp -= 10 + (GameManager.instance.Strength * 0.1f);
+        Fishing.instance.FishHpBar.value = FishManager.instance.hp / Fishing.instance.MaxHp;
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = 0;
         ps.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
 
@@ -103,6 +111,27 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             isTrigger = true;          
+        }
+
+        if(other.gameObject.CompareTag("Up"))
+        {
+            isTrigger = true;
+            isUpTrigger = true;
+        }
+        if (other.gameObject.CompareTag("Down"))
+        {
+            isTrigger = true;
+            isDownTrigger = true;
+        }
+        if (other.gameObject.CompareTag("Left"))
+        {
+            isTrigger = true;
+            isLeftTrigger = true;
+        }
+        if (other.gameObject.CompareTag("Right"))
+        {
+            isTrigger = true;
+            isRightTrigger = true;
         }
 
         if (other.gameObject.CompareTag("Untagged"))
@@ -114,6 +143,26 @@ public class FishSiluet : MonoBehaviour
         if(other.gameObject.CompareTag("Finish"))
         {
             isTrigger = false;
+        }
+
+        if (other.gameObject.CompareTag("Up"))
+        {
+            isTrigger = false;
+            isUpTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Down"))
+        {
+            isTrigger = false;
+            isDownTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Left"))
+        {
+            isTrigger = false;
+            isLeftTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Right"))
+        {
+            isRightTrigger = false;
         }
     }
 }
