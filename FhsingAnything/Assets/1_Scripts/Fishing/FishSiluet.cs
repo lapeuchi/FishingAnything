@@ -95,7 +95,7 @@ public class FishSiluet : MonoBehaviour
     IEnumerator Particle()
     {
         Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 10 + (GameManager.instance.Strength * 0.1f)));
-        FishManager.instance.hp -= 10 + (GameManager.instance.Strength * 0.1f);
+        FishManager.instance.hp -= 10 + ((GameManager.instance.Strength + GameManager.instance.Strength_Equip)* 0.1f);
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = 0;

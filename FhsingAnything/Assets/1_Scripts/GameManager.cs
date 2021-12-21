@@ -74,11 +74,15 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Status")]
     public int Money=100000;
-    public int Strength=10;
+    public int Strength = 10;
     public int ComePower=10;
     public int Luck=10;
     public int Stamina=10;
     public int Intellect=10;
+    public int Strength_Equip=0;
+    public int ComePower_Equip=0;
+    public int Stamina_Equip=0;
+
 
     public int Strength_Price =100;
     public int Luck_Price=100;
@@ -87,23 +91,30 @@ public class GameManager : MonoBehaviour
     public int Intellect_Price=100;
 
     public int index_value;
-
     public enum Fishingrod_State
     {
         Hand,
-        Normal
+        Normal,
+        Magic,
+        God
     }
     public Fishingrod_State Fishingrod_state = Fishingrod_State.Hand;
     
     public enum Chair_State
     {
-        Squat
+        Squat,
+        Gaming,
+        Red,
+        King
     }
     public Chair_State Chair_state = Chair_State.Squat;
     
     public enum Bait_State
     {
-        Pogayri
+        Pogayri,
+        FishBread,
+        Wasabi,
+        Soju
     }
     public Bait_State Bait_state = Bait_State.Pogayri;
 

@@ -14,7 +14,6 @@ public class ButtonManager : MonoBehaviour
     public GameObject NoMoney;
     public Text Mather_talk;
     public Text TaeHwan_talk;
-
     public void Set_state_Sea() 
     {
         SoundManager.instance.PlayClickSound();
@@ -230,9 +229,14 @@ public class ButtonManager : MonoBehaviour
             GameManager.instance.Intellect++;
         }
     }
+    private void NomoneyOff()
+    {
+        NoMoney.SetActive(false);
+    }
+    // 특정 낚시대를 살 떄
     public void Buy_Normalrod()
     {
-        if (GameManager.instance.Intellect_Price > GameManager.instance.Money)
+        if (1000 > GameManager.instance.Money)
         {
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
@@ -243,22 +247,161 @@ public class ButtonManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void NomoneyOff()
+    public void Buy_magicrod()
     {
-        if (NoMoney.active == true)
+        if (10000 > GameManager.instance.Money)
+        { 
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
         {
-            NoMoney.SetActive(false);
-        } 
+            GameManager.instance.Money -= 10000;
+            Destroy(gameObject);
+        }
     }
-    
-    public void Unquip_Fishingrod()
+    public void Buy_Godrod()
     {
-        GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Hand;
+        if (55000 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 55000;
+            Destroy(gameObject);
+        }
     }
+    // 특정 의자를 구매 할 때
+    public void Buy_GamingChair()
+    {
+        if (850 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 850;
+            Destroy(gameObject);
+        }
+    }
+    public void Buy_RedChair()
+    {
+        if (1850 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 1850;
+            Destroy(gameObject);
+        }
+    }
+    public void Buy_KingChair()
+    {
+        if (10000 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 10000;
+            Destroy(gameObject);
+        }
+    }
+
+    // 특정 미끼를 구매 할 때
+    public void Buy_FishBreadBait()
+    {
+        if (700 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 700;
+            Destroy(gameObject);
+        }
+    }
+    public void Buy_WasabiBait()
+    {
+        if (2100 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 2100;
+            Destroy(gameObject);
+        }
+    }
+    public void Buy_SojuBait()
+    {
+        if (10000 > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 10000;
+            Destroy(gameObject);
+        }
+    }
+    // 특정 낚시대를 장착할 때
     public void Equip_Fishingrod_Normalrod()
     {
         GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Normal;
     }
+    public void Equip_Fishingrod_Magicrod()
+    {
+        GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Magic;
+    }
+    public void Equip_Fishingrod_Godrod()
+    {
+        GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.God;
+    }
+
+    // 특정 의자를 장착할 떄
+    public void Equip_Chair_Gamingchair()
+    {
+        GameManager.instance.Chair_state = GameManager.Chair_State.Gaming;
+    }
+    public void Equip_Chair_Redchair()
+    {
+        GameManager.instance.Chair_state = GameManager.Chair_State.Red;
+    }
+    public void Equip_Chair_Kingchair()
+    {
+        GameManager.instance.Chair_state = GameManager.Chair_State.King;
+    }
+
+    // 특정 미끼를 장착할 때
+    public void Equip_Bait_Fishbread()
+    {
+        GameManager.instance.Bait_state = GameManager.Bait_State.FishBread;
+    }
+    public void Equip_Bait_Wasabi()
+    {
+        GameManager.instance.Bait_state = GameManager.Bait_State.Wasabi;
+    }
+    public void Equip_Bait_Soju()
+    {
+        GameManager.instance.Bait_state = GameManager.Bait_State.Soju;
+    }
+
+    // 장비 해제 할때
+    public void Unquip_Fishingrod()
+    {
+        GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Hand;
+    }
+    
     public void Unquip_Chair()
     {
         GameManager.instance.Chair_state = GameManager.Chair_State.Squat;

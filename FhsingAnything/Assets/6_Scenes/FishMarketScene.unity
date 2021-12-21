@@ -5268,12 +5268,18 @@ MonoBehaviour:
   Luck: 10
   Stamina: 10
   Intellect: 10
+  Strength_Equip: 0
+  ComePower_Equip: 0
+  Stamina_Equip: 0
   Strength_Price: 100
   Luck_Price: 100
   ComePower_Price: 100
   Stamina_Price: 100
   Intellect_Price: 100
   index_value: 0
+  Fishingrod_state: 0
+  Chair_state: 0
+  Bait_state: 0
 --- !u!114 &1603437045
 MonoBehaviour:
   m_ObjectHideFlags: 0

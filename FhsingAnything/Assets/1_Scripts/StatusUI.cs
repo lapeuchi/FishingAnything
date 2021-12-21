@@ -12,17 +12,17 @@ public class StatusUI : MonoBehaviour
     public Text Bargen;
 
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         StatusUIUpdate();
     }
 
     private void StatusUIUpdate()
     {
-        Power.text = GameManager.instance.Strength.ToString()+" + 20";
+        Power.text = GameManager.instance.Strength.ToString()+"(+"+GameManager.instance.Strength_Equip.ToString()+")";
         Luck.text = GameManager.instance.Luck.ToString();
-        ComePower.text = GameManager.instance.ComePower.ToString()+" + 20";
-        Tired.text = GameManager.instance.Stamina.ToString()+" + 20";
+        ComePower.text = GameManager.instance.ComePower.ToString()+"(+"+GameManager.instance.ComePower_Equip.ToString() + ")";
+        Tired.text = GameManager.instance.Stamina.ToString()+"(+" + GameManager.instance.Stamina_Equip.ToString() + ")";
         Bargen.text = GameManager.instance.Intellect.ToString();
     }
 }
