@@ -65,6 +65,8 @@ public class LoginManager : MonoBehaviour
         // 만일, 사용자가 입력한 패스워드와 시스템에서 불러온 값을 비교해서 동일하다면...
         if(password.text == pass)
         {
+            GameManager.instance.USER = nick.text;
+            Load();
             // 다음 씬(1번 씬) 로드. (1 : 수산시장)
             SceneManager.LoadScene(1);
         }
@@ -89,5 +91,26 @@ public class LoginManager : MonoBehaviour
         {
             return true;
         }
+    }
+
+    
+
+    public void Load()
+    {
+        if (PlayerPrefs.HasKey(nick.text))
+        {
+            GameManager.instance.Money = PlayerPrefs.GetInt("Money");
+            GameManager.instance.Strength = PlayerPrefs.GetInt("Strength");
+            GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower");
+            GameManager.instance.Luck = PlayerPrefs.GetInt("Luck");
+            GameManager.instance.Stamina = PlayerPrefs.GetInt("Stamina");
+            GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect");
+            GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
+            GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
+            GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price");
+            GameManager.instance.Stamina_Price = PlayerPrefs.GetInt("Stamina_Price");
+            GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price");
+        }
+           
     }
 }

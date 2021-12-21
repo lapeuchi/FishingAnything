@@ -93,6 +93,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void ExitGame()
     {
+        GameManager.instance.Save();
         SoundManager.instance.PlayClickSound();
         Application.Quit();
     }

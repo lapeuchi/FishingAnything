@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
+    public string USER;
 
     public enum GameState { Lobby, Fishing, shop, Setting };
     public GameState curGameState = GameState.Lobby;
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour
         Squat
     }
     public Chair_State Chair_state = Chair_State.Squat;
-    
+
     public enum Bait_State
     {
         Pogayri
@@ -121,5 +122,18 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-   
+    public void Save()
+    {
+        PlayerPrefs.SetInt("Money", GameManager.instance.Money);
+        PlayerPrefs.SetInt("Strength", GameManager.instance.Strength);
+        PlayerPrefs.SetInt("ComePower", GameManager.instance.ComePower);
+        PlayerPrefs.SetInt("Luck", GameManager.instance.Luck);
+        PlayerPrefs.SetFloat("Stamina", GameManager.instance.Stamina);
+        PlayerPrefs.SetInt("Intellect", GameManager.instance.Intellect);
+        PlayerPrefs.SetInt("Strength_Price", GameManager.instance.Strength_Price);
+        PlayerPrefs.SetInt("Luck_Price", GameManager.instance.Luck_Price);
+        PlayerPrefs.SetInt("ComePower_Price", GameManager.instance.ComePower_Price);
+        PlayerPrefs.SetInt("Stamina_Price", GameManager.instance.Stamina_Price);
+        PlayerPrefs.SetInt("Intellect_Price", GameManager.instance.Intellect_Price);
+    }
 }

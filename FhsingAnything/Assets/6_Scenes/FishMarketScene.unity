@@ -5094,7 +5094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1603437042
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5171,6 +5171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e9a84f89c1e664e8f5d6f7ce86aa33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  USER: 
   curGameState: 0
   Arctic_Common:
   - {fileID: 1242295883360074387, guid: fa0743a8a1a9a6545a863546050d4c8c, type: 3}
