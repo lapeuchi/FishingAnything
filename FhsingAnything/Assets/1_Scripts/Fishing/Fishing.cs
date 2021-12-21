@@ -23,6 +23,7 @@ public class Fishing : MonoBehaviour
 
     [SerializeField] private GameObject Sign_Image;
     [SerializeField] private Text Waiting_Text;
+    [SerializeField] private Image Background_Waiting_Text;
     [SerializeField] private GameObject Water;
     [SerializeField] private GameObject Water2; // It used when FishSiluet's 'isGaming' is true
     [SerializeField] public GameObject FishSiluet;
@@ -40,6 +41,7 @@ public class Fishing : MonoBehaviour
 
     void Start()
     {
+        Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         gameProcess = -1;
         Waiting_Text.text = "";
         SetMap();
@@ -103,6 +105,7 @@ public class Fishing : MonoBehaviour
     
     private void FishingGame1()
     {
+        Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         Waiting_Text.text = "";
         Debug.Log("process '0' -> '1'");
         gameProcess = 1;
@@ -127,14 +130,17 @@ public class Fishing : MonoBehaviour
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         gameProcess = 4;
         Water2.SetActive(false);
-        FishHpBar.gameObject.SetActive(false); 
+        FishHpBar.gameObject.SetActive(false);
+        Background_Waiting_Text.color = new Color(1, 1, 1, 0.4f);
         Waiting_Text.text = "자 자 이리로 와... ▼";
         yield return new WaitUntil(() => Input.anyKeyDown);
         yield return new WaitUntil(() => Input.anyKeyDown);
         gameProcess = 5;
         FishManager.instance.isSucess = true;
+        Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         Waiting_Text.text = "";
         yield return new WaitUntil(() => FishManager.instance.isSucess == false);
+        Background_Waiting_Text.color = new Color(1, 1, 1, 0.4f);
         Waiting_Text.text = "낚시 성공!...▼\n";
         gameProcess = 6;
         yield return new WaitUntil(() => Input.anyKeyDown);
@@ -149,6 +155,7 @@ public class Fishing : MonoBehaviour
     void GameClear()
     {
         gameProcess = -1;
+        Background_Waiting_Text.color = new Color(1, 1, 1, 0);
         Waiting_Text.text = "";
         isFishing = false;
         FishingButton.SetActive(true);

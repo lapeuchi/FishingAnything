@@ -19,10 +19,10 @@ public class StatusUI : MonoBehaviour
 
     private void StatusUIUpdate()
     {
-        Power.text = GameManager.instance.Strength.ToString();
+        Power.text = GameManager.instance.Strength.ToString()+" + 20";
         Luck.text = GameManager.instance.Luck.ToString();
-        ComePower.text = GameManager.instance.ComePower.ToString();
-        Tired.text = GameManager.instance.Stamina.ToString();
+        ComePower.text = GameManager.instance.ComePower.ToString()+" + 20";
+        Tired.text = GameManager.instance.Stamina.ToString()+" + 20";
         Bargen.text = GameManager.instance.Intellect.ToString();
     }
 }

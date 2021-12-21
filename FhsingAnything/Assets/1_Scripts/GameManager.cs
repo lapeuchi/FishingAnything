@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
     public int Stamina_Price=100;
     public int Intellect_Price=100;
 
-    public int index_value = 0;
+    public int index_value;
 
     void Awake()
     {

@@ -22,8 +22,8 @@ public class Slot : MonoBehaviour
                 
                 if (_item.Find && !_item.isFind)
                 {
+                    _item.isFind = true; 
                     GameManager.instance.index_value++;
-                    _item.isFind = true;
                 }
             }
             else

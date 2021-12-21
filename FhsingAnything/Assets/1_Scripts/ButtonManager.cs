@@ -161,7 +161,7 @@ public class ButtonManager : MonoBehaviour
         else
         {
             GameManager.instance.Money -= GameManager.instance.Strength_Price;
-            changeMoney = (GameManager.instance.Strength_Price * 1.2f);
+            changeMoney = (GameManager.instance.Strength_Price * 1.3f);
             GameManager.instance.Strength_Price = (int)changeMoney;
             GameManager.instance.Strength++;
         }
@@ -177,7 +177,7 @@ public class ButtonManager : MonoBehaviour
         else
         {
             GameManager.instance.Money -= GameManager.instance.Luck_Price;
-            changeMoney = (GameManager.instance.Luck_Price * 1.2f);
+            changeMoney = (GameManager.instance.Luck_Price * 1.3f);
             GameManager.instance.Luck_Price = (int)changeMoney;
             GameManager.instance.Luck++;
         }
@@ -193,7 +193,7 @@ public class ButtonManager : MonoBehaviour
         else
         {
             GameManager.instance.Money -= GameManager.instance.ComePower_Price;
-            changeMoney = (GameManager.instance.ComePower_Price * 1.2f);
+            changeMoney = (GameManager.instance.ComePower_Price * 1.3f);
             GameManager.instance.ComePower_Price = (int)changeMoney;
             GameManager.instance.ComePower++;
         }
@@ -209,7 +209,7 @@ public class ButtonManager : MonoBehaviour
         else
         {
             GameManager.instance.Money -= GameManager.instance.Stamina_Price;
-            changeMoney = (GameManager.instance.Stamina_Price * 1.2f);
+            changeMoney = (GameManager.instance.Stamina_Price * 1.3f);
             GameManager.instance.Stamina_Price = (int)changeMoney;
             GameManager.instance.Stamina++;
         }
@@ -225,7 +225,7 @@ public class ButtonManager : MonoBehaviour
         else
         {
             GameManager.instance.Money -= GameManager.instance.Intellect_Price;
-            changeMoney = (GameManager.instance.Intellect_Price * 1.2f);
+            changeMoney = (GameManager.instance.Intellect_Price * 1.3f);
             GameManager.instance.Intellect_Price = (int)changeMoney;
             GameManager.instance.Intellect++;
         }
