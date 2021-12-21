@@ -83,6 +83,7 @@ public class FishSiluet : MonoBehaviour
             if(Input.anyKeyDown && isTrigger == false)
             {
                 GameManager.instance.Stamina -= 2f;
+                Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
             }
         }           
         else
