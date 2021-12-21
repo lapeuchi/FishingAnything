@@ -105,7 +105,7 @@ public class Fishing : MonoBehaviour
                 Debug.Log("process '1' -> '2'");
                 Water.SetActive(false);   
             }
-            FishHpBar.value = FishManager.instance.hp / MaxHp;
+            
         }
     }
     
@@ -115,7 +115,7 @@ public class Fishing : MonoBehaviour
         Waiting_Text.text = "";
         Debug.Log("process '0' -> '1'");
         gameProcess = 1;
-        FishSiluet.transform.position = new Vector2(Random.RandomRange(-1.2f, 1.2f), Random.RandomRange(-1.2f, 1.2f));
+        FishSiluet.transform.position = new Vector2(Random.Range(-1.2f, 1.2f), Random.Range(-1.2f, 1.2f));
         Water.SetActive(true);   
     }
     
@@ -132,7 +132,6 @@ public class Fishing : MonoBehaviour
         gameProcess = 3;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
-        FishHpBar.value = FishManager.instance.hp / MaxHp;
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         gameProcess = 4;
         Water2.SetActive(false);
@@ -173,7 +172,7 @@ public class Fishing : MonoBehaviour
         FishManager.instance.FishTier = (FishManager.Tier)Random.Range(0, 6);
         FishManager.instance.Summon(FishManager.instance.FishTier);
         FishingButton.SetActive(false);
-        time = Random.RandomRange(5f, 7.50f);
+        time = Random.Range(5f, 7.50f);
         isFishing = true;
         anim.SetTrigger("Fishing");
     }

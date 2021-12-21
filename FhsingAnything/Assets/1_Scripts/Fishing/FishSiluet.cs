@@ -34,7 +34,7 @@ public class FishSiluet : MonoBehaviour
             Fishing.instance.gameProcess = -3;
             rb.velocity = Vector2.zero;
             SoundManager.instance.PlayFishMoveSound();
-            vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
+            vec = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
             rb.AddForce(vec * 2f, ForceMode2D.Impulse);
             ps.Play();
             yield return new WaitForSeconds(Random.Range(0.2f, 1.5f));
@@ -60,7 +60,6 @@ public class FishSiluet : MonoBehaviour
 
     void Update()
     {
-        Fishing.instance.FishHpBar.value = FishManager.instance.hp / Fishing.instance.MaxHp;
         if (isTrigger == true)
         {
             if (isGaming)
@@ -97,7 +96,6 @@ public class FishSiluet : MonoBehaviour
     {
         Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 10 + (GameManager.instance.Strength * 0.1f)));
         FishManager.instance.hp -= 10 + (GameManager.instance.Strength * 0.1f);
-        Fishing.instance.FishHpBar.value = FishManager.instance.hp / Fishing.instance.MaxHp;
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = 0;
