@@ -9,16 +9,17 @@ public class FishSiluet : MonoBehaviour
     Vector2 vec;
     public bool isTrigger = false;
     public bool isGaming;
-    [SerializeField] GameObject Fishing;
+    [SerializeField] GameObject FishingManager;
     float power;
+
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         ps = gameObject.GetComponent<ParticleSystem>();
-        Fishing = GameObject.Find("FishingManager");
-        if (isGaming == false)
-            StartCoroutine(RandVec());
-        else if (isGaming == true)
+        FishingManager = GameObject.Find("FishingManager");
+        //if (isGaming == false)
+         //   StartCoroutine(RandVec());
+         if (isGaming == true)
             Fight();
     }
 
@@ -26,7 +27,7 @@ public class FishSiluet : MonoBehaviour
     {
         if (isGaming == false)
         {
-            
+            Fishing.instance.gameProcess = -3;
             rb.velocity = Vector2.zero;
             SoundManager.instance.PlayFishMoveSound();
             vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
@@ -52,7 +53,25 @@ public class FishSiluet : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
+        if (isTrigger == true && Input.anyKeyDown)
+        {
+            if (isGaming)
+            {
+                Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 100));
+                FishManager.instance.hp -= 100;
+                StartCoroutine(Particle());
+            }
+            else
+            {
+                Fishing.instance.gameProcess = 1;
+                Destroy(gameObject);
+            }
+
+        }
+
+        if (Fishing.instance.gameProcess == 1)
+            StartCoroutine(RandVec());
         if (isGaming == true)
             transform.Translate(vec * Time.deltaTime * power);
         else
@@ -61,17 +80,7 @@ public class FishSiluet : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-         if(isTrigger == true && Input.anyKeyDown)
-         {   
-            if (isGaming)
-            {
-                Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 100));
-                FishManager.instance.hp -= 100;
-                StartCoroutine(Particle());
-            }
-            else
-                Destroy(gameObject);
-        }
+         
         if (FishManager.instance.hp <= 0)
         {
             SoundManager.instance.PlayCatchSound();
