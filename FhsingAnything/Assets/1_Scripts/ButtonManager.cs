@@ -230,11 +230,41 @@ public class ButtonManager : MonoBehaviour
             GameManager.instance.Intellect++;
         }
     }
+    public void Buy_Normalrod()
+    {
+        if (GameManager.instance.Intellect_Price > GameManager.instance.Money)
+        {
+            NoMoney.SetActive(true);
+            Invoke("NomoneyOff", 2f);
+        }
+        else
+        {
+            GameManager.instance.Money -= 1000;
+            Destroy(gameObject);
+        }
+    }
     private void NomoneyOff()
     {
         if (NoMoney.active == true)
         {
             NoMoney.SetActive(false);
         } 
-    } 
+    }
+    
+    public void Unquip_Fishingrod()
+    {
+        GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Hand;
+    }
+    public void Equip_Fishingrod_Normalrod()
+    {
+        GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Normal;
+    }
+    public void Unquip_Chair()
+    {
+        GameManager.instance.Chair_state = GameManager.Chair_State.Squat;
+    }
+    public void Unquip_Bait()
+    {
+        GameManager.instance.Bait_state = GameManager.Bait_State.Pogayri;
+    }
 }

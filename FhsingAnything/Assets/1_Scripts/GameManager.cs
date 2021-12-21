@@ -88,6 +88,25 @@ public class GameManager : MonoBehaviour
 
     public int index_value;
 
+    public enum Fishingrod_State
+    {
+        Hand,
+        Normal
+    }
+    public Fishingrod_State Fishingrod_state = Fishingrod_State.Hand;
+    
+    public enum Chair_State
+    {
+        Squat
+    }
+    public Chair_State Chair_state = Chair_State.Squat;
+    
+    public enum Bait_State
+    {
+        Pogayri
+    }
+    public Bait_State Bait_state = Bait_State.Pogayri;
+
     void Awake()
     {
         if (instance == null)

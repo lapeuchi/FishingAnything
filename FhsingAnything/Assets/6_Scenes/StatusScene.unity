@@ -774,7 +774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 38e2bdaa152be5c4e8a7f866a58320f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebf652c7a00e5ba4e9bf5733100c7a69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f5961dd02697c4349b0446b07edcc7ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6e38d7c88698e849970c70985351f0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1162,7 +1162,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD558\uCCB4\uAC00 \uB534\uB534 \uB370\uC2A4\uB124"
+  m_Text: "\uAE30\uBCF8 \uC758\uC790\uC774\uB2E4.\n\uD558\uCCB4\uAC00 \uB534\uB534
+    \uB370\uC2A4\uB124~"
 --- !u!222 &428443368
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1219,7 +1220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521939698}
   m_Layer: 5
-  m_Name: MiGGi
+  m_Name: Bait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1377,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 38e2bdaa152be5c4e8a7f866a58320f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8939be0dc8ea30148a6a374934464cac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1464,7 +1465,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCD5C\uACE0\uC758 \uB09A\uC2DC\uB300 \uC774\uB2E4."
+  m_Text: "\uAE30\uBCF8 \uB09A\uC2DC\uB300\uC774\uB2E4. \uCD08\uBCF4\uC790\uB4E4\uC774
+    \uC560\uC6A9\uD55C\uB2E4."
 --- !u!222 &683627115
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1623,7 +1625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB09A\uC2DC\uB300 - \uC804\uC124 \uBA85\uACB8"
+  m_Text: "\uB09A\uC2DC\uB300 - \uC190"
 --- !u!222 &716517380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2148,7 +2150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC789\uC5B4\uBE75\uC774\uB2E4."
+  m_Text: "\uAE30\uBCF8 \uBBF8\uB07C\uC774\uB2E4.\n\uD3EC\uCE74\uB9AC \uB098\uB77C\uAC04\uB3E0."
 --- !u!222 &1182443910
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3827,7 +3829,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBBF8\uB07C - \uBD95\uC5B4\uBE75"
+  m_Text: "\uBBF8\uB07C - \uCD5C\uC6D0\uC900"
 --- !u!222 &2144204884
 CanvasRenderer:
   m_ObjectHideFlags: 0
