@@ -26,6 +26,7 @@ public class FishSiluet : MonoBehaviour
     {
         if (isGaming == false)
         {
+            
             rb.velocity = Vector2.zero;
             SoundManager.instance.PlayFishMoveSound();
             vec = new Vector2(Random.RandomRange(-1f, 1f), Random.RandomRange(-1f, 1f));
@@ -36,7 +37,6 @@ public class FishSiluet : MonoBehaviour
         }
     }
 
-    
     void Fight()
     {
         power = Random.Range(3f, 5f);
@@ -77,7 +77,6 @@ public class FishSiluet : MonoBehaviour
             SoundManager.instance.PlayCatchSound();
             Destroy(gameObject);
         }
-            
     }
 
     IEnumerator Particle()
