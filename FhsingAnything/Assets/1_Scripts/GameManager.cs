@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-
+    public string USER;
     public enum GameState { Lobby, Fishing, shop, Setting };
     public GameState curGameState = GameState.Lobby;
     [Header("Arctic")]
@@ -131,5 +131,19 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-   
+    public void Save()
+    {
+        PlayerPrefs.SetInt("Money" + "_" + USER, GameManager.instance.Money);
+        PlayerPrefs.SetInt("Strength" + "_" + USER, GameManager.instance.Strength);
+        PlayerPrefs.SetInt("ComePower" + "_" + USER, GameManager.instance.ComePower);
+        PlayerPrefs.SetInt("Luck" + "_" + USER, GameManager.instance.Luck);
+        PlayerPrefs.SetInt("Stamina" + "_" + USER, GameManager.instance.Stamina);
+        PlayerPrefs.SetInt("Intellect" + "_" + USER, GameManager.instance.Intellect);
+
+        PlayerPrefs.SetInt("Strength_Price" + "_" + USER, GameManager.instance.Strength_Price);
+        PlayerPrefs.SetInt("Luck_Price" + "_" + USER, GameManager.instance.Luck_Price);
+        PlayerPrefs.SetInt("ComePower_Price" + "_" + USER, GameManager.instance.ComePower_Price);
+        PlayerPrefs.SetInt("Stamina_Price" + "_" + USER, GameManager.instance.Stamina_Price);
+        PlayerPrefs.SetInt("Intellect_Price" + "_" + USER, GameManager.instance.Intellect_Price);
+    }
 }

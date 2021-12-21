@@ -99,17 +99,17 @@ public class LoginManager : MonoBehaviour
     {
         if (PlayerPrefs.HasKey(nick.text))
         {
-            GameManager.instance.Money = PlayerPrefs.GetInt("Money");
-            GameManager.instance.Strength = PlayerPrefs.GetInt("Strength");
-            GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower");
-            GameManager.instance.Luck = PlayerPrefs.GetInt("Luck");
-            GameManager.instance.Stamina = PlayerPrefs.GetInt("Stamina");
-            GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect");
-            GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
-            GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
-            GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price");
-            GameManager.instance.Stamina_Price = PlayerPrefs.GetInt("Stamina_Price");
-            GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price");
+            GameManager.instance.Money = PlayerPrefs.GetInt("Money" + "_" + nick);
+            GameManager.instance.Strength = PlayerPrefs.GetInt("Strength" + "_" + nick);
+            GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower" + "_" + nick);
+            GameManager.instance.Luck = PlayerPrefs.GetInt("Luck" + "_" + nick);
+            GameManager.instance.Stamina = PlayerPrefs.GetInt("Stamina" + "_" + nick);
+            GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect" + "_" + nick);
+            GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price" + "_" + nick);
+            GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price" + "_" + nick);
+            GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price" + "_" + nick);
+            GameManager.instance.Stamina_Price = PlayerPrefs.GetInt("Stamina_Price" + "_" + nick);
+            GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price" + "_" + nick);
         }
            
     }
