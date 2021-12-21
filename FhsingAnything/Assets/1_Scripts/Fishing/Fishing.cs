@@ -21,13 +21,12 @@ public class Fishing : MonoBehaviour
     private float time = 0.0f;
     public int gameProcess = -1;
 
-    private GameObject Sign_Image;
-    private Text Waiting_Text;
-    private Image Background_Waiting_Text;
-    private GameObject Water;
-    private GameObject Water2; // It used when FishSiluet's 'isGaming' is true
+    public GameObject Sign_Image;
+    public Text Waiting_Text;
+    public Image Background_Waiting_Text;
+    public GameObject Water;
+    public GameObject Water2; // It used when FishSiluet's 'isGaming' is true
     public GameObject FishSiluet;
-    public GameObject FishSiluet_1;
     public Slider FishHpBar;
     public Slider PlayerHpBar;
     
@@ -137,11 +136,13 @@ public class Fishing : MonoBehaviour
         PlayerHpBar.value = GameManager.instance.Stamina / PlayerMaxHp;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
+        PlayerHpBar.gameObject.SetActive(true);
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         gameProcess = 4;
         yield return new WaitForSeconds(0.5f);
         Water2.SetActive(false);
         FishHpBar.gameObject.SetActive(false);
+        PlayerHpBar.gameObject.SetActive(false);
         Background_Waiting_Text.color = new Color(1, 1, 1, 0.4f);
         Waiting_Text.text = "자 자 이리로 와... ▼";
         yield return new WaitUntil(() => Input.anyKeyDown);

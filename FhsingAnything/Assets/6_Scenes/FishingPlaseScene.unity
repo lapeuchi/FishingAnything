@@ -701,8 +701,12 @@ MonoBehaviour:
   - {fileID: 813185052544625475, guid: 4ee588d12d75d5346b362fffa18e59c6, type: 3}
   FishingButton: {fileID: 1659393545}
   gameProcess: 0
+  Sign_Image: {fileID: 1311448326}
+  Waiting_Text: {fileID: 1633113675}
+  Background_Waiting_Text: {fileID: 1942862710}
+  Water: {fileID: 1000085874}
+  Water2: {fileID: 871035189}
   FishSiluet: {fileID: 1593126995}
-  FishSiluet_1: {fileID: 0}
   FishHpBar: {fileID: 1701941705}
   PlayerHpBar: {fileID: 1580905752}
   FishMaxHp: 0
