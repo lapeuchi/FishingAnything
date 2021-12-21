@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-
+    public bool[] IsBuy;
     public enum GameState { Lobby, Fishing, shop, Setting };
     public GameState curGameState = GameState.Lobby;
     [Header("Arctic")]
