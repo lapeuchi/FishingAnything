@@ -14,6 +14,8 @@ public class ButtonManager : MonoBehaviour
     public GameObject NoMoney;
     public Text Mather_talk;
     public Text TaeHwan_talk;
+
+    public Text Message;
     public void Set_state_Sea() 
     {
         SoundManager.instance.PlayClickSound();
@@ -91,15 +93,20 @@ public class ButtonManager : MonoBehaviour
     }
     public void ExitGame()
     {
-        GameManager.instance.Save();
+        GameManager.instance.Save(GameManager.instance.USER);
         SoundManager.instance.PlayClickSound();
         Application.Quit();
     }
 
     public void SelectPlaceOn()
-    {
-        SoundManager.instance.PlayClickSound();
-        SelectPlaceBackGround.SetActive(true);
+    {        
+        if (GameManager.instance.Stamina <= 0)
+            StartCoroutine(Yell("스테미너가 부족해 낚시를 할 수 없습니다."));
+        else
+        {
+            SoundManager.instance.PlayClickSound();
+            SelectPlaceBackGround.SetActive(true);
+        }
     }
     public void SelectPlaceFalse()
     {
@@ -164,7 +171,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Strength_Price * 1.3f);
             GameManager.instance.Strength_Price = (int)changeMoney;
             GameManager.instance.Strength++;
-            GameManager.instance.Save();
+            GameManager.instance.Save(GameManager.instance.USER);
         }
     }
     public void Buy_Luck()
@@ -181,7 +188,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Luck_Price * 1.3f);
             GameManager.instance.Luck_Price = (int)changeMoney;
             GameManager.instance.Luck++;
-            GameManager.instance.Save();
+            GameManager.instance.Save(GameManager.instance.USER);
         }
     }
     public void Buy_ComePower()
@@ -198,7 +205,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.ComePower_Price * 1.3f);
             GameManager.instance.ComePower_Price = (int)changeMoney;
             GameManager.instance.ComePower++;
-            GameManager.instance.Save();
+            GameManager.instance.Save(GameManager.instance.USER);
         }
     }
     public void Buy_Stamina()
@@ -215,7 +222,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Stamina_Price * 1.3f);
             GameManager.instance.Stamina_Price = (int)changeMoney;
             GameManager.instance.Stamina++;
-            GameManager.instance.Save();
+            GameManager.instance.Save(GameManager.instance.USER);
         }
     }
     public void Buy_Intellect()
@@ -232,7 +239,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Intellect_Price * 1.3f);
             GameManager.instance.Intellect_Price = (int)changeMoney;
             GameManager.instance.Intellect++;
-            GameManager.instance.Save();
+            GameManager.instance.Save(GameManager.instance.USER);
         }
     }
     private void NomoneyOff()
@@ -415,5 +422,20 @@ public class ButtonManager : MonoBehaviour
     public void Unquip_Bait()
     {
         GameManager.instance.Bait_state = GameManager.Bait_State.Pogayri;
+    }
+
+    public IEnumerator Yell(string str)
+    {
+        Message.color = new Color(255, 210, 23, 255);
+        Message.text = str;
+        yield return new WaitForSeconds(1f);
+        for (float f = 1f; f >= 0; f -= 0.02f)
+        {
+            Color c = Message.color;
+            c.a = f;
+            Message.color = c;
+            yield return null;
+        }
+        Message.color = new Color(255, 210, 23, 0);
     }
 }

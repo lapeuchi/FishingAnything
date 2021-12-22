@@ -119,6 +119,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        //PlayerPrefs.DeleteAll();
         if (instance == null)
         {
             instance = this;
@@ -127,12 +128,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }           
-        DontDestroyOnLoad(gameObject);
-
-        
+        DontDestroyOnLoad(gameObject);       
     }
     
-    public void Save()
+    public void Save(string USER)
     {
         PlayerPrefs.SetInt("Money" + "_" + USER, GameManager.instance.Money);
         PlayerPrefs.SetInt("Strength" + "_" + USER, GameManager.instance.Strength);

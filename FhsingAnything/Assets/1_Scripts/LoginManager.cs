@@ -35,20 +35,19 @@ public class LoginManager : MonoBehaviour
 
         //사용자의 아이디는 키(key)로 패스워드를 값(value)로 설정해 저장한다.
         PlayerPrefs.SetString(nick.text, password.text);
-
-        //만일 시스템이 저장돼 있는 아이디가 없다면...
-        if (!PlayerPrefs.HasKey(nick.text))
+        // 만일 계정이 있으면... -> 이미 존재한다는 메세지 출력
+        if (PlayerPrefs.HasKey(nick.text))
+        {
+            notify.text = "이미 존재하는 닉네임 입니다.";
+        }
+        //만일 시스템이 저장돼 있는 아이디가 없다면... -> 계정 생성
+        else if (!PlayerPrefs.HasKey(nick.text))
         {
             //사용자의 아이디는 키(key)로 패스워드를 값(value)으로 설정해 저장한다.
             PlayerPrefs.SetString(nick.text, password.text);
             notify.text = "아이디 생성이 완료됐습니다.";
-            SetNewbie();
-        }
-        //그렇지 않으면, 이미 존재한다는 메세지 출력
-        else
-        {
-            notify.text = "이미 존재하는 닉네임 입니다.";
-        }
+            SetNewbie(nick.text);
+        }        
     }
 
     //아이디와 패스워드 저장 함수
@@ -67,7 +66,7 @@ public class LoginManager : MonoBehaviour
         if(password.text == pass)
         {
             GameManager.instance.USER = nick.text;
-            Load();
+            Load(nick.text);
             // 다음 씬(1번 씬) 로드. (1 : 수산시장)
             SceneManager.LoadScene(1);
         }
@@ -96,9 +95,9 @@ public class LoginManager : MonoBehaviour
 
     
 
-    public void Load()
+    public void Load(string USER)
     {
-        if (PlayerPrefs.HasKey(nick.text))
+        if (PlayerPrefs.HasKey(USER))
         {
             GameManager.instance.Money = PlayerPrefs.GetInt("Money" + "_" + nick);
             GameManager.instance.Strength = PlayerPrefs.GetInt("Strength" + "_" + nick);
@@ -114,7 +113,7 @@ public class LoginManager : MonoBehaviour
         }         
     }
 
-    public void SetNewbie()
+    public void SetNewbie(string USER)
     {
         GameManager.instance.Money = 1000;
         GameManager.instance.Strength = 10;
@@ -131,5 +130,6 @@ public class LoginManager : MonoBehaviour
         GameManager.instance.ComePower_Price = 100;
         GameManager.instance.Stamina_Price = 100;
         GameManager.instance.Intellect_Price = 100;
+        GameManager.instance.Save(USER);
     }
 }

@@ -1588,17 +1588,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8583cabae9d813e4a997cfd1f29470dc, type: 2}
   - {fileID: 11400000, guid: d301151e51f846c4699f71bf2a0cb14b, type: 2}
   fishing_Place_State: 7
-  Money: 10000
-  Strength: 10
-  ComePower: 10
-  Luck: 10
-  Stamina: 10
-  Intellect: 10
-  Strength_Price: 100
-  Luck_Price: 100
-  ComePower_Price: 100
-  Stamina_Price: 100
-  Intellect_Price: 100
+  Money: 0
+  Strength: 0
+  ComePower: 0
+  Luck: 0
+  Stamina: 0
+  Intellect: 0
+  Strength_Equip: 0
+  ComePower_Equip: 0
+  Stamina_Equip: 0
+  Strength_Price: 0
+  Luck_Price: 0
+  ComePower_Price: 0
+  Stamina_Price: 0
+  Intellect_Price: 0
   index_value: 0
   Fishingrod_state: 0
   Chair_state: 0
