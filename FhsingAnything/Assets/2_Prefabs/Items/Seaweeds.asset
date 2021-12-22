@@ -18,5 +18,5 @@ MonoBehaviour:
   Explanation: "\uC9ED\uB2C8\uB2E4."
   itemImage: {fileID: 21300000, guid: 0f1cd942eb933b4458d8edcf7a553340, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
-  Find: 0
-  isFind: 0
+  Find: 1
+  isFind: 1

@@ -96,6 +96,7 @@ public class FishSiluet : MonoBehaviour
         if (isGaming == true)
         {
             transform.Translate(vec * Time.deltaTime * power);
+            //transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
             // float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
             //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }

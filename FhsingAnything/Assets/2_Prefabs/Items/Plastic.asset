@@ -19,5 +19,5 @@ MonoBehaviour:
     \uBD84\uB9AC\uC218\uAC70 \uD569\uC2DC\uB2E4."
   itemImage: {fileID: 21300000, guid: 0c46738c0b9e6ad42897b74d0c8a1bb7, type: 3}
   Notfound: {fileID: 21300000, guid: 767657d45a2178f4a80da41d9e190b9a, type: 3}
-  Find: 0
-  isFind: 0
+  Find: 1
+  isFind: 1
