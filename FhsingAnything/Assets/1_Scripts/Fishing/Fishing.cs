@@ -115,7 +115,9 @@ public class Fishing : MonoBehaviour
         if(global::GameManager.instance.Stamina <= 0)
         {
             GameClear();
-            Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ...▼";
+            Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ... " +
+                "\n(낚시 실패로 최대 피로도가 증가했습니다) ▼";
+            GameManager.instance.Max_Stamina ++;
             if (Input.anyKeyDown)
                 SceneManager.LoadScene("FishMarketScene");
             global::GameManager.instance.Save();

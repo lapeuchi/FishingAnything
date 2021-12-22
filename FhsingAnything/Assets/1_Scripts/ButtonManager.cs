@@ -151,6 +151,8 @@ public class ButtonManager : MonoBehaviour
     }
     public void Mathers_talk()
     {
+        GameManager.instance.Stamina++;
+        GameManager.instance.Save();
         SoundManager.instance.PlayClickSound();
         string[] talk = new string[] {"전복 하나 어디 갔어\n전복 누가 가져갔어", "나미끼는 최고의 노상방뇨 달인이었어","낚시는 기다림의 미학이란다",
             "난 전복 가져가는 놈이 세상에서 젤 싫어","한 때는 이 전복으로 세상을 재패했었단다","옛날에는 바다에 바?론? 같은게 없었는데 수질오염인가 뭔가 하는게 이렇게 만들었단다"
@@ -161,6 +163,8 @@ public class ButtonManager : MonoBehaviour
     }
     public void TaeHwans_talk()
     {
+        GameManager.instance.Money++;
+        GameManager.instance.Save();
         SoundManager.instance.PlayClickSound();
         string[] talk = new string[] {"비키니는 사랑입니다♡", "여기 온수 수조의 물은 따뜻해..","낚시가 힘들면 장비를 바꿔보자",
             "비키니 볼려고 국가대표 했다","이 수산시장은 역사가 깊어, 옛날에 이곳에서 북극곰 50마리와 댄스 배틀을 벌였었지..","인어는 존재 할려나? 난 몰?루"
@@ -221,14 +225,14 @@ public class ButtonManager : MonoBehaviour
     }
     public void Buy_Stamina()
     {
-        if (100 > GameManager.instance.Money || GameManager.instance.Max_Stamina <= GameManager.instance.Stamina)
+        if (70 > GameManager.instance.Money || GameManager.instance.Max_Stamina <= GameManager.instance.Stamina)
         {
             MaxStamina.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {  
-            GameManager.instance.Money -= 100;
+            GameManager.instance.Money -= 70;
             GameManager.instance.Stamina += 50;
             if(GameManager.instance.Stamina >= GameManager.instance.Max_Stamina)
             {

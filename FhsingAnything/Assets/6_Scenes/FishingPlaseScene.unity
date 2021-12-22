@@ -651,7 +651,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 145755759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bb89f55c483e24184f1a53205284d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b197e9cbb11f7d45afaadbfa7cbc56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isScanned: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 260642847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290f375fbf4d45949ab49066f4a5c4e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b197e9cbb11f7d45afaadbfa7cbc56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isScanned: 0
@@ -911,7 +911,6 @@ MonoBehaviour:
   FishHpBar: {fileID: 1701941705}
   PlayerHpBar: {fileID: 1580905752}
   FishMaxHp: 0
-  PlayerMaxHp: 0
   Charactor: {fileID: 0}
   SignText: {fileID: 232854315}
 --- !u!4 &287087600

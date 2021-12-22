@@ -90,7 +90,7 @@ public class IntroProcess : MonoBehaviour
             if (chargingTime >= 1f)
             {
                 SoundManager.instance.StopIntro();
-                SceneManager.LoadScene("LoginScene");
+                SceneManager.LoadScene("LoginScene");   
             }
                 
         }

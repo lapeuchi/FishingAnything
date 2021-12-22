@@ -16,8 +16,8 @@ public class LoginManager : MonoBehaviour
     public void GameStart()
     {
         GameManager.instance.Load();
-        // 다음 씬(1번 씬) 로드. (1 : 수산시장)
-        SceneManager.LoadScene(1);     
+        // 다음 씬(2번 씬) 로드.
+        SceneManager.LoadScene(3);     
     }
 
     
