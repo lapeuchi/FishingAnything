@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
     public int ComePower;
     public int Luck;
     public float Stamina;
+    public float Max_Stamina;
     public int Intellect;
     public int Strength_Equip;
     public int ComePower_Equip;
@@ -86,7 +87,6 @@ public class GameManager : MonoBehaviour
     public int Strength_Price;
     public int Luck_Price;
     public int ComePower_Price;
-    public int Stamina_Price;
     public int Intellect_Price;
 
     public int index_value;
@@ -136,7 +136,6 @@ public class GameManager : MonoBehaviour
             SetNewbie();  
         }
     }
-    
     public void Save()
     {
         PlayerPrefs.SetInt("Money", GameManager.instance.Money);
@@ -149,7 +148,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Strength_Price", GameManager.instance.Strength_Price);
         PlayerPrefs.SetInt("Luck_Price", GameManager.instance.Luck_Price);
         PlayerPrefs.SetInt("ComePower_Price", GameManager.instance.ComePower_Price);
-        PlayerPrefs.SetInt("Stamina_Price", GameManager.instance.Stamina_Price);
         PlayerPrefs.SetInt("Intellect_Price", GameManager.instance.Intellect_Price);
     }
 
@@ -164,7 +162,6 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
         GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
         GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price");
-        GameManager.instance.Stamina_Price = PlayerPrefs.GetInt("Stamina_Price");
         GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price");
     }
     public void SetNewbie()
@@ -175,6 +172,7 @@ public class GameManager : MonoBehaviour
         GameManager.instance.ComePower = 10;
         GameManager.instance.Luck = 10;
         GameManager.instance.Stamina = 100f;
+        GameManager.instance.Max_Stamina = 100f;
         GameManager.instance.Intellect = 10;
         GameManager.instance.Strength_Equip = 0;
         GameManager.instance.ComePower_Equip = 0;
@@ -183,7 +181,6 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Strength_Price = 100;
         GameManager.instance.Luck_Price = 100;
         GameManager.instance.ComePower_Price = 100;
-        GameManager.instance.Stamina_Price = 100;
         GameManager.instance.Intellect_Price = 100;
         GameManager.instance.Save();
     }

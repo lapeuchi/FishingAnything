@@ -14,6 +14,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject NoMoney;
     public Text Mather_talk;
     public Text TaeHwan_talk;
+    [SerializeField] GameObject MaxStamina;
 
     public Text Message;
     public void Set_state_Sea() 
@@ -210,19 +211,16 @@ public class ButtonManager : MonoBehaviour
     }
     public void Buy_Stamina()
     {
-        float changeMoney;
-        if (GameManager.instance.Stamina_Price > GameManager.instance.Money)
+        if (100 > GameManager.instance.Money && GameManager.instance.Max_Stamina > GameManager.instance.Stamina)
         {
-            NoMoney.SetActive(true);
+            MaxStamina.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
-        {
-            GameManager.instance.Money -= GameManager.instance.Stamina_Price;
-            changeMoney = (GameManager.instance.Stamina_Price * 1.1f);
-            GameManager.instance.Stamina_Price = (int)changeMoney;
-            GameManager.instance.Stamina++;
-            GameManager.instance.Save();
+        {  
+                GameManager.instance.Money -= 100;
+                GameManager.instance.Stamina += 50;
+                GameManager.instance.Save();
         }
     }
     public void Buy_Intellect()
@@ -244,6 +242,7 @@ public class ButtonManager : MonoBehaviour
     }
     private void NomoneyOff()
     {
+        MaxStamina.SetActive(false);
         NoMoney.SetActive(false);
     }
     // 특정 낚시대를 살 떄
@@ -299,6 +298,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.Max_Stamina = 100 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[3] = true;
             GameManager.instance.Money -= 850;
             Destroy(gameObject);
@@ -313,6 +313,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.Max_Stamina = 100 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[4] = true;
             GameManager.instance.Money -= 1850;
             Destroy(gameObject);
@@ -327,6 +328,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.Max_Stamina = 100 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[5] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);

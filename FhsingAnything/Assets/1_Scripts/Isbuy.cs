@@ -18,7 +18,7 @@ public class Isbuy : MonoBehaviour
     {
         BuyCheck();   
     }
-    public void BuyCheck()
+    private void BuyCheck()
     {
         if(GameManager.instance.isBuy[0] == true)
         {
