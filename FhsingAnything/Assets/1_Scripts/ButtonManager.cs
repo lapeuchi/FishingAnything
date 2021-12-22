@@ -93,7 +93,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void ExitGame()
     {
-        GameManager.instance.Save(GameManager.instance.USER);
+        GameManager.instance.Save();
         SoundManager.instance.PlayClickSound();
         Application.Quit();
     }
@@ -171,7 +171,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Strength_Price * 1.3f);
             GameManager.instance.Strength_Price = (int)changeMoney;
             GameManager.instance.Strength++;
-            GameManager.instance.Save(GameManager.instance.USER);
+            GameManager.instance.Save();
         }
     }
     public void Buy_Luck()
@@ -188,7 +188,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Luck_Price * 1.3f);
             GameManager.instance.Luck_Price = (int)changeMoney;
             GameManager.instance.Luck++;
-            GameManager.instance.Save(GameManager.instance.USER);
+            GameManager.instance.Save();
         }
     }
     public void Buy_ComePower()
@@ -205,7 +205,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.ComePower_Price * 1.3f);
             GameManager.instance.ComePower_Price = (int)changeMoney;
             GameManager.instance.ComePower++;
-            GameManager.instance.Save(GameManager.instance.USER);
+            GameManager.instance.Save();
         }
     }
     public void Buy_Stamina()
@@ -222,7 +222,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Stamina_Price * 1.3f);
             GameManager.instance.Stamina_Price = (int)changeMoney;
             GameManager.instance.Stamina++;
-            GameManager.instance.Save(GameManager.instance.USER);
+            GameManager.instance.Save();
         }
     }
     public void Buy_Intellect()
@@ -239,7 +239,7 @@ public class ButtonManager : MonoBehaviour
             changeMoney = (GameManager.instance.Intellect_Price * 1.3f);
             GameManager.instance.Intellect_Price = (int)changeMoney;
             GameManager.instance.Intellect++;
-            GameManager.instance.Save(GameManager.instance.USER);
+            GameManager.instance.Save();
         }
     }
     private void NomoneyOff()

@@ -116,6 +116,7 @@ public class Fishing : MonoBehaviour
             Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ...▼";
             if (Input.anyKeyDown)
                 SceneManager.LoadScene("FishMarketScene");
+            GameManager.instance.Save();
         }
     }
     
@@ -187,6 +188,7 @@ public class Fishing : MonoBehaviour
         Waiting_Text.text = "";
         isFishing = false;
         FishingButton.SetActive(true);
+        GameManager.instance.Save();
     }
 
     public void ClickFishing()

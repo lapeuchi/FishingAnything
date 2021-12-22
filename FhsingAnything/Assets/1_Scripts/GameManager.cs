@@ -128,22 +128,62 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }           
-        DontDestroyOnLoad(gameObject);       
+        DontDestroyOnLoad(gameObject);    
+        
+        if(PlayerPrefs.GetInt("isFirst") == 0)
+        {
+            SetNewbie();  
+        }
     }
     
-    public void Save(string USER)
+    public void Save()
     {
-        PlayerPrefs.SetInt("Money" + "_" + USER, GameManager.instance.Money);
-        PlayerPrefs.SetInt("Strength" + "_" + USER, GameManager.instance.Strength);
-        PlayerPrefs.SetInt("ComePower" + "_" + USER, GameManager.instance.ComePower);
-        PlayerPrefs.SetInt("Luck" + "_" + USER, GameManager.instance.Luck);
-        PlayerPrefs.SetInt("Stamina" + "_" + USER, GameManager.instance.Stamina);
-        PlayerPrefs.SetInt("Intellect" + "_" + USER, GameManager.instance.Intellect);
+        PlayerPrefs.SetInt("Money", GameManager.instance.Money);
+        PlayerPrefs.SetInt("Strength", GameManager.instance.Strength);
+        PlayerPrefs.SetInt("ComePower", GameManager.instance.ComePower);
+        PlayerPrefs.SetInt("Luck", GameManager.instance.Luck);
+        PlayerPrefs.SetInt("Stamina", GameManager.instance.Stamina);
+        PlayerPrefs.SetInt("Intellect", GameManager.instance.Intellect);
 
-        PlayerPrefs.SetInt("Strength_Price" + "_" + USER, GameManager.instance.Strength_Price);
-        PlayerPrefs.SetInt("Luck_Price" + "_" + USER, GameManager.instance.Luck_Price);
-        PlayerPrefs.SetInt("ComePower_Price" + "_" + USER, GameManager.instance.ComePower_Price);
-        PlayerPrefs.SetInt("Stamina_Price" + "_" + USER, GameManager.instance.Stamina_Price);
-        PlayerPrefs.SetInt("Intellect_Price" + "_" + USER, GameManager.instance.Intellect_Price);
+        PlayerPrefs.SetInt("Strength_Price", GameManager.instance.Strength_Price);
+        PlayerPrefs.SetInt("Luck_Price", GameManager.instance.Luck_Price);
+        PlayerPrefs.SetInt("ComePower_Price", GameManager.instance.ComePower_Price);
+        PlayerPrefs.SetInt("Stamina_Price", GameManager.instance.Stamina_Price);
+        PlayerPrefs.SetInt("Intellect_Price", GameManager.instance.Intellect_Price);
+    }
+
+    public void Load()
+    {
+        GameManager.instance.Money = PlayerPrefs.GetInt("Money");
+        GameManager.instance.Strength = PlayerPrefs.GetInt("Strength");
+        GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower");
+        GameManager.instance.Luck = PlayerPrefs.GetInt("Luck");
+        GameManager.instance.Stamina = PlayerPrefs.GetInt("Stamina");
+        GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect");
+        GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
+        GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
+        GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price");
+        GameManager.instance.Stamina_Price = PlayerPrefs.GetInt("Stamina_Price");
+        GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price");
+    }
+    public void SetNewbie()
+    {
+        PlayerPrefs.SetInt("isFirst", 1);
+        GameManager.instance.Money = 1000;
+        GameManager.instance.Strength = 10;
+        GameManager.instance.ComePower = 10;
+        GameManager.instance.Luck = 10;
+        GameManager.instance.Stamina = 10;
+        GameManager.instance.Intellect = 10;
+        GameManager.instance.Strength_Equip = 0;
+        GameManager.instance.ComePower_Equip = 0;
+        GameManager.instance.Stamina_Equip = 0;
+
+        GameManager.instance.Strength_Price = 100;
+        GameManager.instance.Luck_Price = 100;
+        GameManager.instance.ComePower_Price = 100;
+        GameManager.instance.Stamina_Price = 100;
+        GameManager.instance.Intellect_Price = 100;
+        GameManager.instance.Save();
     }
 }
