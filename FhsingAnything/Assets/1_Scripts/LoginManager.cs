@@ -42,6 +42,7 @@ public class LoginManager : MonoBehaviour
             //사용자의 아이디는 키(key)로 패스워드를 값(value)으로 설정해 저장한다.
             PlayerPrefs.SetString(nick.text, password.text);
             notify.text = "아이디 생성이 완료됐습니다.";
+            SetNewbie();
         }
         //그렇지 않으면, 이미 존재한다는 메세지 출력
         else
@@ -110,7 +111,25 @@ public class LoginManager : MonoBehaviour
             GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price" + "_" + nick);
             GameManager.instance.Stamina_Price = PlayerPrefs.GetInt("Stamina_Price" + "_" + nick);
             GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price" + "_" + nick);
-        }
-           
+        }         
+    }
+
+    public void SetNewbie()
+    {
+        GameManager.instance.Money = 1000;
+        GameManager.instance.Strength = 10;
+        GameManager.instance.ComePower = 10;
+        GameManager.instance.Luck = 10;
+        GameManager.instance.Stamina = 10;
+        GameManager.instance.Intellect = 10;
+        GameManager.instance.Strength_Equip = 0;
+        GameManager.instance.ComePower_Equip = 0;
+        GameManager.instance.Stamina_Equip = 0;
+
+        GameManager.instance.Strength_Price = 100;
+        GameManager.instance.Luck_Price = 100;
+        GameManager.instance.ComePower_Price = 100;
+        GameManager.instance.Stamina_Price = 100;
+        GameManager.instance.Intellect_Price = 100;
     }
 }

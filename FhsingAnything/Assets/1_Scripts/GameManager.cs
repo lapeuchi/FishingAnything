@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     public string USER;
-    public bool isFirst;
     public enum GameState { Lobby, Fishing, shop, Setting };
     public GameState curGameState = GameState.Lobby;
     [Header("Arctic")]
@@ -74,22 +73,21 @@ public class GameManager : MonoBehaviour
     public FishingState fishing_Place_State;
 
     [Header("Player Status")]
-    public int Money=100000;
-    public int Strength = 10;
-    public int ComePower=10;
-    public int Luck=10;
-    public int Stamina=10;
-    public int Intellect=10;
-    public int Strength_Equip=0;
-    public int ComePower_Equip=0;
-    public int Stamina_Equip=0;
+    public int Money;
+    public int Strength;
+    public int ComePower;
+    public int Luck;
+    public int Stamina;
+    public int Intellect;
+    public int Strength_Equip;
+    public int ComePower_Equip;
+    public int Stamina_Equip;
 
-
-    public int Strength_Price =100;
-    public int Luck_Price=100;
-    public int ComePower_Price=100;
-    public int Stamina_Price=100;
-    public int Intellect_Price=100;
+    public int Strength_Price;
+    public int Luck_Price;
+    public int ComePower_Price;
+    public int Stamina_Price;
+    public int Intellect_Price;
 
     public int index_value;
     public enum Fishingrod_State
@@ -130,8 +128,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }           
         DontDestroyOnLoad(gameObject);
-    }
 
+        
+    }
+    
     public void Save()
     {
         PlayerPrefs.SetInt("Money" + "_" + USER, GameManager.instance.Money);
