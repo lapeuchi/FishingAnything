@@ -10,24 +10,28 @@ public class IntroProcess : MonoBehaviour
     public Image BackGroundImage;   //bg
     public Sprite[] BackGroundL; // 0 : 목욕탕 , 1 : 지도 , 2 : 검은화면
     public GameObject Content;
-
+    private AudioSource _as;
     public float scrollSpeed; //95 당선
 
     public byte process = 0;
 
+    public float chargingTime = 0f;
+    
     void Start()
     {
-        
+        _as = gameObject.GetComponent<AudioSource>();
+        _as.Play();
+        StartCoroutine(FadeIn(BackGroundL[2]));
     }
 
-    void Update()
+    public void Update()
+    {
+        Skip();
+    }
+
+    private void FixedUpdate()
     {
         Content.transform.Translate(Vector2.up * Time.deltaTime * scrollSpeed);
-        if(process == 0)
-        {
-            StartCoroutine(FadeIn(BackGroundL[2]));
-            process = 1;
-        }
     }
 
     IEnumerator FadeIn(Sprite BackGroundL)
@@ -50,6 +54,16 @@ public class IntroProcess : MonoBehaviour
             BackGroundImage.color = c;
             yield return null;
         }
+    }
 
+    void Skip()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            chargingTime += Time.deltaTime;
+            if (chargingTime >= 2f)
+                SceneManager.LoadScene("LoginScene");
+        }
+        else chargingTime = 0f;
     }
 }
