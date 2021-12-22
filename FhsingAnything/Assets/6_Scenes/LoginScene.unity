@@ -1600,6 +1600,7 @@ MonoBehaviour:
   Stamina_Price: 0
   Intellect_Price: 0
   index_value: 0
+  isBuy: 000000000000000000
   Fishingrod_state: 0
   Chair_state: 0
   Bait_state: 0

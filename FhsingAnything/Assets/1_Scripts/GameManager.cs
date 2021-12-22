@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
     public int Intellect_Price;
 
     public int index_value;
+    public bool[] isBuy;
     public enum Fishingrod_State
     {
         Hand,

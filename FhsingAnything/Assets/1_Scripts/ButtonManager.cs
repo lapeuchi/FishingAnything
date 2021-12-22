@@ -256,6 +256,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[0] = true;
             GameManager.instance.Money -= 1000;
             Destroy(gameObject);
         }
@@ -263,12 +264,13 @@ public class ButtonManager : MonoBehaviour
     public void Buy_magicrod()
     {
         if (10000 > GameManager.instance.Money)
-        { 
+        {
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            GameManager.instance.isBuy[1] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);
         }
@@ -282,6 +284,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[2] = true;
             GameManager.instance.Money -= 55000;
             Destroy(gameObject);
         }
@@ -296,6 +299,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[3] = true;
             GameManager.instance.Money -= 850;
             Destroy(gameObject);
         }
@@ -309,6 +313,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[4] = true;
             GameManager.instance.Money -= 1850;
             Destroy(gameObject);
         }
@@ -322,6 +327,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[5] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);
         }
@@ -337,6 +343,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[6] = true;
             GameManager.instance.Money -= 700;
             Destroy(gameObject);
         }
@@ -350,6 +357,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[7] = true;
             GameManager.instance.Money -= 2100;
             Destroy(gameObject);
         }
@@ -363,6 +371,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            GameManager.instance.isBuy[8] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);
         }
