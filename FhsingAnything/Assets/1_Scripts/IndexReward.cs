@@ -22,6 +22,7 @@ public class IndexReward : MonoBehaviour
     {
         if(GameManager.instance.index_value == 10 && !isOned[0])
         {
+            SoundManager.instance.PlayCT();
             text.text = "도감 10개 채우기 보상!";
             reward.SetActive(true);
             reward_Ten.SetActive(true);
@@ -34,6 +35,7 @@ public class IndexReward : MonoBehaviour
         }
         if (GameManager.instance.index_value == 20 && !isOned[1])
         {
+            SoundManager.instance.PlayCT();
             text.text = "도감 20개 채우기 보상!";
             reward.SetActive(true);
             reward_TwoTen.SetActive(true);
@@ -42,6 +44,7 @@ public class IndexReward : MonoBehaviour
         }
         if (GameManager.instance.index_value == 30 && !isOned[2])
         {
+            SoundManager.instance.PlayCT();
             text.text = "도감 30개 채우기 보상!";
             reward.SetActive(true);
             reward_ThreeTen.SetActive(true);
@@ -55,6 +58,7 @@ public class IndexReward : MonoBehaviour
         }
         if (GameManager.instance.index_value == 40 && !isOned[3])
         {
+            SoundManager.instance.PlayCT();
             text.text = "도감 40개 채우기 보상!";
             reward.SetActive(true);
             reward_FourTen.SetActive(true);
@@ -63,6 +67,7 @@ public class IndexReward : MonoBehaviour
         }
         if (GameManager.instance.index_value == 50 && !isOned[4])
         {
+            SoundManager.instance.PlayCT();
             text.text = "도감 50개 채우기 보상!";
             reward.SetActive(true);
             reward_FiveTen.SetActive(true);
@@ -71,6 +76,7 @@ public class IndexReward : MonoBehaviour
         }
         if (GameManager.instance.index_value == 59 && !isOned[4])
         {
+            SoundManager.instance.PlayCT();
             text.text = "축하드립니다!";
             reward.SetActive(true);
             reward_All.SetActive(true);

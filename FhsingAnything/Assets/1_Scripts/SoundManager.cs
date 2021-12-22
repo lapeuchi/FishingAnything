@@ -14,8 +14,10 @@ public class SoundManager : MonoBehaviour
     public AudioClip Sharf; //게임 1 단계에서 낚았을 때 효과음
     public AudioClip BGM;
 
-    public AudioClip StarWars;
     public AudioClip TTS;
+
+    public AudioClip CT;
+
     private void Awake()
     {
         if(instance == null)
@@ -64,9 +66,13 @@ public class SoundManager : MonoBehaviour
         _audio.Stop();
     }
 
+    public void PlayCT()
+    {
+        _audio.PlayOneShot(CT);
+    }
+
     public void PlayIntro()
     {
-        _audio.PlayOneShot(StarWars);
         _audio.PlayOneShot(TTS);
     }
 
