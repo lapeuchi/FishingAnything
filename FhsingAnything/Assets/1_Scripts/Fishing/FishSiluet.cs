@@ -104,9 +104,15 @@ public class FishSiluet : MonoBehaviour
           //transform.rotation = rot;
         }
      
+        //이겼을 때
         if (FishManager.instance.hp <= 0)
         {
             SoundManager.instance.PlayCatchSound();
+            Destroy(gameObject);
+        }
+        //졌을 때
+        if(GameManager.instance.Stamina <= 0)
+        {
             Destroy(gameObject);
         }
     }
