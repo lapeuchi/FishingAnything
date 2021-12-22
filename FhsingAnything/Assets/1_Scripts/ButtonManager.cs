@@ -71,6 +71,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void GoFishMarket()
     {
+        GameManager.instance.Save();
         SoundManager.instance.PlayClickSound();
         SceneManager.LoadScene("FishMarketScene");
     }
