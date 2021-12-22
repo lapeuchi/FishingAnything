@@ -94,13 +94,13 @@ public class FishSiluet : MonoBehaviour
 
     IEnumerator Particle()
     {
-        Debug.Log("gameprocess 2" + FishManager.instance.hp + "=>" + (FishManager.instance.hp - 10 + (GameManager.instance.Strength * 0.1f)));
+        Debug.Log(FishManager.instance.hp + "=>" + (FishManager.instance.hp - (10 + (GameManager.instance.Strength * 0.1f))));
         FishManager.instance.hp -= 10 + ((GameManager.instance.Strength + GameManager.instance.Strength_Equip)* 0.1f);
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = 0;
         ps.Play();
-        yield return new WaitForSeconds(0.1f);
+        yield return null;
         Destroy(gameObject);
     }
 
@@ -145,28 +145,28 @@ public class FishSiluet : MonoBehaviour
 
         if (other.gameObject.CompareTag("Up"))
         {
-            GameManager.instance.Stamina =- 1;
+            GameManager.instance.Stamina -= 2;
             isTrigger = false;
             isUpTrigger = false;
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("Down"))
         {
-            GameManager.instance.Stamina = -1;
+            GameManager.instance.Stamina -= 2;
             isTrigger = false;
             isDownTrigger = false;
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("Left"))
         {
-            GameManager.instance.Stamina = -1;
+            GameManager.instance.Stamina -= 2;
             isTrigger = false;
             isLeftTrigger = false;
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("Right"))
         {
-            GameManager.instance.Stamina = -1;
+            GameManager.instance.Stamina -= 2;
             isTrigger = false;
             isRightTrigger = false;
             Destroy(gameObject);

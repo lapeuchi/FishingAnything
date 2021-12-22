@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     public int Strength;
     public int ComePower;
     public int Luck;
-    public int Stamina;
+    public float Stamina;
     public int Intellect;
     public int Strength_Equip;
     public int ComePower_Equip;
@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Strength", GameManager.instance.Strength);
         PlayerPrefs.SetInt("ComePower", GameManager.instance.ComePower);
         PlayerPrefs.SetInt("Luck", GameManager.instance.Luck);
-        PlayerPrefs.SetInt("Stamina", GameManager.instance.Stamina);
+        PlayerPrefs.SetFloat("Stamina", GameManager.instance.Stamina);
         PlayerPrefs.SetInt("Intellect", GameManager.instance.Intellect);
 
         PlayerPrefs.SetInt("Strength_Price", GameManager.instance.Strength_Price);
@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Strength = PlayerPrefs.GetInt("Strength");
         GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower");
         GameManager.instance.Luck = PlayerPrefs.GetInt("Luck");
-        GameManager.instance.Stamina = PlayerPrefs.GetInt("Stamina");
+        GameManager.instance.Stamina = PlayerPrefs.GetFloat("Stamina");
         GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect");
         GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
         GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
@@ -170,11 +170,11 @@ public class GameManager : MonoBehaviour
     public void SetNewbie()
     {
         PlayerPrefs.SetInt("isFirst", 1);
-        GameManager.instance.Money = 100;
+        GameManager.instance.Money = 1000;
         GameManager.instance.Strength = 10;
         GameManager.instance.ComePower = 10;
         GameManager.instance.Luck = 10;
-        GameManager.instance.Stamina = 30;
+        GameManager.instance.Stamina = 100f;
         GameManager.instance.Intellect = 10;
         GameManager.instance.Strength_Equip = 0;
         GameManager.instance.ComePower_Equip = 0;

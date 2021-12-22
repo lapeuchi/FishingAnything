@@ -9,7 +9,7 @@ public class LoginManager : MonoBehaviour
     //데이터 초기화
     public void ResetData()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("isFirst", 0);
     }
 
     //게임시작
