@@ -68,6 +68,8 @@ public class FishSiluet : MonoBehaviour
             vec = Vector2.left;
         if (i == 3)
             vec = Vector2.right;
+        float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     void Update()

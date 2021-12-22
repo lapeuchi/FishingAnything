@@ -143,8 +143,8 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("ComePower", GameManager.instance.ComePower);
         PlayerPrefs.SetInt("Luck", GameManager.instance.Luck);
         PlayerPrefs.SetFloat("Stamina", GameManager.instance.Stamina);
+        PlayerPrefs.SetFloat("Max_Stamina", GameManager.instance.Max_Stamina);
         PlayerPrefs.SetInt("Intellect", GameManager.instance.Intellect);
-
         PlayerPrefs.SetInt("Strength_Price", GameManager.instance.Strength_Price);
         PlayerPrefs.SetInt("Luck_Price", GameManager.instance.Luck_Price);
         PlayerPrefs.SetInt("ComePower_Price", GameManager.instance.ComePower_Price);
@@ -158,6 +158,7 @@ public class GameManager : MonoBehaviour
         GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower");
         GameManager.instance.Luck = PlayerPrefs.GetInt("Luck");
         GameManager.instance.Stamina = PlayerPrefs.GetFloat("Stamina");
+        GameManager.instance.Max_Stamina = PlayerPrefs.GetFloat("Max_Stamina");
         GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect");
         GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
         GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
