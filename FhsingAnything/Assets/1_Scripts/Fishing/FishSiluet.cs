@@ -167,6 +167,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Up"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isUpTrigger = false;
             Destroy(gameObject);
@@ -174,6 +175,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Down"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isDownTrigger = false;
             Destroy(gameObject);
@@ -181,6 +183,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Left"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isLeftTrigger = false;
             Destroy(gameObject);
@@ -188,6 +191,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Right"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isRightTrigger = false;
             Destroy(gameObject);
