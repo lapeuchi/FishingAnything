@@ -36,6 +36,7 @@ public class Fishing : MonoBehaviour
     Animator anim;
     public GameObject Charactor;
 
+    public Text SignText;
     private void Awake()
     {
         if (instance == null)

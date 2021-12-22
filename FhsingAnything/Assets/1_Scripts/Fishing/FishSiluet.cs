@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FishSiluet : MonoBehaviour
 {
@@ -34,7 +35,18 @@ public class FishSiluet : MonoBehaviour
             Fishing.instance.gameProcess = -3;
             rb.velocity = Vector2.zero;
             SoundManager.instance.PlayFishMoveSound();
-            vec = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+            float r = Random.Range(0f, 100f);
+            if(r <= GameManager.instance.ComePower)
+            {
+                Fishing.instance.SignText.text = "슈우웅!";
+                vec = new Vector2(0, 0) - (Vector2)transform.position;
+            }
+            else
+            {
+                Fishing.instance.SignText.text = "//...";
+                vec = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+            }
+            
             rb.AddForce(vec * 2f, ForceMode2D.Impulse);
             ps.Play();
             yield return new WaitForSeconds(Random.Range(0.2f, 1.5f));
@@ -72,8 +84,11 @@ public class FishSiluet : MonoBehaviour
                 Fishing.instance.gameProcess = 1;
                 Destroy(gameObject);
             }
-
-        }
+            else if (isGaming == false)
+            {
+                Fishing.instance.SignText.text = "보인다!! 빈틈의 실!!!";
+            }
+        }           
 
         if (Fishing.instance.gameProcess == 1)
             StartCoroutine(RandVec());
@@ -83,6 +98,8 @@ public class FishSiluet : MonoBehaviour
         {
             float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+          //Quaternion rot = Quaternion.LookRotation(vec.normalized);
+          //transform.rotation = rot;
         }
      
         if (FishManager.instance.hp <= 0)
@@ -140,7 +157,11 @@ public class FishSiluet : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Finish"))
         {
-            isTrigger = false;
+            isTrigger = false; 
+            if (isGaming == false)
+            {
+                Fishing.instance.SignText.text = "";
+            }
         }
 
         if (other.gameObject.CompareTag("Up"))
