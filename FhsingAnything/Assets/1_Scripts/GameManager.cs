@@ -149,6 +149,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Luck_Price", GameManager.instance.Luck_Price);
         PlayerPrefs.SetInt("ComePower_Price", GameManager.instance.ComePower_Price);
         PlayerPrefs.SetInt("Intellect_Price", GameManager.instance.Intellect_Price);
+        PlayerPrefs.SetInt("index_value", GameManager.instance.index_value);
     }
 
     public void Load()
@@ -164,6 +165,7 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
         GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price");
         GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price");
+        GameManager.instance.index_value = PlayerPrefs.GetInt("index_value");
     }
     public void SetNewbie()
     {
@@ -183,6 +185,7 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Luck_Price = 100;
         GameManager.instance.ComePower_Price = 100;
         GameManager.instance.Intellect_Price = 100;
+        GameManager.instance.index_value = 0;
         GameManager.instance.Save();
     }
 }
