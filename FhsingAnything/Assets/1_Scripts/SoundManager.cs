@@ -12,7 +12,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip FishMove;
     public AudioClip Catch;
     public AudioClip Sharf; //게임 1 단계에서 낚았을 때 효과음
-
+    public AudioClip BGM;
     private void Awake()
     {
         if(instance == null)
@@ -26,9 +26,15 @@ public class SoundManager : MonoBehaviour
         _audio = gameObject.GetComponent<AudioSource>();
     }
 
+    private void FixedUpdate()
+    {
+        PlayBGM();
+    }
+
     public void PlayClickSound()
     {
         _audio.PlayOneShot(Click);
+        
     }
     public void PlayFishMoveSound()
     {
@@ -41,5 +47,16 @@ public class SoundManager : MonoBehaviour
     public void PlaySharfSound()
     {
         _audio.PlayOneShot(Sharf);
+    }
+
+    public void PlayBGM()
+    {
+        if (_audio.isPlaying) return;
+        _audio.PlayOneShot(BGM);
+    }
+
+    public void StopBGM()
+    {
+        _audio.Stop();
     }
 }
