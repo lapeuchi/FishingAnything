@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:FhsingAnything/Assets/1_Scripts/IntroScripts.meta
 guid: a3a90f9e6dc5fac489664481d20b8a7a
+=======
+guid: 4904f270dd7e8764f80b32c30455d074
+>>>>>>> c8e7331d1a1f4a70f99784b18791193a3bb74d4e:FhsingAnything/Assets/2_Prefabs/Equipments/Bait.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
