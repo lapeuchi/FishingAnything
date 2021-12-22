@@ -169,11 +169,11 @@ public class GameManager : MonoBehaviour
     public void SetNewbie()
     {
         PlayerPrefs.SetInt("isFirst", 1);
-        GameManager.instance.Money = 1000;
+        GameManager.instance.Money = 100;
         GameManager.instance.Strength = 10;
         GameManager.instance.ComePower = 10;
         GameManager.instance.Luck = 10;
-        GameManager.instance.Stamina = 10;
+        GameManager.instance.Stamina = 30;
         GameManager.instance.Intellect = 10;
         GameManager.instance.Strength_Equip = 0;
         GameManager.instance.ComePower_Equip = 0;

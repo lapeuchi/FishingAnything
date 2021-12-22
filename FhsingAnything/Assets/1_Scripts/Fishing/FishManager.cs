@@ -110,32 +110,32 @@ public class FishManager : MonoBehaviour
         if (FishTier == Tier.Common)
         {   
             hp = Random.Range(100, 200);
-            money = 0 + sizeLv * (int)FishTier;
+            money = 10 + sizeLv * (int)FishTier+1;
         }
         if (FishTier == Tier.Normal)
         {
             hp = Random.Range(200, 400);
-            money = 100 + sizeLv * (int)FishTier;
+            money = 100 + sizeLv * (int)FishTier+1;
         }
         if (FishTier == Tier.Rare)
         {
             hp = Random.Range(400, 700);
-            money = 200 + sizeLv * (int)FishTier;
+            money = 200 + sizeLv * (int)FishTier+1;
         }
         if (FishTier == Tier.Epic)
         {
             hp = Random.Range(700, 1100);
-            money = 300 + sizeLv * (int)FishTier;
+            money = 300 + sizeLv * (int)FishTier+1;
         }
         if (FishTier == Tier.Unique)
         {
             hp = Random.Range(1100, 1600);
-            money = 400 + sizeLv * (int)FishTier;
+            money = 400 + sizeLv * (int)FishTier+1;
         }
         if (FishTier == Tier.Legendary)
         {
             hp = Random.Range(1600, 2200);
-            money = 500 + sizeLv * (int)FishTier;          
+            money = 500 + sizeLv * (int)FishTier+1;          
         }     
         if (FishTier == Tier.Special)
         {
