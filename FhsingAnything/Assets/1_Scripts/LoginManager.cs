@@ -31,10 +31,7 @@ public class LoginManager : MonoBehaviour
         if(!CheckInput(nick.text, password.text))
         {
             return;
-        }
-
-        //사용자의 아이디는 키(key)로 패스워드를 값(value)로 설정해 저장한다.
-        PlayerPrefs.SetString(nick.text, password.text);
+        }      
         // 만일 계정이 있으면... -> 이미 존재한다는 메세지 출력
         if (PlayerPrefs.HasKey(nick.text))
         {
@@ -44,6 +41,7 @@ public class LoginManager : MonoBehaviour
         else if (!PlayerPrefs.HasKey(nick.text))
         {
             //사용자의 아이디는 키(key)로 패스워드를 값(value)으로 설정해 저장한다.
+            PlayerPrefs.SetString(nick.text, password.text);
             PlayerPrefs.SetString(nick.text, password.text);
             notify.text = "아이디 생성이 완료됐습니다.";
             SetNewbie(nick.text);
