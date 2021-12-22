@@ -135,7 +135,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Untagged"))
             isTrigger = false;
     }
-       
+
     public void OnTriggerExit2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Finish"))
@@ -145,22 +145,31 @@ public class FishSiluet : MonoBehaviour
 
         if (other.gameObject.CompareTag("Up"))
         {
+            GameManager.instance.Stamina =- 1;
             isTrigger = false;
             isUpTrigger = false;
+            Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("Down"))
         {
+            GameManager.instance.Stamina = -1;
             isTrigger = false;
             isDownTrigger = false;
+            Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("Left"))
         {
+            GameManager.instance.Stamina = -1;
             isTrigger = false;
             isLeftTrigger = false;
+            Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("Right"))
         {
+            GameManager.instance.Stamina = -1;
+            isTrigger = false;
             isRightTrigger = false;
+            Destroy(gameObject);
         }
     }
 }

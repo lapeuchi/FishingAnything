@@ -22,7 +22,7 @@ public class LoadingNextScene : MonoBehaviour
         AsyncOperation ao = SceneManager.LoadSceneAsync(num);
         //로드되는 씬의 모습이 화면에 보이지 않게 한다.
         ao.allowSceneActivation = false;
-
+        GameManager.instance.Load();
         //로딩이 완료될 때까지 반복해서 씬의 요소들을 로드하고 진행과정을 화면에 표시한다.
         while(!ao.isDone)
         {
