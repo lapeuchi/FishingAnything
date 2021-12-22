@@ -32,7 +32,7 @@ public class Fishing : MonoBehaviour
     public Slider PlayerHpBar;
     
     public float FishMaxHp;
-    public float PlayerMaxHp;
+    
     Animator anim;
     public GameObject Charactor;
 
@@ -57,31 +57,31 @@ public class Fishing : MonoBehaviour
 
     private void SetMap()
     {
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Sea)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.Sea)
         {
             Instantiate(MapList[4]);
         }
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.River)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.River)
         {
             Instantiate(MapList[3]);
         }
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Sewer)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.Sewer)
         {
             Instantiate(MapList[5]);
         }
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Arctic)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.Arctic)
         {
             Instantiate(MapList[0]);
         }
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Waterfall)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.Waterfall)
         {
             Instantiate(MapList[6]);
         }
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Baths)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.Baths)
         {
             Instantiate(MapList[2]);
         }
-        if (GameManager.instance.fishing_Place_State == GameManager.FishingState.Baclocdam)
+        if (global::GameManager.instance.fishing_Place_State == global::GameManager.FishingState.Baclocdam)
         {
             Instantiate(MapList[1]);
         }
@@ -90,7 +90,7 @@ public class Fishing : MonoBehaviour
     void Update()
     {
         FishHpBar.value = FishManager.instance.hp / FishMaxHp;
-        PlayerHpBar.value = GameManager.instance.Stamina / PlayerMaxHp;
+        PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
         if (isFishing == true)
         {
             StartCoroutine(FishSign());
@@ -112,13 +112,13 @@ public class Fishing : MonoBehaviour
             }           
         }
 
-        if(GameManager.instance.Stamina <= 0)
+        if(global::GameManager.instance.Stamina <= 0)
         {
             GameClear();
             Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ...▼";
             if (Input.anyKeyDown)
                 SceneManager.LoadScene("FishMarketScene");
-            GameManager.instance.Save();
+            global::GameManager.instance.Save();
         }
     }
     
@@ -144,8 +144,7 @@ public class Fishing : MonoBehaviour
         gameProcess = 3;
         FishMaxHp = FishManager.instance.hp;
         FishHpBar.value = FishManager.instance.hp / FishMaxHp;
-        PlayerMaxHp = GameManager.instance.Stamina;
-        PlayerHpBar.value = GameManager.instance.Stamina / PlayerMaxHp;
+        PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
         PlayerHpBar.gameObject.SetActive(true);
