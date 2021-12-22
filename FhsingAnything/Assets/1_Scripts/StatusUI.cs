@@ -22,7 +22,7 @@ public class StatusUI : MonoBehaviour
         Power.text = GameManager.instance.Strength.ToString()+"(+"+GameManager.instance.Strength_Equip.ToString()+")";
         Luck.text = GameManager.instance.Luck.ToString();
         ComePower.text = GameManager.instance.ComePower.ToString()+"(+"+GameManager.instance.ComePower_Equip.ToString() + ")";
-        Tired.text = GameManager.instance.Stamina.ToString()+"(+" + GameManager.instance.Stamina_Equip.ToString() + ")";
+        Tired.text = GameManager.instance.Stamina.ToString()+"(최대 피로도:" + GameManager.instance.Max_Stamina.ToString() + ")";
         Bargen.text = GameManager.instance.Intellect.ToString();
     }
 }

@@ -17,7 +17,7 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] GameObject MaxStamina;
 
     public Text Message;
-    public void Set_state_Sea() 
+    public void Set_state_Sea()
     {
         SoundManager.instance.PlayClickSound();
         GameManager.instance.fishing_Place_State = GameManager.FishingState.Sea;
@@ -100,7 +100,7 @@ public class ButtonManager : MonoBehaviour
     }
 
     public void SelectPlaceOn()
-    {        
+    {
         if (GameManager.instance.Stamina <= 0)
             StartCoroutine(Yell("스테미너가 부족해 낚시를 할 수 없습니다."));
         else
@@ -142,12 +142,12 @@ public class ButtonManager : MonoBehaviour
     public void Mathers_talk()
     {
         SoundManager.instance.PlayClickSound();
-        string[] talk = new string[] {"전복 하나 어디 갔어\n전복 누가 가져갔어", "나미끼는 최고의 노상방뇨 달인이었어","낚시는 기다림의 미학이란다", 
+        string[] talk = new string[] {"전복 하나 어디 갔어\n전복 누가 가져갔어", "나미끼는 최고의 노상방뇨 달인이었어","낚시는 기다림의 미학이란다",
             "난 전복 가져가는 놈이 세상에서 젤 싫어","한 때는 이 전복으로 세상을 재패했었단다","옛날에는 바다에 바?론? 같은게 없었는데 수질오염인가 뭔가 하는게 이렇게 만들었단다"
             ,"원래 목욕탕에서는 낚시가 금지였단다","언젠가는 나미끼 같은 노상방뇨 마스터가 나타날게야","북극에 사는 북극곰 아는감, 옛날에 그 북극곰 50마리랑 저 마린보이 청년이 댄스 배틀을 했었지.."
             ,"유미라고 귀여운 고양이 한마리가 있는데 신기하게도 책 위에서만 있더구나","낚시가 유행을 탄지 30년 정도 지나갔지만 아직까지 레비아탄을 잡은 낚시꾼이 없단다"
         };
-        Mather_talk.text = talk[Random.Range(0, talk.Length)];  
+        Mather_talk.text = talk[Random.Range(0, talk.Length)];
     }
     public void TaeHwans_talk()
     {
@@ -161,7 +161,7 @@ public class ButtonManager : MonoBehaviour
     public void Buy_Power()
     {
         float changeMoney;
-        if(GameManager.instance.Strength_Price > GameManager.instance.Money)
+        if (GameManager.instance.Strength_Price > GameManager.instance.Money)
         {
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
@@ -211,16 +211,20 @@ public class ButtonManager : MonoBehaviour
     }
     public void Buy_Stamina()
     {
-        if (100 > GameManager.instance.Money && GameManager.instance.Max_Stamina > GameManager.instance.Stamina)
+        if (100 > GameManager.instance.Money || GameManager.instance.Max_Stamina <= GameManager.instance.Stamina)
         {
             MaxStamina.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {  
-                GameManager.instance.Money -= 100;
-                GameManager.instance.Stamina += 50;
-                GameManager.instance.Save();
+            GameManager.instance.Money -= 100;
+            GameManager.instance.Stamina += 50;
+            if(GameManager.instance.Stamina >= GameManager.instance.Max_Stamina)
+            {
+                GameManager.instance.Stamina = GameManager.instance.Max_Stamina;
+            }
+            GameManager.instance.Save();
         }
     }
     public void Buy_Intellect()
