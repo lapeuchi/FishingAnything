@@ -1705,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &974398037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2022,6 +2022,7 @@ MonoBehaviour:
   ComePower: 0
   Luck: 0
   Stamina: 0
+  Max_Stamina: 0
   Intellect: 0
   Strength_Equip: 0
   ComePower_Equip: 0
@@ -2029,7 +2030,6 @@ MonoBehaviour:
   Strength_Price: 0
   Luck_Price: 0
   ComePower_Price: 0
-  Stamina_Price: 0
   Intellect_Price: 0
   index_value: 0
   isBuy: 000000000000000000
