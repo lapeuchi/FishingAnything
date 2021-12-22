@@ -89,6 +89,7 @@ public class Fishing : MonoBehaviour
     void Update()
     {
         FishHpBar.value = FishManager.instance.hp / FishMaxHp;
+        PlayerHpBar.value = GameManager.instance.Stamina / PlayerMaxHp;
         if (isFishing == true)
         {
             StartCoroutine(FishSign());
