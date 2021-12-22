@@ -16,7 +16,7 @@ public class FinishLine : MonoBehaviour
         if(isScanned == false && Input.anyKeyDown)
         {
             GameManager.instance.Stamina -= 1;
-            Fishing.instance.PlayerHpBar.value = (float)GameManager.instance.Stamina / (float)Fishing.instance.PlayerMaxHp;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
         }       
     }
 
