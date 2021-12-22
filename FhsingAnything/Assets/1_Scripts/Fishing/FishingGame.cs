@@ -9,7 +9,7 @@ public class FishingGame : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SummonSiluet", 1f, Random.Range(0.5f, 1.5f));
-        InvokeRepeating("SummonSiluet", 1f, Random.Range(0.5f, 1.5f));
+        //InvokeRepeating("SummonSiluet", 1f, Random.Range(0.5f, 1.5f));
     }
 
     private void Update()

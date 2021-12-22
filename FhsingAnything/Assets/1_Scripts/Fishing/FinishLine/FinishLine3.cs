@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FinishLine : MonoBehaviour
+public class FinishLine3 : MonoBehaviour
 {
     public bool isScanned = false;
     void Start()
@@ -16,22 +16,20 @@ public class FinishLine : MonoBehaviour
         if(isScanned == false && Input.anyKeyDown)
         {
             GameManager.instance.Stamina -= 1;
-            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / Fishing.instance.PlayerMaxHp;
         }       
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D cd)
     {
-        if(!other.gameObject.CompareTag("FishSiluet"))
+        if(!cd.gameObject.CompareTag("FishSiluet"))
         {
             isScanned = true;
         }
-        else isScanned = false;
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D cd)
     {
-        if (!collision.gameObject.CompareTag("FishSiluet"))
+        if (!cd.gameObject.CompareTag("FishSiluet"))
         {
             isScanned = false;
         }
