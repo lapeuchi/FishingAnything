@@ -6999,7 +6999,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
-  Tuto: {fileID: 1363822730458970222, guid: 54750615aa85c884ca2c5ddaa04b2bf5, type: 3}
+  Tuto: {fileID: 1421651650848074642, guid: 54750615aa85c884ca2c5ddaa04b2bf5, type: 3}
   Message: {fileID: 0}
 --- !u!1 &2135682146
 GameObject:

@@ -12,6 +12,7 @@ public class IndexReward : MonoBehaviour
     [SerializeField] GameObject reward_ThreeTen;
     [SerializeField] GameObject reward_FourTen;
     [SerializeField] GameObject reward_FiveTen;
+    [SerializeField] GameObject reward_All;
     [SerializeField] bool[] isOned;
     void Start()
     {
@@ -68,6 +69,14 @@ public class IndexReward : MonoBehaviour
             GameManager.instance.Money += 50000;
             isOned[4] = true;
         }
+        if (GameManager.instance.index_value == 59 && !isOned[4])
+        {
+            text.text = "축하드립니다!";
+            reward.SetActive(true);
+            reward_All.SetActive(true);
+            GameManager.instance.Money += 50000;
+            isOned[5] = true;
+        }
     }
     public void RewardOff()
     {
@@ -77,5 +86,6 @@ public class IndexReward : MonoBehaviour
         reward_ThreeTen.SetActive(false);
         reward_FourTen.SetActive(false);
         reward_FiveTen.SetActive(false);
+        reward_All.SetActive(false);
     }
 }
