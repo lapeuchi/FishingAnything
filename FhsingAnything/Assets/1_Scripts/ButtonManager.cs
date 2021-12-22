@@ -15,8 +15,18 @@ public class ButtonManager : MonoBehaviour
     public Text Mather_talk;
     public Text TaeHwan_talk;
     [SerializeField] GameObject MaxStamina;
+    [SerializeField] GameObject Tuto;
 
     public Text Message;
+
+    public void Ins_Tuto()
+    {
+        Instantiate(Tuto, new Vector3(0, 0, 0), Quaternion.identity);
+    }
+    public void Des_Tuto()
+    {
+        Destroy(Tuto);
+    }
     public void Set_state_Sea()
     {
         SoundManager.instance.PlayClickSound();
