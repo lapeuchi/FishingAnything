@@ -15,7 +15,7 @@ public class FinishLine2 : MonoBehaviour
     {
         if(isScanned == false && Input.anyKeyDown)
         {
-            GameManager.instance.Stamina -= 1f;
+            GameManager.instance.Stamina -= 0.5f;
         }       
     }
 

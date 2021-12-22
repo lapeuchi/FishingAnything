@@ -1722,6 +1722,7 @@ MonoBehaviour:
   FishMove: {fileID: 8300000, guid: 225761f4db47c69439ec0c2fc15a7c7a, type: 3}
   Catch: {fileID: 8300000, guid: 73588bd891c21f041959ae5738159d58, type: 3}
   Sharf: {fileID: 8300000, guid: fa89a5a26b32ef84ab0e645c2cbf893e, type: 3}
+  BGM: {fileID: 8300000, guid: e9b70d5bb3d7e174cbdaa4f7596b8985, type: 3}
 --- !u!82 &974398038
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1734,7 +1735,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
