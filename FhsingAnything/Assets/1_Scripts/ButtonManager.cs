@@ -211,16 +211,16 @@ public class ButtonManager : MonoBehaviour
     }
     public void Buy_Stamina()
     {
-        if (100 > GameManager.instance.Money && GameManager.instance.Max_Stamina > GameManager.instance.Stamina)
+        if (70 > GameManager.instance.Money && GameManager.instance.Max_Stamina > GameManager.instance.Stamina)
         {
             MaxStamina.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
-        {  
-                GameManager.instance.Money -= 100;
-                GameManager.instance.Stamina += 50;
-                GameManager.instance.Save();
+        {                  
+            GameManager.instance.Money -= 70;
+            GameManager.instance.Stamina = GameManager.instance.Max_Stamina;
+            GameManager.instance.Save();
         }
     }
     public void Buy_Intellect()

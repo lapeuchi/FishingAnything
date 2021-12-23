@@ -150,6 +150,19 @@ public class FishManager : MonoBehaviour
     public Tier RandTier()
     {
         float i = Random.Range(0f, 101f);
+        //if (i <= 49f)
+        //    return Tier.Common;
+        //else if (i <= 71f)
+        //    return Tier.Normal;
+        //else if (i <= 86f)
+        //    return Tier.Rare;
+        //else if (i <= 91f)
+        //    return Tier.Epic;
+        //else if (i <= 95f)
+        //    return Tier.Unique;
+        //else if (i <= 101f)
+        //    return Tier.Legendary;
+        //else return Tier.Common;
         if (i <= 49f)
             return Tier.Common;
         else if (i <= 71f)
