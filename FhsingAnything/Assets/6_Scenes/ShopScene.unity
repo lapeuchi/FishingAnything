@@ -1142,6 +1142,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &101199068
 MonoBehaviour:
@@ -2095,6 +2096,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &230638390
 MonoBehaviour:
@@ -2248,6 +2250,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &232236182
 MonoBehaviour:
@@ -2499,7 +2502,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1854410268}
   m_HandleRect: {fileID: 1854410267}
   m_Direction: 2
-  m_Value: 0.73109114
+  m_Value: 0.8263079
   m_Size: 0.13446799
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3019,6 +3022,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &324942856
 MonoBehaviour:
@@ -3394,6 +3398,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &404308683
 MonoBehaviour:
@@ -4011,6 +4016,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &496488257
 MonoBehaviour:
@@ -4164,6 +4170,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &506169446
 MonoBehaviour:
@@ -4317,6 +4324,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &506959083
 MonoBehaviour:
@@ -4470,6 +4478,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &519907800
 MonoBehaviour:
@@ -4819,6 +4828,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &536131934
 MonoBehaviour:
@@ -5050,6 +5060,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &553408250
 MonoBehaviour:
@@ -5477,6 +5488,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &593997221
 MonoBehaviour:
@@ -5630,6 +5642,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &599733042
 MonoBehaviour:
@@ -6519,6 +6532,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &693884030
 MonoBehaviour:
@@ -6784,6 +6798,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &737194300
 MonoBehaviour:
@@ -7093,6 +7108,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &790203755
 MonoBehaviour:
@@ -7246,6 +7262,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &795445658
 MonoBehaviour:
@@ -7399,6 +7416,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &813309510
 MonoBehaviour:
@@ -7552,6 +7570,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &820927181
 MonoBehaviour:
@@ -8816,6 +8835,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &982243211
 MonoBehaviour:
@@ -9281,6 +9301,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 889490174}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1016543046
 MonoBehaviour:
@@ -9510,6 +9531,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1040870585
 MonoBehaviour:
@@ -10341,6 +10363,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1141501479
 MonoBehaviour:
@@ -10743,7 +10766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1799}
+  m_AnchoredPosition: {x: 0, y: 1162}
   m_SizeDelta: {x: 0, y: 7729.3496}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1170958436
@@ -11783,6 +11806,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1338368460
 MonoBehaviour:
@@ -12586,6 +12610,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1488693446
 MonoBehaviour:
@@ -13332,6 +13357,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1577886410
 MonoBehaviour:
@@ -13833,6 +13859,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1601380958
 MonoBehaviour:
@@ -16669,6 +16696,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1967365915
 MonoBehaviour:
@@ -17172,6 +17200,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &2002879404
 MonoBehaviour:
@@ -17593,6 +17622,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &2088564674
 MonoBehaviour:
@@ -17746,6 +17776,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &2103127494
 MonoBehaviour:
@@ -18669,6 +18700,7 @@ MonoBehaviour:
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
   MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!1 &5040518255724689649
 GameObject:

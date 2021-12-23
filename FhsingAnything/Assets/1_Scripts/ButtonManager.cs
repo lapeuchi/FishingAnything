@@ -268,7 +268,7 @@ public class ButtonManager : MonoBehaviour
             GameManager.instance.Save();
         }
     }
-    private void NomoneyOff()
+    public void NomoneyOff()
     {
         MaxStamina.SetActive(false);
         NoMoney.SetActive(false);
