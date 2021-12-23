@@ -187,6 +187,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Money -= GameManager.instance.Strength_Price;
             changeMoney = (GameManager.instance.Strength_Price * 1.1f);
             GameManager.instance.Strength_Price = (int)changeMoney;
@@ -204,6 +205,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Money -= GameManager.instance.Luck_Price;
             changeMoney = (GameManager.instance.Luck_Price * 1.1f);
             GameManager.instance.Luck_Price = (int)changeMoney;
@@ -221,6 +223,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Money -= GameManager.instance.ComePower_Price;
             changeMoney = (GameManager.instance.ComePower_Price * 1.1f);
             GameManager.instance.ComePower_Price = (int)changeMoney;
@@ -236,7 +239,8 @@ public class ButtonManager : MonoBehaviour
             Invoke("NomoneyOff", 2f);
         }
         else
-        {  
+        {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Money -= 70;
             GameManager.instance.Stamina += 50;
             if(GameManager.instance.Stamina >= GameManager.instance.Max_Stamina)
@@ -256,6 +260,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Money -= GameManager.instance.Intellect_Price;
             changeMoney = (GameManager.instance.Intellect_Price * 1.1f);
             GameManager.instance.Intellect_Price = (int)changeMoney;
@@ -273,11 +278,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (1000 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.isBuy[0] = true;
             GameManager.instance.Money -= 1000;
             Destroy(gameObject);
@@ -287,11 +294,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (10000 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.isBuy[1] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);
@@ -301,11 +310,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (55000 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.isBuy[2] = true;
             GameManager.instance.Money -= 55000;
             Destroy(gameObject);
@@ -316,11 +327,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (850 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Max_Stamina = 150 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[3] = true;
             GameManager.instance.Money -= 850;
@@ -331,11 +344,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (1850 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Max_Stamina = 150 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[4] = true;
             GameManager.instance.Money -= 1850;
@@ -346,11 +361,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (10000 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.Max_Stamina = 150 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[5] = true;
             GameManager.instance.Money -= 10000;
@@ -363,11 +380,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (700 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.isBuy[6] = true;
             GameManager.instance.Money -= 700;
             Destroy(gameObject);
@@ -377,11 +396,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (2100 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.isBuy[7] = true;
             GameManager.instance.Money -= 2100;
             Destroy(gameObject);
@@ -391,11 +412,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (10000 > GameManager.instance.Money)
         {
+            SoundManager.instance.PlayClickSound();
             NoMoney.SetActive(true);
             Invoke("NomoneyOff", 2f);
         }
         else
         {
+            SoundManager.instance.PlayClickSound();
             GameManager.instance.isBuy[8] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);
@@ -404,57 +427,69 @@ public class ButtonManager : MonoBehaviour
     // 특정 낚시대를 장착할 때
     public void Equip_Fishingrod_Normalrod()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Normal;
     }
     public void Equip_Fishingrod_Magicrod()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Magic;
     }
     public void Equip_Fishingrod_Godrod()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.God;
     }
 
     // 특정 의자를 장착할 떄
     public void Equip_Chair_Gamingchair()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Chair_state = GameManager.Chair_State.Gaming;
     }
     public void Equip_Chair_Redchair()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Chair_state = GameManager.Chair_State.Red;
     }
     public void Equip_Chair_Kingchair()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Chair_state = GameManager.Chair_State.King;
     }
 
     // 특정 미끼를 장착할 때
     public void Equip_Bait_Fishbread()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Bait_state = GameManager.Bait_State.FishBread;
     }
     public void Equip_Bait_Wasabi()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Bait_state = GameManager.Bait_State.Wasabi;
     }
     public void Equip_Bait_Soju()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Bait_state = GameManager.Bait_State.Soju;
     }
 
     // 장비 해제 할때
     public void Unquip_Fishingrod()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Fishingrod_state = GameManager.Fishingrod_State.Hand;
     }
     
     public void Unquip_Chair()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Chair_state = GameManager.Chair_State.Squat;
     }
     public void Unquip_Bait()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Bait_state = GameManager.Bait_State.Pogayri;
     }
 

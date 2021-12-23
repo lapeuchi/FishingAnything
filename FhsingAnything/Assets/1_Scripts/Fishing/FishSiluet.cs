@@ -58,7 +58,7 @@ public class FishSiluet : MonoBehaviour
 
     void Fight()
     {
-        power = Random.Range(3f, 5f);
+        power = Random.Range(3f, 7f);
         int i = Random.Range(0, 4);
         if (i == 0)
             vec = Vector2.up;
