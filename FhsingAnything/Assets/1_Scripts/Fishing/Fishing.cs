@@ -32,7 +32,9 @@ public class Fishing : MonoBehaviour
     public Slider PlayerHpBar;
     
     public float FishMaxHp;
-    
+
+    public bool loseState;
+
     Animator anim;
     public GameObject Charactor;
 
@@ -112,19 +114,28 @@ public class Fishing : MonoBehaviour
             }           
         }
 
-        if(global::GameManager.instance.Stamina <= 0)
+        if (GameManager.instance.Stamina <= 0)
         {
-            GameClear();
-            Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ... " +
-                "\n(낚시 실패로 최대 피로도가 증가했습니다) ▼";
-            
-            if (Input.anyKeyDown)
-                GameManager.instance.Max_Stamina += 3;
-            SceneManager.LoadScene("FishMarketScene");
-            global::GameManager.instance.Save();
+            StartCoroutine(Lose());
         }
     }
     
+    IEnumerator Lose()
+    {
+        GameManager.instance.Stamina = 1f;
+        GameClear();
+        yield return new WaitForSeconds(0.5f);
+        Waiting_Text.text = "앗! 물고기한테 당했다. 마을로 돌아가자 ...▼";
+        yield return new WaitUntil(() => Input.anyKeyDown);
+        Waiting_Text.text = "낚시 실패로 최대 피로도가 증가했습니다 ...▼";
+        yield return new WaitUntil(() => Input.anyKeyDown);
+        yield return new WaitForSeconds(0.5f);
+        GameManager.instance.Max_Stamina += 3;
+        GameManager.instance.Stamina = 0;
+        SceneManager.LoadScene("FishMarketScene");
+        global::GameManager.instance.Save();        
+    }
+
     private void FishingGame1()
     {
         Background_Waiting_Text.color = new Color(1, 1, 1, 0);
@@ -151,6 +162,7 @@ public class Fishing : MonoBehaviour
         Water2.SetActive(true);
         FishHpBar.gameObject.SetActive(true);
         PlayerHpBar.gameObject.SetActive(true);
+        
         yield return new WaitUntil(() => FishManager.instance.hp <= 0);
         gameProcess = 4;
         yield return new WaitForSeconds(0.5f);

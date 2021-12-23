@@ -13,5 +13,9 @@ public class ItmeFindReset : MonoBehaviour
             findReset[i].Find = false;
             findReset[i].isFind = false;
         }
+        for (int i = 0; i < 6; i++)
+        {
+            GameManager.instance.isOned[i] = false;
+        }
     }
 }

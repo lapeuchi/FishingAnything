@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     public string USER;
+    public bool[] isOned;
     public enum GameState { Lobby, Fishing, shop, Setting };
     public GameState curGameState = GameState.Lobby;
     [Header("Arctic")]
@@ -174,8 +175,8 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Strength = 10;
         GameManager.instance.ComePower = 10;
         GameManager.instance.Luck = 10;
-        GameManager.instance.Stamina = 100f;
-        GameManager.instance.Max_Stamina = 100f;
+        GameManager.instance.Stamina = 150f;
+        GameManager.instance.Max_Stamina = 150f;
         GameManager.instance.Intellect = 10;
         GameManager.instance.Strength_Equip = 0;
         GameManager.instance.ComePower_Equip = 0;

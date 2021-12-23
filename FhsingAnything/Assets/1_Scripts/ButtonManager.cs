@@ -321,7 +321,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
-            GameManager.instance.Max_Stamina = 100 + GameManager.instance.Stamina_Equip;
+            GameManager.instance.Max_Stamina = 150 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[3] = true;
             GameManager.instance.Money -= 850;
             Destroy(gameObject);
@@ -336,7 +336,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
-            GameManager.instance.Max_Stamina = 100 + GameManager.instance.Stamina_Equip;
+            GameManager.instance.Max_Stamina = 150 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[4] = true;
             GameManager.instance.Money -= 1850;
             Destroy(gameObject);
@@ -351,7 +351,7 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
-            GameManager.instance.Max_Stamina = 100 + GameManager.instance.Stamina_Equip;
+            GameManager.instance.Max_Stamina = 150 + GameManager.instance.Stamina_Equip;
             GameManager.instance.isBuy[5] = true;
             GameManager.instance.Money -= 10000;
             Destroy(gameObject);

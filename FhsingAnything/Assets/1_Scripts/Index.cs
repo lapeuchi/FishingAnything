@@ -14,6 +14,7 @@ public class Index : MonoBehaviour
     public Text Rare;
     public Image image;
     public GameObject NotFind;
+
     public Item IndexItem
     {
         get
@@ -36,7 +37,10 @@ public class Index : MonoBehaviour
             }
             
         }
-    } 
+    }
+
+ 
+
     private void NotFound()
     {
         NotFind.SetActive(true);
@@ -45,6 +49,6 @@ public class Index : MonoBehaviour
     private void NotFoundOff()
     {
         NotFind.SetActive(false);
-
     }
+
 }

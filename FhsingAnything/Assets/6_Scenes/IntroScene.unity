@@ -981,6 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   USER: 
+  isOned: 000000000000
   curGameState: 0
   Arctic_Common:
   - {fileID: 1242295883360074387, guid: fa0743a8a1a9a6545a863546050d4c8c, type: 3}
