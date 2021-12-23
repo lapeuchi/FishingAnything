@@ -7,6 +7,7 @@ public class Fish : MonoBehaviour
     public float hp;
     public int money;
     public int size;
+    private float PlusMoney;
 
     public enum FishItem
     {
@@ -23,7 +24,8 @@ public class Fish : MonoBehaviour
     SpriteRenderer sr;
     public void Link()
     {
-        GameManager.instance.Money += money;
+        PlusMoney = money * ((100+GameManager.instance.Intellect * 3)/100);
+        GameManager.instance.Money += (int)PlusMoney;
         if(fishT.isFind == false)
             fishT.Find = true;
         //switch (curfish)

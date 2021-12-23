@@ -9,15 +9,25 @@ public class LoginManager : MonoBehaviour
     //데이터 초기화
     public void ResetData()
     {
+        SoundManager.instance.PlayClickSound();
         PlayerPrefs.SetInt("isFirst", 0);
+        Application.Quit();
     }
 
     //게임시작
     public void GameStart()
     {
+        SoundManager.instance.PlayClickSound();
         GameManager.instance.Load();
-        // 다음 씬(1번 씬) 로드. (1 : 수산시장)
-        SceneManager.LoadScene(1);     
+        // 다음 씬(2번 씬) 로드.
+        SceneManager.LoadScene(3);     
+    }
+
+    //게임 종료
+    public void GameExit()
+    {
+        SoundManager.instance.PlayClickSound();
+        Application.Quit();
     }
 
     

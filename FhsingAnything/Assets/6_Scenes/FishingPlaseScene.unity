@@ -651,7 +651,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 145755759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bb89f55c483e24184f1a53205284d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b197e9cbb11f7d45afaadbfa7cbc56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isScanned: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 260642847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290f375fbf4d45949ab49066f4a5c4e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b197e9cbb11f7d45afaadbfa7cbc56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isScanned: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
   FishHpBar: {fileID: 1701941705}
   PlayerHpBar: {fileID: 1580905752}
   FishMaxHp: 0
-  PlayerMaxHp: 0
+  loseState: 0
   Charactor: {fileID: 0}
   SignText: {fileID: 232854315}
 --- !u!4 &287087600
@@ -1639,7 +1639,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 110, y: 800}
+  m_SizeDelta: {x: 110, y: 813.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972381196
 MonoBehaviour:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD50C\uB808\uC774\uC5B4\n\n\uCCB4\uB825"
+  m_Text: "\uD53C\uB85C\uB3C4"
 --- !u!222 &972381197
 CanvasRenderer:
   m_ObjectHideFlags: 0

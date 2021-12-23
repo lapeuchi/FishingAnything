@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 9a45f8608617d854b96e3de110a81208
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ROKA
+  fontNames:
+  - ROKA
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a2f36871caa82a64f8fcb9673abdf74f, type: 3}
+  - {fileID: 12800000, guid: e6811633ce16a4e48b497bdc49a2f4a3, type: 3}
+  - {fileID: 12800000, guid: c3b5ecfd3855f1f498d92fe084b6ccdf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

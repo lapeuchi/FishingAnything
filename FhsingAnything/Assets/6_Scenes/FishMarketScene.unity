@@ -411,6 +411,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &122841163
 MonoBehaviour:
@@ -722,6 +724,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &284292378
 MonoBehaviour:
@@ -970,6 +974,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2097115052}
   - {fileID: 204817155}
   - {fileID: 1917099680}
   - {fileID: 1628949405}
@@ -1097,7 +1102,7 @@ RectTransform:
   - {fileID: 470314756}
   - {fileID: 842636773}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1164,6 +1169,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &427907954
 MonoBehaviour:
@@ -1527,7 +1534,7 @@ RectTransform:
   - {fileID: 122841161}
   - {fileID: 1344846164}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1696,6 +1703,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &627847748
 MonoBehaviour:
@@ -1848,6 +1857,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &632265323
 MonoBehaviour:
@@ -2126,7 +2137,7 @@ Transform:
   - {fileID: 845619025}
   - {fileID: 1804980028}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744707326
 GameObject:
@@ -2188,6 +2199,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &744707329
 MonoBehaviour:
@@ -2340,6 +2353,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 1879652589}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &759137125
 MonoBehaviour:
@@ -2492,6 +2507,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &787934363
 MonoBehaviour:
@@ -2954,6 +2971,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &936959471
 MonoBehaviour:
@@ -3232,7 +3251,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 312693874}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3311,7 +3330,7 @@ RectTransform:
   - {fileID: 1351794365}
   - {fileID: 812889437}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3378,6 +3397,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1170904814
 MonoBehaviour:
@@ -3530,6 +3551,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1205675280
 MonoBehaviour:
@@ -3778,6 +3801,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263976704}
   m_CullTransparentMesh: 0
+--- !u!1 &1308447698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308447699}
+  - component: {fileID: 1308447701}
+  - component: {fileID: 1308447700}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1308447699
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308447698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2097115052}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308447700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308447698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 99a7daafca030ef4796e0b002f609d79, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\uB3C4\uC6C0\uB9D0"
+--- !u!222 &1308447701
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308447698}
+  m_CullTransparentMesh: 0
 --- !u!1 &1318806779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,6 +3939,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1318806782
 MonoBehaviour:
@@ -4068,6 +4171,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1344846166
 MonoBehaviour:
@@ -4294,6 +4399,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1352517732
 MonoBehaviour:
@@ -4764,6 +4871,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 1053474167}
 --- !u!1 &1481526366
 GameObject:
@@ -4953,7 +5062,7 @@ RectTransform:
   - {fileID: 1706079251}
   - {fileID: 2045497021}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5104,7 +5213,7 @@ RectTransform:
   m_Children:
   - {fileID: 2135682147}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5261,6 +5370,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!1 &1669429780
 GameObject:
@@ -5478,6 +5589,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 1330188970}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1699177280
 MonoBehaviour:
@@ -5752,7 +5865,7 @@ RectTransform:
   m_Children:
   - {fileID: 1669429781}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5779,6 +5892,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1762634574
 MonoBehaviour:
@@ -6155,6 +6270,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &1825216639
 MonoBehaviour:
@@ -6429,7 +6546,7 @@ RectTransform:
   m_Children:
   - {fileID: 1639867423}
   m_Father: {fileID: 312693874}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.3750002}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6574,6 +6691,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!114 &2039932741
 MonoBehaviour:
@@ -6728,6 +6847,160 @@ MonoBehaviour:
   m_Spacing: {x: 100, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 2
+--- !u!1 &2097115051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097115052}
+  - component: {fileID: 2097115055}
+  - component: {fileID: 2097115054}
+  - component: {fileID: 2097115053}
+  - component: {fileID: 2097115056}
+  m_Layer: 5
+  m_Name: Button_ Tuto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2097115052
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097115051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1308447699}
+  m_Father: {fileID: 312693874}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -796.5, y: 304.5}
+  m_SizeDelta: {x: 200.3985, y: 85.36871}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2097115053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097115051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2097115054}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2097115056}
+        m_MethodName: Ins_Tuto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2097115054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097115051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8eb69fafe4f719b49bb2dd1a7358aaaa, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2097115055
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097115051}
+  m_CullTransparentMesh: 0
+--- !u!114 &2097115056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097115051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05602c495138b9247b1afe726a8f931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectPlaceBackGround: {fileID: 0}
+  BlackBackGround: {fileID: 0}
+  TaeHwan: {fileID: 0}
+  Mather: {fileID: 0}
+  IndexUI: {fileID: 0}
+  NoMoney: {fileID: 0}
+  Mather_talk: {fileID: 0}
+  TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 1421651650848074642, guid: 54750615aa85c884ca2c5ddaa04b2bf5, type: 3}
+  Message: {fileID: 0}
 --- !u!1 &2135682146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6878,6 +7151,8 @@ MonoBehaviour:
   NoMoney: {fileID: 0}
   Mather_talk: {fileID: 0}
   TaeHwan_talk: {fileID: 0}
+  MaxStamina: {fileID: 0}
+  Tuto: {fileID: 0}
   Message: {fileID: 0}
 --- !u!1001 &2552914101576651592
 PrefabInstance:
@@ -6936,7 +7211,7 @@ PrefabInstance:
     - target: {fileID: 2552914101646561355, guid: 85ab557c5eed5064ca7ec6aba2525293,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2552914101646561355, guid: 85ab557c5eed5064ca7ec6aba2525293,
         type: 3}

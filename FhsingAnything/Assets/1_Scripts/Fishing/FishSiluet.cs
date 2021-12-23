@@ -58,7 +58,7 @@ public class FishSiluet : MonoBehaviour
 
     void Fight()
     {
-        power = Random.Range(3f, 5f);
+        power = Random.Range(3f, 7f);
         int i = Random.Range(0, 4);
         if (i == 0)
             vec = Vector2.up;
@@ -68,6 +68,7 @@ public class FishSiluet : MonoBehaviour
             vec = Vector2.left;
         if (i == 3)
             vec = Vector2.right;
+       
     }
 
     void Update()
@@ -93,7 +94,13 @@ public class FishSiluet : MonoBehaviour
         if (Fishing.instance.gameProcess == 1)
             StartCoroutine(RandVec());
         if (isGaming == true)
+        {
             transform.Translate(vec * Time.deltaTime * power);
+            //transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
+            // float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
+            //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
+        
         else
         {
             float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
@@ -102,9 +109,15 @@ public class FishSiluet : MonoBehaviour
           //transform.rotation = rot;
         }
      
+        //이겼을 때
         if (FishManager.instance.hp <= 0)
         {
             SoundManager.instance.PlayCatchSound();
+            Destroy(gameObject);
+        }
+        //졌을 때
+        if(GameManager.instance.Stamina <= 0)
+        {
             Destroy(gameObject);
         }
     }
@@ -167,6 +180,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Up"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isUpTrigger = false;
             Destroy(gameObject);
@@ -174,6 +188,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Down"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isDownTrigger = false;
             Destroy(gameObject);
@@ -181,6 +196,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Left"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isLeftTrigger = false;
             Destroy(gameObject);
@@ -188,6 +204,7 @@ public class FishSiluet : MonoBehaviour
         if (other.gameObject.CompareTag("Right"))
         {
             GameManager.instance.Stamina -= 2;
+            Fishing.instance.PlayerHpBar.value = GameManager.instance.Stamina / GameManager.instance.Max_Stamina;
             isTrigger = false;
             isRightTrigger = false;
             Destroy(gameObject);

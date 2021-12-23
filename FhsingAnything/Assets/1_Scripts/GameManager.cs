@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     public string USER;
+    public bool[] isOned;
     public enum GameState { Lobby, Fishing, shop, Setting };
     public GameState curGameState = GameState.Lobby;
     [Header("Arctic")]
@@ -143,12 +144,13 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("ComePower", GameManager.instance.ComePower);
         PlayerPrefs.SetInt("Luck", GameManager.instance.Luck);
         PlayerPrefs.SetFloat("Stamina", GameManager.instance.Stamina);
+        PlayerPrefs.SetFloat("Max_Stamina", GameManager.instance.Max_Stamina);
         PlayerPrefs.SetInt("Intellect", GameManager.instance.Intellect);
-
         PlayerPrefs.SetInt("Strength_Price", GameManager.instance.Strength_Price);
         PlayerPrefs.SetInt("Luck_Price", GameManager.instance.Luck_Price);
         PlayerPrefs.SetInt("ComePower_Price", GameManager.instance.ComePower_Price);
         PlayerPrefs.SetInt("Intellect_Price", GameManager.instance.Intellect_Price);
+        PlayerPrefs.SetInt("index_value", GameManager.instance.index_value);
     }
 
     public void Load()
@@ -158,11 +160,13 @@ public class GameManager : MonoBehaviour
         GameManager.instance.ComePower = PlayerPrefs.GetInt("ComePower");
         GameManager.instance.Luck = PlayerPrefs.GetInt("Luck");
         GameManager.instance.Stamina = PlayerPrefs.GetFloat("Stamina");
+        GameManager.instance.Max_Stamina = PlayerPrefs.GetFloat("Max_Stamina");
         GameManager.instance.Intellect = PlayerPrefs.GetInt("Intellect");
         GameManager.instance.Strength_Price = PlayerPrefs.GetInt("Strength_Price");
         GameManager.instance.Luck_Price = PlayerPrefs.GetInt("Luck_Price");
         GameManager.instance.ComePower_Price = PlayerPrefs.GetInt("ComePower_Price");
         GameManager.instance.Intellect_Price = PlayerPrefs.GetInt("Intellect_Price");
+        GameManager.instance.index_value = PlayerPrefs.GetInt("index_value");
     }
     public void SetNewbie()
     {
@@ -171,8 +175,8 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Strength = 10;
         GameManager.instance.ComePower = 10;
         GameManager.instance.Luck = 10;
-        GameManager.instance.Stamina = 100f;
-        GameManager.instance.Max_Stamina = 100f;
+        GameManager.instance.Stamina = 150f;
+        GameManager.instance.Max_Stamina = 150f;
         GameManager.instance.Intellect = 10;
         GameManager.instance.Strength_Equip = 0;
         GameManager.instance.ComePower_Equip = 0;
@@ -182,6 +186,7 @@ public class GameManager : MonoBehaviour
         GameManager.instance.Luck_Price = 100;
         GameManager.instance.ComePower_Price = 100;
         GameManager.instance.Intellect_Price = 100;
+        GameManager.instance.index_value = 0;
         GameManager.instance.Save();
     }
 }
